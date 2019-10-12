@@ -27,16 +27,26 @@ def main():
             #filter10th = filter9th.replace("CISCO-LWAPP-ROGUE-MIB::", " ")
 
             #filter more details
-            clientIPFilter = filter9th.replace("cldcClientByIpAddressType", "IP Address Type:")
-            clientUsername = clientIPFilter.replace("cldcClientUsername", "Client Username:")
-            clientSSID = clientUsername.replace("cldcClientSSID", "Client SSID:")
-            clientMACAddr = clientSSID.replace("cldcApMacAddress", "AP MAC Address:")
-            clientSessionID = clientMACAddr.replace("cldcClientSessionID", "Client Session ID:")
-            clApName = clientSessionID.replace("cLApName", "Access Point Name: ")
+            clientIPFilter = filter9th.replace("cldcClientByIpAddressType.", "IP Address Type:")
+            clientUsername = clientIPFilter.replace("cldcClientUsername.", "Client Username:")
+            clientSSID = clientUsername.replace("cldcClientSSID.", "Client SSID:")
+            clientMACAddr = clientSSID.replace("cldcApMacAddress.", "AP MAC Address:")
+            clientSessionID = clientMACAddr.replace("cldcClientSessionID.", "Client Session ID:")
+            clApName = clientSessionID.replace("cLApName.", "Access Point Name: ")
             
+            bsnStationAPMacAddr = clApName.replace("bsnStationAPMacAddr.0", "Access Point MAC Address:")
+            bsnStationAPIfSlotId = bsnStationAPMacAddr.replace("bsnStationAPIfSlotId.0", "Access Point Slot ID:")
+            bsnStationReasonCode = bsnStationAPIfSlotId.replace("bsnStationReasonCode.0", "Reason:")
+            bsnUserIpAddress = bsnStationReasonCode.replace("bsnUserIpAddress.0", "Client IP Address:")
+            bsnStationUserName = bsnUserIpAddress.replace("bsnStationUserName.0", "CLient Username:")
+            bsnStationMacAddress = bsnStationUserName.replace("bsnStationMacAddress.0", "Client MAC Address:")
+            bsnAPName = bsnStationMacAddress.replace("bsnAPName.0", "Access Point Name:")
+
+
+            finalResult  = bsnAPName
 
             #write final message into file
-            output.write( clApName + "\n")
+            output.write( finalResult + "\n")
 
         except EOFError:
             running = False
