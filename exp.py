@@ -67,8 +67,26 @@ def main():
             cldcClientSSID = cLApDot11IfSlotId.replace("cldcClientSSID.", "Client SSID:")
             bsnAPDot3MacAddress = cldcClientSSID.replace("bsnAPDot3MacAddress.", "AP MAC Address:")
             bsnAPIfSlotId = bsnAPDot3MacAddress.replace("bsnAPIfSlotId.", "AP interface slot ID:")
+            cldcClientIPAddress = bsnAPIfSlotId.replace("cldcClientIPAddress.0","Client IP Address:")
 
-            finalResult  = bsnAPIfSlotId
+            cldcClientMacAddress = cldcClientIPAddress.replace("cldcClientMacAddress.0", "Client MAC Address:")
+            cldcIfType = cldcClientMacAddress.replace("cldcIfType.0", "Client interface type:")
+            
+            clrRrmApTransmitPowerLevel = cldcIfType.replace("clrRrmApTransmitPowerLevel.0", "Controller AP Power Level:")
+            clrRrmTimeStamp = clrRrmApTransmitPowerLevel.replace("clrRrmTimeStamp.0","Controller AP timestamp:")
+            clrRrmClientType = clrRrmTimeStamp.replace("clrRrmClientType.0","Controller AP client type:")
+            clrRrmRssiHistogramLength = clrRrmClientType.replace("clrRrmRssiHistogramLength.0", "RSSI Histogram length:")
+            clrRrmRssiHistogramMaxIndex = clrRrmRssiHistogramLength.replace("clrRrmRssiHistogramMaxIndex.0","RSSI histogram max:")
+            clrRrmRssiHistogramMinIndex = clrRrmRssiHistogramMaxIndex.replace("clrRrmRssiHistogramMinIndex.0","RSSI histogram min:")
+            clrRrmRssiHistogramValues = clrRrmRssiHistogramMinIndex.replace("clrRrmRssiHistogramValues.0","RSSI histogram values:")
+            clrRrmNeighborApCount = clrRrmRssiHistogramValues.replace("clrRrmNeighborApCount.0","Controller Neighbor AP count: ")
+            clrRrmNeighborApMacAddress = clrRrmNeighborApCount.replace("clrRrmNeighborApMacAddress.0", "Neighbor AP MAC Address:")
+            clrRrmNeighborApRssi = clrRrmNeighborApMacAddress.replace("clrRrmNeighborApRssi.0", "Neighbor AP RSSI:")
+            clrRrmNeighborApIfType = clrRrmNeighborApRssi.replace("clrRrmNeighborApIfType.0", "Neighbor AP interface type:")
+            cLWlanChdEnable = clrRrmNeighborApIfType.replace("cLWlanChdEnable.2","WLAN channel enable:")
+
+
+            finalResult  = cLWlanChdEnable
 
             #write final message into file
             output.write( finalResult + "\n")
