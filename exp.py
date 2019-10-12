@@ -27,13 +27,13 @@ def main():
             #filter10th = filter9th.replace("CISCO-LWAPP-ROGUE-MIB::", " ")
 
             #filter more details
-            clientIPFilter = filter9th.replace("cldcClientByIpAddressType.0", "IP Address Type:")
-            clientUsername = clientIPFilter.replace("cldcClientUsername.'....-.'", "Client Username:")
-            clientSSID = clientUsername.replace("cldcClientSSID.'....-.'", "Client SSID:")
-            clientMACAddr = clientSSID.replace("cldcApMacAddress.'....-.'", "AP MAC Address:")
-            clientSessionID = clientMACAddr.replace("cldcClientSessionID.'....-.'", "Client Session ID:")
-            clApName = clientSessionID.replace("cLApName.'.=o1..'", "Access Point Name: ")
-
+            clientIPFilter = filter9th.replace("cldcClientByIpAddressType", "IP Address Type:")
+            clientUsername = clientIPFilter.replace("cldcClientUsername", "Client Username:")
+            clientSSID = clientUsername.replace("cldcClientSSID", "Client SSID:")
+            clientMACAddr = clientSSID.replace("cldcApMacAddress", "AP MAC Address:")
+            clientSessionID = clientMACAddr.replace("cldcClientSessionID", "Client Session ID:")
+            clApName = clientSessionID.replace("cLApName", "Access Point Name: ")
+            
 
             #write final message into file
             output.write( clApName + "\n")
