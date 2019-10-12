@@ -93,7 +93,12 @@ def main():
             bsnRogueAPAirespaceAPSlotId = bsnRogueAPAirespaceAPMacAddress.replace("bsnRogueAPAirespaceAPSlotId.0", "Rogue AP slot ID:")
             bsnRogueAPRadioType = bsnRogueAPAirespaceAPSlotId.replace("bsnRogueAPRadioType.0", "Rogue AP radio type:")
             bsnRogueAPAirespaceAPMacAddress = bsnRogueAPRadioType.replace("bsnRogueAPAirespaceAPMacAddress.0","(Airespace)Rogue AP MAC Address:")
-            finalResult  = bsnRogueAPAirespaceAPMacAddress
+
+            bsnImpersonatedAPMacAddr = bsnRogueAPAirespaceAPMacAddress.replace("bsnImpersonatedAPMacAddr.0", "AP MAC Address:")
+            bsnImpersonatingSourceMacAddr = bsnImpersonatedAPMacAddr.replace("bsnImpersonatingSourceMacAddr.0","AP Source MAC Adress:")
+
+
+            finalResult  = bsnImpersonatingSourceMacAddr
 
             #write final message into file
             output.write( finalResult + "\n")
