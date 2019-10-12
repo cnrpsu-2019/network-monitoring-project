@@ -85,8 +85,15 @@ def main():
             clrRrmNeighborApIfType = clrRrmNeighborApRssi.replace("clrRrmNeighborApIfType.0", "Neighbor AP interface type:")
             cLWlanChdEnable = clrRrmNeighborApIfType.replace("cLWlanChdEnable.2","WLAN channel enable:")
 
+            bsnAuthFailureUserType = cLWlanChdEnable.replace("bsnAuthFailureUserType.0", "User type:")
+            bsnAuthFailureUserName = bsnAuthFailureUserType.replace("bsnAuthFailureUserName.0","Username:")
 
-            finalResult  = cLWlanChdEnable
+            bsnRogueAPDot11MacAddress = bsnAuthFailureUserName.replace("bsnRogueAPDot11MacAddress.0","(Dot11)Rogue AP MAC Address:")
+            bsnRogueAPAirespaceAPMacAddress = bsnRogueAPDot11MacAddress.replace("bsnRogueAPAirespaceAPMacAddress.0", "(Airespace)Rogue AP MAC Address")
+            bsnRogueAPAirespaceAPSlotId = bsnRogueAPAirespaceAPMacAddress.replace("bsnRogueAPAirespaceAPSlotId.0", "Rogue AP slot ID:")
+            bsnRogueAPRadioType = bsnRogueAPAirespaceAPSlotId.replace("bsnRogueAPRadioType.0", "Rogue AP radio type:")
+            bsnRogueAPAirespaceAPMacAddress = bsnRogueAPRadioType.replace("bsnRogueAPAirespaceAPMacAddress.0","(Airespace)Rogue AP MAC Address:")
+            finalResult  = bsnRogueAPAirespaceAPMacAddress
 
             #write final message into file
             output.write( finalResult + "\n")
