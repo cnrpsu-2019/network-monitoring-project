@@ -27,9 +27,9 @@ def main():
             #filter10th = filter9th.replace("CISCO-LWAPP-ROGUE-MIB::", " ")
 
             #filter more details
-            clientIPFilter = filter9th.replace("cldcClientByIpAddressType.", "IP Address Type:")
+            clientIPFilter = filter9th.replace("cldcClientByIpAddressType.0", "IP Address Type:")
             clientUsername = clientIPFilter.replace("cldcClientUsername.", "Client Username:")
-            clientSSID = clientUsername.replace("cldcClientSSID.", "Client SSID:")
+            clientSSID = clientUsername.replace("cldcClientSSID.0", "Client SSID:")
             clientMACAddr = clientSSID.replace("cldcApMacAddress.", "AP MAC Address:")
             clientSessionID = clientMACAddr.replace("cldcClientSessionID.", "Client Session ID:")
             clApName = clientSessionID.replace("cLApName.", "Access Point Name: ")
@@ -63,11 +63,11 @@ def main():
             cLApRogueClassifiedApMacAddress = cLApRuleName.replace("cLApRogueClassifiedApMacAddress.0", "Classified rogue AP MAC Address:")
             cLApRogueClassifiedRSSI = cLApRogueClassifiedApMacAddress.replace("cLApRogueClassifiedRSSI.0", "Classified rogue AP RSSI:")
 
+            cLApDot11IfSlotId = cLApRogueClassifiedRSSI.replace("cLApDot11IfSlotId.0", "AP interface Slot ID:")
 
 
 
-
-            finalResult  = cLApRogueClassifiedRSSI
+            finalResult  = cLApDot11IfSlotId
 
             #write final message into file
             output.write( finalResult + "\n")
