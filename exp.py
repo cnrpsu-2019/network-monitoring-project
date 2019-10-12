@@ -101,10 +101,10 @@ def main():
             cLRogueClientFirstReported = cLRogueClientTotalDetectingAPs.replace("cLRogueClientFirstReported.0","First Report:")
             cLRogueClientLastReported = cLRogueClientFirstReported.replace("cLRogueClientLastReported.0","Last report:")
             cLRogueClientGatewayMac = cLRogueClientLastReported.replace("cLRogueClientGatewayMac.0","Rogue gateway MAC Address:")
+            bsnAPIfType = cLRogueClientGatewayMac.replace("bsnAPIfType.0","AP interface type:")
 
 
-
-            finalResult  = cLRogueClientGatewayMac
+            finalResult  = bsnAPIfType
 
             #write final message into file
             output.write( finalResult + "\n")
