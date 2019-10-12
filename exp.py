@@ -41,9 +41,33 @@ def main():
             bsnStationUserName = bsnUserIpAddress.replace("bsnStationUserName.0", "CLient Username:")
             bsnStationMacAddress = bsnStationUserName.replace("bsnStationMacAddress.0", "Client MAC Address:")
             bsnAPName = bsnStationMacAddress.replace("bsnAPName.0", "Access Point Name:")
+            cldcClientByIpAddress = bsnAPName.replace("cldcClientByIpAddress.0", "Client by IP Address:")
+            
+            #Rogue
+            cLApSysMacAddress = cldcClientByIpAddress.replace("cLApSysMacAddress.0", "System rogue AP MAC Address:")
+            cLApName = cLApSysMacAddress.replace("cLApName.0", "Rogue AP name:")
+            cLApRogueApMacAddress = cLApName.replace("cLApRogueApMacAddress.0", "Rogue AP MAC Address:")
+            cLApEthernetIfSlotId = cLApRogueApMacAddress.replace("cLApEthernetIfSlotId.0", "Slot ID:")
+            cLApDot11IfType = cLApEthernetIfSlotId.replace("cLApDot11IfType.0", "Type:")
+            cLApRogueDetectedChannel = cLApDot11IfType.replace("cLApRogueDetectedChannel.0", "Detected Channel:")
+            cLApRSSI = cLApRogueDetectedChannel.replace("cLApRSSI.0", "RSSI:")
+            cLApSNR = cLApRSSI.replace("cLApSNR.0","SNR:")
+            cLApRogueAPOnWiredNetwork = cLApSNR.replace("cLApRogueAPOnWiredNetwork.0", "Rogue AP on wired Network:")
+            cLApAdhocRogue = cLApRogueAPOnWiredNetwork.replace("cLApAdhocRogue.0", "Rogue Adhoc:")
+            cLApRogueApSsid = cLApAdhocRogue.replace("cLApRogueApSsid.0", "Rogue SSID:")
+            cLApRogueClassType = cLApRogueApSsid.replace("cLApRogueClassType.0", "Class Type:")
+            cLApRogueMode = cLApRogueClassType.replace("cLApRogueMode.0", "Rogue Mode:")
+            cLApRogueIsClassifiedByRule = cLApRogueMode.replace("cLApRogueIsClassifiedByRule.0", "Is Classified by rule?:")
+            cLApSeverityScore = cLApRogueIsClassifiedByRule.replace("cLApSeverityScore.0", "Severity score:")
+            cLApRuleName = cLApSeverityScore.replace("cLApRuleName.0", "Rule name:")
+            cLApRogueClassifiedApMacAddress = cLApRuleName.replace("cLApRogueClassifiedApMacAddress.0", "Classified rogue AP MAC Address:")
+            cLApRogueClassifiedRSSI = cLApRogueClassifiedApMacAddress.replace("cLApRogueClassifiedRSSI.0", "Classified rogue AP RSSI:")
 
 
-            finalResult  = bsnAPName
+
+
+
+            finalResult  = cLApRogueClassifiedRSSI
 
             #write final message into file
             output.write( finalResult + "\n")
