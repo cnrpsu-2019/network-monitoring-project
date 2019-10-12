@@ -97,6 +97,12 @@ def main():
             bsnImpersonatedAPMacAddr = bsnRogueAPAirespaceAPMacAddress.replace("bsnImpersonatedAPMacAddr.0", "AP MAC Address:")
             bsnImpersonatingSourceMacAddr = bsnImpersonatedAPMacAddr.replace("bsnImpersonatingSourceMacAddr.0","AP Source MAC Adress:")
 
+            # cLRogueClientTotalDetectingAPs.0 1
+            # cLRogueClientFirstReported.0 Sat Oct 12 16:45:26 2019 ICT
+            # cLRogueClientLastReported.0 Sat Oct 12 16:45:26 2019 ICT
+            # cLRogueClientGatewayMac.0 0:0:0:0:0:0
+
+
 
             finalResult  = bsnImpersonatingSourceMacAddr
 
