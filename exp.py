@@ -65,8 +65,10 @@ def main():
 
             cLApDot11IfSlotId = cLApRogueClassifiedRSSI.replace("cLApDot11IfSlotId.0", "AP interface Slot ID:")
             cldcClientSSID = cLApDot11IfSlotId.replace("cldcClientSSID.", "Client SSID:")
+            bsnAPDot3MacAddress = cldcClientSSID.replace("bsnAPDot3MacAddress.", "AP MAC Address:")
+            bsnAPIfSlotId = bsnAPDot3MacAddress.replace("bsnAPIfSlotId.", "AP interface slot ID:")
 
-            finalResult  = cldcClientSSID
+            finalResult  = bsnAPIfSlotId
 
             #write final message into file
             output.write( finalResult + "\n")
