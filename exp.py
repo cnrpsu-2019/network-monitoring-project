@@ -106,16 +106,15 @@ def main():
             
             #remaining filter
             filter10th = bsnAPIfType.replace("CISCO-LWAPP-SI-MIB::", "")
-            # cLSiIdrDeviceId.0 Wrong Type (should be Gauge32 or Unsigned32): 45065
-            # cLSiIdrDeviceType.0 Wrong Type (should be Gauge32 or Unsigned32): 30
-            # cLSiIdrAffectedChannels.0 Wrong Type (should be OCTET STRING): 768
-            # cLSiIdrSeverity.0 Wrong Type (should be Gauge32 or Unsigned32): 0
-            # cLSiIdrClusterId.0 f5:be:20:0:d:4d
-            # cLSiAlarmClear.0 false
-            # AP Name: 0 AP206-R204
-            # cLSiIdrPreviousClusterId.0 f5:be:20:0:d:4d
+            cLSiIdrDeviceId = filter10th.replace("cLSiIdrDeviceId.0 Wrong Type (should be Gauge32 or Unsigned32):", "Device ID:")
+            cLSiIdrDeviceType = cLSiIdrDeviceId.replace("cLSiIdrDeviceType.0 Wrong Type (should be Gauge32 or Unsigned32):", "Device type:")
+            cLSiIdrAffectedChannels = cLSiIdrDeviceType.replace("cLSiIdrAffectedChannels.0 Wrong Type (should be OCTET STRING):", "Affected Channels:")
+            cLSiIdrSeverity = cLSiIdrAffectedChannels.replace("cLSiIdrSeverity.0 Wrong Type (should be Gauge32 or Unsigned32):", "Severity:")
+            cLSiIdrClusterId = cLSiIdrSeverity.replace("cLSiIdrClusterId.0", "Cluster ID:") 
+            cLSiAlarmClear = cLSiIdrClusterId.replace("cLSiAlarmClear.0", "Alarm Clear:")
+            cLSiIdrPreviousClusterId = cLSiAlarmClear.replace("cLSiIdrPreviousClusterId.0", "Previous cluster ID:")
 
-            finalResult  = bsnStationBlacklistingReasonCode
+            finalResult  = cLSiIdrPreviousClusterId
 
             #write final message into file
             output.write( finalResult + "\n")
