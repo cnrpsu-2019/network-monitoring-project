@@ -30,7 +30,7 @@ def main():
             clientIPFilter = filter9th.replace("cldcClientByIpAddressType.0", "IP Address Type:")
             clientUsername = clientIPFilter.replace("cldcClientUsername.", "Client Username:")
             clientSSID = clientUsername.replace("cldcClientSSID.0", "Client SSID:")
-            clientMACAddr = clientSSID.replace("cldcApMacAddress.0", "AP MAC Address:")
+            clientMACAddr = clientSSID.replace("cldcApMacAddress.", "AP MAC Address:")
             clientSessionID = clientMACAddr.replace("cldcClientSessionID.", "Client Session ID:")
             clApName = clientSessionID.replace("cLApName.0", "AP Name: ")
             
@@ -65,8 +65,8 @@ def main():
 
             cLApDot11IfSlotId = cLApRogueClassifiedRSSI.replace("cLApDot11IfSlotId.0", "AP interface Slot ID:")
             cldcClientSSID = cLApDot11IfSlotId.replace("cldcClientSSID.", "Client SSID:")
-            bsnAPDot3MacAddress = cldcClientSSID.replace("bsnAPDot3MacAddress.0", "AP MAC Address:")
-            bsnAPIfSlotId = bsnAPDot3MacAddress.replace("bsnAPIfSlotId.0 Wrong Type (should be Gauge32 or Unsigned32):", "AP interface slot ID:")
+            bsnAPDot3MacAddress = cldcClientSSID.replace("bsnAPDot3MacAddress.", "AP MAC Address:")
+            bsnAPIfSlotId = bsnAPDot3MacAddress.replace("bsnAPIfSlotId. Wrong Type (should be Gauge32 or Unsigned32):", "AP interface slot ID:")
             cldcClientIPAddress = bsnAPIfSlotId.replace("cldcClientIPAddress.0","Client IP Address:")
 
             cldcClientMacAddress = cldcClientIPAddress.replace("cldcClientMacAddress.0", "Client MAC Address:")
