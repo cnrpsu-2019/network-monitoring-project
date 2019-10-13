@@ -114,7 +114,10 @@ def main():
             cLSiAlarmClear = cLSiIdrClusterId.replace("cLSiAlarmClear.0", "Alarm Clear:")
             cLSiIdrPreviousClusterId = cLSiAlarmClear.replace("cLSiIdrPreviousClusterId.0", "Previous cluster ID:")
 
-            finalResult  = cLSiIdrPreviousClusterId
+            #rogue Ap
+            bsnRogueAPAirespaceAPName = cLSiIdrPreviousClusterId.replace("bsnRogueAPAirespaceAPName.0", "Rogue AP name:") 
+
+            finalResult  = bsnRogueAPAirespaceAPName
 
             #write final message into file
             output.write( finalResult + "\n")
