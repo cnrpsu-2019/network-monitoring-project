@@ -58,7 +58,7 @@ def main():
             cLApRogueClassType = cLApRogueApSsid.replace("cLApRogueClassType.0", "Class Type:")
             cLApRogueMode = cLApRogueClassType.replace("cLApRogueMode.0", "Rogue Mode:")
             cLApRogueIsClassifiedByRule = cLApRogueMode.replace("cLApRogueIsClassifiedByRule.0", "Is Classified by rule?:")
-            cLApSeverityScore = cLApRogueIsClassifiedByRule.replace("cLApSeverityScore.0", "Severity score:")
+            cLApSeverityScore = cLApRogueIsClassifiedByRule.replace("cLApSeverityScore.0 Wrong Type (should be Gauge32 or Unsigned32):", "Severity score:")
             cLApRuleName = cLApSeverityScore.replace("cLApRuleName.0", "Rule name:")
             cLApRogueClassifiedApMacAddress = cLApRuleName.replace("cLApRogueClassifiedApMacAddress.0", "Classified rogue AP MAC Address:")
             cLApRogueClassifiedRSSI = cLApRogueClassifiedApMacAddress.replace("cLApRogueClassifiedRSSI.0", "Classified rogue AP RSSI:")
