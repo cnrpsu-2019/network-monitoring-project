@@ -32,7 +32,7 @@ def main():
             clientSSID = clientUsername.replace("cldcClientSSID.0", "Client SSID:")
             clientMACAddr = clientSSID.replace("cldcApMacAddress.", "AP MAC Address:")
             clientSessionID = clientMACAddr.replace("cldcClientSessionID.", "Client Session ID:")
-            clApName = clientSessionID.replace("cLApName.", "AP Name: ")
+            clApName = clientSessionID.replace("cLApName.0", "AP Name: ")
             
             bsnStationAPMacAddr = clApName.replace("bsnStationAPMacAddr.0", "AP MAC Address:")
             bsnStationAPIfSlotId = bsnStationAPMacAddr.replace("bsnStationAPIfSlotId.0", "AP Slot ID:")
