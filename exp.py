@@ -29,10 +29,10 @@ def main():
             #filter more details
             clientIPFilter = filter9th.replace("cldcClientByIpAddressType.0", "IP Address Type:")
             clientUsername = clientIPFilter.replace("cldcClientUsername.", "Client Username:")
-            clientSSID = clientUsername.replace("cldcClientSSID.", "Client SSID:")
+            clientSSID = clientUsername.replace("cldcClientSSID.0", "Client SSID:")
             clientMACAddr = clientSSID.replace("cldcApMacAddress.", "AP MAC Address:")
             clientSessionID = clientMACAddr.replace("cldcClientSessionID.", "Client Session ID:")
-            clApName = clientSessionID.replace("cLApName.", "AP Name: ")
+            clApName = clientSessionID.replace("cLApName.0", "AP Name: ")
             
             bsnStationAPMacAddr = clApName.replace("bsnStationAPMacAddr.0", "AP MAC Address:")
             bsnStationAPIfSlotId = bsnStationAPMacAddr.replace("bsnStationAPIfSlotId.0", "AP Slot ID:")
