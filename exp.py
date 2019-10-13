@@ -15,16 +15,16 @@ def main():
             unknowToTimestmp = input.replace("<UNKNOWN>","") #1st filter - remove <UNKNOWN>
             #2nd filter - sysUptime
             sysUp = unknowToTimestmp.replace("DISMAN-EVENT-MIB::sysUpTimeInstance", "System Uptime (Day:Hour:Minutes:Second):")
-            filterAire = sysUp.replace("AIRESPACE-WIRELESS-MIB::", " ")
-            filterLwapp = filterAire.replace("CISCO-LWAPP-DOT11-CLIENT-MIB::", " ")
+            filterAire = sysUp.replace("AIRESPACE-WIRELESS-MIB::", "")
+            filterLwapp = filterAire.replace("CISCO-LWAPP-DOT11-CLIENT-MIB::", "")
             #4th filter
-            filter4th = filterLwapp.replace("CISCO-LWAPP-AP-MIB::", " ")
+            filter4th = filterLwapp.replace("CISCO-LWAPP-AP-MIB::", "")
             filter5th = filter4th.replace("SNMPv2-MIB::snmpTrapOID.0", "Trap Event at : " + strnow + " ==>" )
-            filter6th = filter5th.replace("CISCO-LWAPP-RRM-MIB::", " ")
-            filter7th = filter6th.replace("CISCO-LWAPP-RRM-MIB::", " ")
-            filter8th = filter7th.replace("CISCO-LWAPP-WLAN-MIB::", " ")
-            filter9th = filter8th.replace("CISCO-LWAPP-ROGUE-MIB::", " ")
-            #filter10th = filter9th.replace("CISCO-LWAPP-ROGUE-MIB::", " ")
+            filter6th = filter5th.replace("CISCO-LWAPP-RRM-MIB::", "")
+            filter7th = filter6th.replace("CISCO-LWAPP-RRM-MIB::", "")
+            filter8th = filter7th.replace("CISCO-LWAPP-WLAN-MIB::", "")
+            filter9th = filter8th.replace("CISCO-LWAPP-ROGUE-MIB::", "")
+            
 
             #filter more details
             clientIPFilter = filter9th.replace("cldcClientByIpAddressType.0", "IP Address Type:")
@@ -32,15 +32,15 @@ def main():
             clientSSID = clientUsername.replace("cldcClientSSID.", "Client SSID:")
             clientMACAddr = clientSSID.replace("cldcApMacAddress.", "AP MAC Address:")
             clientSessionID = clientMACAddr.replace("cldcClientSessionID.", "Client Session ID:")
-            clApName = clientSessionID.replace("cLApName.", "Access Point Name: ")
+            clApName = clientSessionID.replace("cLApName.", "AP Name: ")
             
-            bsnStationAPMacAddr = clApName.replace("bsnStationAPMacAddr.0", "Access Point MAC Address:")
-            bsnStationAPIfSlotId = bsnStationAPMacAddr.replace("bsnStationAPIfSlotId.0", "Access Point Slot ID:")
-            bsnStationReasonCode = bsnStationAPIfSlotId.replace("bsnStationReasonCode.0", "Reason:")
+            bsnStationAPMacAddr = clApName.replace("bsnStationAPMacAddr.0", "AP MAC Address:")
+            bsnStationAPIfSlotId = bsnStationAPMacAddr.replace("bsnStationAPIfSlotId.0", "AP Slot ID:")
+            bsnStationReasonCode = bsnStationAPIfSlotId.replace("bsnStationReasonCode.0", "Reason Code:")
             bsnUserIpAddress = bsnStationReasonCode.replace("bsnUserIpAddress.0", "Client IP Address:")
             bsnStationUserName = bsnUserIpAddress.replace("bsnStationUserName.0", "CLient Username:")
             bsnStationMacAddress = bsnStationUserName.replace("bsnStationMacAddress.0", "Client MAC Address:")
-            bsnAPName = bsnStationMacAddress.replace("bsnAPName.0", "Access Point Name:")
+            bsnAPName = bsnStationMacAddress.replace("bsnAPName.0", "AP Name:")
             cldcClientByIpAddress = bsnAPName.replace("cldcClientByIpAddress.0", "Client by IP Address:")
             
             #Rogue
@@ -103,7 +103,17 @@ def main():
             cLRogueClientGatewayMac = cLRogueClientLastReported.replace("cLRogueClientGatewayMac.0","Rogue gateway MAC Address:")
             bsnAPIfType = cLRogueClientGatewayMac.replace("bsnAPIfType.0","AP interface type:")
             bsnStationBlacklistingReasonCode = bsnAPIfType.replace("bsnStationBlacklistingReasonCode.0", "Blacklisted reason:")
-
+            
+            #remaining filter
+            filter10th = bsnAPIfType.replace("CISCO-LWAPP-SI-MIB::", "")
+            # cLSiIdrDeviceId.0 Wrong Type (should be Gauge32 or Unsigned32): 45065
+            # cLSiIdrDeviceType.0 Wrong Type (should be Gauge32 or Unsigned32): 30
+            # cLSiIdrAffectedChannels.0 Wrong Type (should be OCTET STRING): 768
+            # cLSiIdrSeverity.0 Wrong Type (should be Gauge32 or Unsigned32): 0
+            # cLSiIdrClusterId.0 f5:be:20:0:d:4d
+            # cLSiAlarmClear.0 false
+            # AP Name: 0 AP206-R204
+            # cLSiIdrPreviousClusterId.0 f5:be:20:0:d:4d
 
             finalResult  = bsnStationBlacklistingReasonCode
 
