@@ -102,9 +102,10 @@ def main():
             cLRogueClientLastReported = cLRogueClientFirstReported.replace("cLRogueClientLastReported.0","Last report:")
             cLRogueClientGatewayMac = cLRogueClientLastReported.replace("cLRogueClientGatewayMac.0","Rogue gateway MAC Address:")
             bsnAPIfType = cLRogueClientGatewayMac.replace("bsnAPIfType.0","AP interface type:")
+            bsnStationBlacklistingReasonCode = bsnAPIfType.replace("bsnStationBlacklistingReasonCode.0", "Blacklisted reason:")
 
 
-            finalResult  = bsnAPIfType
+            finalResult  = bsnStationBlacklistingReasonCode
 
             #write final message into file
             output.write( finalResult + "\n")
