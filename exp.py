@@ -66,7 +66,7 @@ def main():
             cLApDot11IfSlotId = cLApRogueClassifiedRSSI.replace("cLApDot11IfSlotId.0", "AP interface Slot ID:")
             cldcClientSSID = cLApDot11IfSlotId.replace("cldcClientSSID.", "Client SSID:")
             bsnAPDot3MacAddress = cldcClientSSID.replace("bsnAPDot3MacAddress.", "AP MAC Address:")
-            bsnAPIfSlotId = bsnAPDot3MacAddress.replace("bsnAPIfSlotId.0 Wrong Type (should be Gauge32 or Unsigned32):", "AP interface slot ID:")
+            bsnAPIfSlotId = bsnAPDot3MacAddress.replace("bsnAPIfSlotId. Wrong Type (should be Gauge32 or Unsigned32):", "AP interface slot ID:")
             cldcClientIPAddress = bsnAPIfSlotId.replace("cldcClientIPAddress.0","Client IP Address:")
 
             cldcClientMacAddress = cldcClientIPAddress.replace("cldcClientMacAddress.0", "Client MAC Address:")
@@ -115,9 +115,12 @@ def main():
             cLSiIdrPreviousClusterId = cLSiAlarmClear.replace("cLSiIdrPreviousClusterId.0", "Previous cluster ID:")
 
             #rogue Ap
-            bsnRogueAPAirespaceAPName = cLSiIdrPreviousClusterId.replace("bsnRogueAPAirespaceAPName.0", "Rogue AP name:") 
+            bsnRogueAPAirespaceAPName = cLSiIdrPreviousClusterId.replace("bsnRogueAPAirespaceAPName.0", "Rogue AP name:")
+            modApname = bsnRogueAPAirespaceAPName.replace("AP Name: .","AP Name:")
+            modUsername  = modApname.replace("Client Username:0", "Client Username:") 
 
-            finalResult  = bsnRogueAPAirespaceAPName
+            finalResult  = modUsername
+
 
             #write final message into file
             output.write( finalResult + "\n")
