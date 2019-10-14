@@ -117,8 +117,9 @@ def main():
             #rogue Ap
             bsnRogueAPAirespaceAPName = cLSiIdrPreviousClusterId.replace("bsnRogueAPAirespaceAPName.0", "Rogue AP name:")
             modApname = bsnRogueAPAirespaceAPName.replace("AP Name: .","AP Name:")
-            modUsername  = modApname.replace("Client Username:0", "Client Username:") 
-
+            modUsername  = modApname.replace("Client Username:0", "Client Username:")
+            cLLastDetectingRadioMACAddress = modUsername.replace("cLLastDetectingRadioMACAddress.0", "Last detecting radio MAC Address:") 
+            modApname0 = cLLastDetectingRadioMACAddress.replace("AP Name:0", "AP Name:")
             finalResult  = modUsername
 
 
