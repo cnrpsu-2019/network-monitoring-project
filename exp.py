@@ -49,7 +49,7 @@ def main():
             cLApRogueApMacAddress = cLApName.replace("cLApRogueApMacAddress.0", "Rogue AP MAC Address:")
             cLApEthernetIfSlotId = cLApRogueApMacAddress.replace("cLApEthernetIfSlotId.0", "Slot ID:")
             cLApDot11IfType = cLApEthernetIfSlotId.replace("cLApDot11IfType.0", "Type:")
-            cLApRogueDetectedChannel = cLApDot11IfType.replace("cLApRogueDetectedChannel.0 (should be Gauge32 or Unsigned32):", "Detected Channel:")
+            cLApRogueDetectedChannel = cLApDot11IfType.replace("cLApRogueDetectedChannel.0 Wrong Type (should be Gauge32 or Unsigned32):", "Detected Channel:")
             cLApRSSI = cLApRogueDetectedChannel.replace("cLApRSSI.0", "RSSI:")
             cLApSNR = cLApRSSI.replace("cLApSNR.0","SNR:")
             cLApRogueAPOnWiredNetwork = cLApSNR.replace("cLApRogueAPOnWiredNetwork.0", "Rogue AP on wired Network:")
