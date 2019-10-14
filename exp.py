@@ -120,7 +120,7 @@ def main():
             modUsername  = modApname.replace("Client Username:0", "Client Username:")
             cLLastDetectingRadioMACAddress = modUsername.replace("cLLastDetectingRadioMACAddress.0", "Last detecting radio MAC Address:") 
             modApname0 = cLLastDetectingRadioMACAddress.replace("AP Name:0", "AP Name:")
-            finalResult  = modUsername
+            finalResult  = modApname0
 
 
             #write final message into file
