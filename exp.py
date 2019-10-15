@@ -142,7 +142,10 @@ def main():
             dotRemove = atzRemove.replace("'......'", "")
             qRemove = dotRemove.replace("'....Q.'", "")
             dollarRemove = qRemove.replace("'$.....'","")
-
+            npRemove = dollarRemove.replace("'...np'", "")
+            voRemove = npRemove.replace("'.vo..5'","")
+            coRemove = voRemove.replace("'..co..'","")
+            
             #final result
             finalResult  = dollarRemove
 
