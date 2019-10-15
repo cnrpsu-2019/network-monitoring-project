@@ -222,9 +222,11 @@ def main():
             zatozero = bsnAPIfSlotId1.replace("'..z.A.'","000000")
             slotId = zatozero.replace("Slot ID: Wrong Type (should be Gauge32 or Unsigned32):","Slot ID:")
             removezero = slotId.replace("000000","")
-            
+            jRemove = removezero.replace("'`.J...'","")
+            NRemove = jRemove.replace("'.N....'","")
+            bsRemove = NeRemove.replace("'p.\...'","000000")
             #final result
-            Result  = removezero
+            Result  = bsRemove
             
             output.write(Result + "\n")
            
