@@ -174,11 +174,12 @@ def main():
             qQRemove = questionRemove.replace("'.Q.,.?'","")
             g3Remove = qQRemove.replace("'..g3..'","")
             powerTRemove = g3Remove.replace("'. ^..T'","")
-                                 
-            #addtional remove
-
+            arwARemove = powerTRemove.replace("'..<<.A'","")
+            zlekRemove = arwARemove.replace("'..z...'","")
+            tplusRemove = zlekRemove.replace("'T+....'","")
+            i0Remove = tplusRemove.replace("'0.....'","")
             #final result
-            finalResult  = eqbRemove
+            finalResult  = i0Remove
 
 
             #write final message into file
