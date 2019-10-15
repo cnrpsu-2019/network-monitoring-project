@@ -210,7 +210,7 @@ def main():
             
         
             
-            output.write(Result)
+            output.write(Result + "\n")
            
 
         except EOFError:
