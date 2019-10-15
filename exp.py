@@ -225,8 +225,10 @@ def main():
             jRemove = removezero.replace("'`.J...'","")
             NRemove = jRemove.replace("'.N....'","")
             bsRemove = NeRemove.replace("'p.\...'","000000")
+            removezero2 = bsRemove.replace("000000","")
+            htRemove = removezero2.replace("'hT....'","")
             #final result
-            Result  = bsRemove
+            Result  = htRemove
             
             output.write(Result + "\n")
            
