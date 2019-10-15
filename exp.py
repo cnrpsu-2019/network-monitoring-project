@@ -210,7 +210,7 @@ def main():
             
         
             
-            output.write(Result.replace(re.findall("^'" and  "$'"), "") + "\n")
+            output.write(Result.replace(re.findall("^'" and  "$'"), N63Remove, "") + "\n")
            
 
         except EOFError:
