@@ -227,8 +227,10 @@ def main():
             bsRemove = NeRemove.replace("'p.\...'","000000")
             removezero2 = bsRemove.replace("000000","")
             htRemove = removezero2.replace("'hT....'","")
+            modMac = htRemove.replace("AP MAC Address:0","AP MAC Address:")
+            immod = modMac.replace("bsnAPIfSlotId.0 Wrong Type (should be Gauge32 or Unsigned32):","AP slot ID:")
             #final result
-            Result  = htRemove
+            Result  = immod
             
             output.write(Result + "\n")
            
