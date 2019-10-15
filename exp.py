@@ -158,13 +158,16 @@ def main():
             pw7Remove = hRemove.replace("'. ^.7.'","")
             lastfRemove = pw7Remove.replace("'.....f'","")
             NpRemove = lastfRemove.replace("'.N...p'","")
-
-
-            #addtional remove
             cLWlanChdEnable3 = NpRemove.replace("cLWlanChdEnable.3", "Wlan Channel Enable:")
+            GURemove = cLWlanChdEnable3.replace("' G..U.'","")
+            xanoRemove = GURemove.replace("'X@N/`o'","")
+            oRemove = xanoRemove.replace("'.o.[./'","")
+            eqbRemove = oRemove.replace("'...=.B'","")            
+                     
+            #addtional remove
 
             #final result
-            finalResult  = cLWlanChdEnable3
+            finalResult  = eqbRemove
 
 
             #write final message into file
