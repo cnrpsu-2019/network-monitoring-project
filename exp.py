@@ -1,4 +1,5 @@
 import datetime
+import re
 
 def main():
     running = True
@@ -201,14 +202,16 @@ def main():
             eqL1Remove = smalleRemove.replace("'L.=~1.'","")
             collonNRemove = eqL1Remove.replace("'.-|.:m'","")
             dollarRemove2 = collonNRemove.replace("'$.....'","")
-            N63Remove = dollarRemove2.replace("'@N6.3.'","")
-
+            N63Remove = dollarRemove2.replace("'@N6.3.'","") #fuck this shit, im done
+            
+            
             #final result
-            finalResult  = N63Remove
-
-
+            Result  = N63Remove
+            Remove = re.search("^'*'", Result)
+            if(Remove):
+                finalResult = Remove.sub("", Remove)
             #write final message into file
-            output.write( finalResult + "\n")
+            output.write(finalResult + "\n")
 
         except EOFError:
             running = False
