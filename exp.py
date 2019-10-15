@@ -213,7 +213,7 @@ def main():
                 finalResult = Remove.sub("", Remove)
                  #write final message into file
             finalResult = Remove
-            output.write(finalResult + "\n")
+            output.write(finalResult)
            
 
         except EOFError:
