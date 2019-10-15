@@ -132,7 +132,7 @@ def main():
             lbRemove = niRemove.replace("'..l.{.'", "")
             blankRemove = lbRemove.replace("'..... '", "")
             mRemove = blankRemove.replace("'..M...'","")
-            psRemove = mRemove.replace("'p.\...'","")
+            psRemove = mRemove.replace("'p....'","")
             e01Remove = psRemove.replace("'.=o1..'", "")
             ctRemove = e01Remove.replace("'..c|.t'", "")
             bracketRemove = ctRemove.replace("'...[..'", "")
@@ -145,7 +145,7 @@ def main():
             npRemove = dollarRemove.replace("'...np'", "")
             voRemove = npRemove.replace("'.vo..5'","")
             coRemove = voRemove.replace("'..co..'","")
-            
+
             #final result
             finalResult  = dollarRemove
 
