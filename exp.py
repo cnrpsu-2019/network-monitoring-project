@@ -222,7 +222,7 @@ def main():
             
             
             #final result
-            Result  = paRemove
+            Result  = dotconvert
             
             output.write(Result + "\n")
            
