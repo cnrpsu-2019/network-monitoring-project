@@ -217,7 +217,8 @@ def main():
             tqdRemove = lvlRemove.replace("'.TQD..'","")
             mxoRemove = tqdRemove.replace("'x.mO..'","")
             paRemove = mxoRemove.replace("'.P?..a'","")
-
+            dotconvert = paRemove.replace("'......'","000000")
+            
             
             
             #final result
