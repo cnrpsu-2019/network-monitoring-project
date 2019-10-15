@@ -202,12 +202,21 @@ def main():
             eqL1Remove = smalleRemove.replace("'L.=~1.'","")
             collonNRemove = eqL1Remove.replace("'.-|.:m'","")
             dollarRemove2 = collonNRemove.replace("'$.....'","")
-            N63Remove = dollarRemove2.replace("'@N6.3.'","") 
+            N63Remove = dollarRemove2.replace("'@N6.3.'","")
+            blankdotRemove = N63Remove.replace("'......'","")
+            yRemove = blankRemove.replace("'...y..'","")
+            eqbRemove2 = yRemove.replace("'...[.='","")
+            collonNRemove2 = eqbRemove2.replace("'...:2.'","")
+            sqbrckRemove = collonNRemove2.replace("'.....]'","")
+            yURemove = sqbrckRemove.replace("'.y..U.'","")
+            questionRemove2 = yURemove.replace("'....?.'","")
+            atfRemove = questionRemove2.replace("'.. @F.'","")
+
             
             
             #final result
-            Result  = N63Remove
-            re.sub(r"[-()\"#/@;:<>{}`+=~|.!?,]", "", Result)
+            Result  = atbracketRemove
+            
             output.write(Result + "\n")
            
 
