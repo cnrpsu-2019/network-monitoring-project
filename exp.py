@@ -163,7 +163,18 @@ def main():
             xanoRemove = GURemove.replace("'X@N/`o'","")
             oRemove = xanoRemove.replace("'.o.[./'","")
             eqbRemove = oRemove.replace("'...=.B'","")            
-                     
+            x1Remove = eqbRemove.replace("'..1.x|'","")
+            eqRemove = x1Remove.replace("'...=..'","")
+            jjMRemove = eqRemove.replace("'.jj.M+'","")
+            bRemove = jjMRemove.replace("'..b...'","")
+            d0Remove = bRemove.replace("'`0.-D.'","")
+            NeRemove = d0Remove.replace("'.N..e.'","")
+            pkRemove =  NeRemove.replace("'...}..'","")
+            questionRemove = pkRemove.replace("'....?.'","")
+            qQRemove = questionRemove.replace("'.Q.,.?'","")
+            g3Remove = qQRemove.replace("'..g3..'","")
+            powerTRemove = g3Remove.replace("'. ^..T'","")
+                                 
             #addtional remove
 
             #final result
