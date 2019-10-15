@@ -214,10 +214,14 @@ def main():
             colloonTRemove = atfRemove.replace("'T.:...'","")
             lkRemove = colloonTRemove.replace("'Lk....'","")
             lvlRemove = lkRemove.replace("'Lk....'","")
+            tqdRemove = lvlRemove.replace("'.TQD..'","")
+            mxoRemove = tqdRemove.replace("'x.mO..'","")
+            paRemove = mxoRemove.replace("'.P?..a'","")
+
             
             
             #final result
-            Result  = lvlRemove
+            Result  = paRemove
             
             output.write(Result + "\n")
            
