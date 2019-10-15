@@ -210,8 +210,9 @@ def main():
             Remove = re.search("^'*'", Result)
             if(Remove):
                 finalResult = Remove.sub("", Remove)
-            #write final message into file
-            output.write(finalResult + "\n")
+                 #write final message into file
+                output.write(finalResult + "\n")
+           
 
         except EOFError:
             running = False
