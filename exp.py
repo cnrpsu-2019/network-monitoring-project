@@ -178,6 +178,19 @@ def main():
             zlekRemove = arwARemove.replace("'..z...'","")
             tplusRemove = zlekRemove.replace("'T+....'","")
             i0Remove = tplusRemove.replace("'0.....'","")
+            l7Remove = i0Remove.replace("'..7L..'", "")
+            mmRemove = l7Remove.replace("'.....m'","")
+            uppwerWRemove = mmRemove.replace("'.W....'","")
+            parrowRemove = uppwerWRemove.replace("'P>.*..'")
+            almostlastERemove = parrowRemove.replace("'....E.'","")
+            hkvRemove = almostlastERemove.replace("'HK...v'","")
+            atbracketRemove = hkvRemove.replace("'@.(...'","")
+            lfRemove = atbracketRemove.replace("'`lf...'","")
+            DaRemove = lfRemove.replace("'.D..a,'","")
+            DaRemove2 = DaRemove.replace("'D^...-'","")
+            atPRemove = DaRemove2.replace("'...p.@'","")
+            l1Remove = atzRemove.replace("'l.1.*.'","")
+            
             #final result
             finalResult  = i0Remove
 
