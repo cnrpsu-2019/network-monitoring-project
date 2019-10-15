@@ -145,6 +145,12 @@ def main():
             npRemove = dollarRemove.replace("'...np'", "")
             voRemove = npRemove.replace("'.vo..5'","")
             coRemove = voRemove.replace("'..co..'","")
+            lessRemove = coRemove.replace("'...<..'", "")
+            fnRemove = lessRemove.replace("',...f~'","")
+            dbnRemove = fnRemove.replace("'.N..N.'", "")
+            orRemove = dbnRemove.replace("'|.....'","")
+            dni7Remove = orRemove.replace("'dni.7.'","")
+            njRemove = dni7Remove.replace("'.N..j.'","")            
 
             #final result
             finalResult  = dollarRemove
