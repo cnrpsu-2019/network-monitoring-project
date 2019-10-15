@@ -207,10 +207,10 @@ def main():
             
             #final result
             Result  = N63Remove
-            Remove = re.search("^'*'", Result)
+            
         
             
-            output.write(Remove)
+            output.write(Result)
            
 
         except EOFError:
