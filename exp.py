@@ -136,9 +136,15 @@ def main():
             e01Remove = psRemove.replace("'.=o1..'", "")
             ctRemove = e01Remove.replace("'..c|.t'", "")
             bracketRemove = ctRemove.replace("'...[..'", "")
+            enRemove = bracketRemove.replace("'`.En..'","")
+            xvRemove = enRemove.replace("'X..@.v'","")
+            atzRemove = xvRemove.replace("'@..Z.\'","")
+            dotRemove = atzRemove.replace("'......'", "")
+            qRemove = dotRemove.replace("'....Q.'", "")
+            dollarRemove = qRemove.replace("'$.....'","")
 
             #final result
-            finalResult  = bracketRemove
+            finalResult  = dollarRemove
 
 
             #write final message into file
