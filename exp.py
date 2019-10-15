@@ -215,7 +215,7 @@ def main():
             
             
             #final result
-            Result  = atbracketRemove
+            Result  = atfRemove
             
             output.write(Result + "\n")
            
