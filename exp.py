@@ -125,10 +125,20 @@ def main():
 
 
             #remove weird characters
-
+            hkxRemove = cLWlanChdEnable.replace("'H.k.x~'", "")
+            opRemove = hkxRemove.replace("'.=o.-p'", "")
+            atBRemove = opRemove.replace("'@..B..'","")
+            niRemove = atBRemove.replace("'.N..i.'","")
+            lbRemove = niRemove.replace("'..l.{.'", "")
+            blankRemove = lbRemove.replace("'..... '", "")
+            mRemove = blankRemove.replace("'..M...'","")
+            psRemove = mRemove.replace("'p.\...'","")
+            e01Remove = psRemove.replace("'.=o1..'", "")
+            ctRemove = e01Remove.replace("'..c|.t'", "")
+            bracketRemove = ctRemove.replace("'...[..'", "")
 
             #final result
-            finalResult  = cLWlanChdEnable
+            finalResult  = bracketRemove
 
 
             #write final message into file
