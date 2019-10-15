@@ -218,11 +218,12 @@ def main():
             mxoRemove = tqdRemove.replace("'x.mO..'","")
             paRemove = mxoRemove.replace("'.P?..a'","")
             dotconvert = paRemove.replace("'......'","000000")
-            
+            bsnAPIfSlotId1 = dotconvert.replace("bsnAPIfSlotId.0 Wrong Type (should be Gauge32 or Unsigned32):","")
+
             
             
             #final result
-            Result  = dotconvert
+            Result  = bsnAPIfSlotId1
             
             output.write(Result + "\n")
            
