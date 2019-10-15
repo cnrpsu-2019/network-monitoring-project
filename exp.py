@@ -202,7 +202,7 @@ def main():
             eqL1Remove = smalleRemove.replace("'L.=~1.'","")
             collonNRemove = eqL1Remove.replace("'.-|.:m'","")
             dollarRemove2 = collonNRemove.replace("'$.....'","")
-            N63Remove = dollarRemove2.replace("'@N6.3.'","") #fuck this shit, im done
+            N63Remove = dollarRemove2.replace("'@N6.3.'","") 
             
             
             #final result
@@ -210,7 +210,7 @@ def main():
             
         
             
-            output.write(Result + "\n")
+            output.write(Result.replace(re.findall("^'" and  "$'"), "") + "\n")
            
 
         except EOFError:
