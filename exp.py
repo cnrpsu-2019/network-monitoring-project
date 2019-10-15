@@ -207,7 +207,7 @@ def main():
             
             #final result
             Result  = N63Remove
-            re.sub("^'" and "$'", "", Result)
+            re.sub(r"[-()\"#/@;:<>{}`+=~|.!?,]", "", Result)
             output.write(Result + "\n")
            
 
