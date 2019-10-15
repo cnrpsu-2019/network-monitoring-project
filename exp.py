@@ -207,9 +207,7 @@ def main():
             
             #final result
             Result  = N63Remove
-            
-        
-            
+            re.sub("^'" and "$'", "", Result)
             output.write(Result + "\n")
            
 
