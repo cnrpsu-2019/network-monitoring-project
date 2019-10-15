@@ -190,9 +190,16 @@ def main():
             DaRemove2 = DaRemove.replace("'D^...-'","")
             atPRemove = DaRemove2.replace("'...p.@'","")
             l1Remove = atzRemove.replace("'l.1.*.'","")
-
+            NSRemove = l1Remove.replace("'.N..$.'","")
+            atbracketRemove2 = NSRemove.replace("'@.(_..'","")
+            orhRemove = atbracketRemove2.replace("'.-|.h.'","")
+            xer0Remove = orhRemove.replace("'x{.ER0'","")
+            zARemove = xer0Remove.replace("'..z.A.'","")
+            parrowRemove2 = zARemove.replace("'P>../.'","")
+            percentRemove = parrowRemove2.replace("'.%...%'","")
+            smalleRemove = percentRemove.replace("'....e.'","")
             #final result
-            finalResult  = i0Remove
+            finalResult  = smalleRemove
 
 
             #write final message into file
