@@ -122,6 +122,7 @@ def main():
             modApname0 = cLLastDetectingRadioMACAddress.replace("AP Name:0", "AP Name:")
 
             cLWlanChdEnable = modApname0.replace("cLWlanChdEnable.1", "Wlan Channel Enable:")
+            
 
 
             #remove weird characters
@@ -150,10 +151,20 @@ def main():
             dbnRemove = fnRemove.replace("'.N..N.'", "")
             orRemove = dbnRemove.replace("'|.....'","")
             dni7Remove = orRemove.replace("'dni.7.'","")
-            njRemove = dni7Remove.replace("'.N..j.'","")            
+            njRemove = dni7Remove.replace("'.N..j.'","")
+            bbd48Remove = njRemove.replace("'4Bb|D.'","")
+            wfkeRemove = bbd48Remove.replace("'..WfKe'","")
+            hRemove = wfkeRemove.replace("'.H.,..'","")
+            pw7Remove = hRemove.replace("'. ^.7.'","")
+            lastfRemove = pw7Remove.replace("'.....f'","")
+            NpRemove = lastfRemove.replace("'.N...p'","")
+
+
+            #addtional remove
+            cLWlanChdEnable3 = NpRemove.replace("cLWlanChdEnable.3", "Wlan Channel Enable:")
 
             #final result
-            finalResult  = dollarRemove
+            finalResult  = cLWlanChdEnable3
 
 
             #write final message into file
