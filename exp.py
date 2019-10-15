@@ -198,8 +198,13 @@ def main():
             parrowRemove2 = zARemove.replace("'P>../.'","")
             percentRemove = parrowRemove2.replace("'.%...%'","")
             smalleRemove = percentRemove.replace("'....e.'","")
+            eqL1Remove = smalleRemove.replace("'L.=~1.'","")
+            collonNRemove = eqL1Remove.replace("'.-|.:m'","")
+            dollarRemove2 = collonNRemove.replace("'$.....'","")
+            N63Remove = dollarRemove2.replace("'@N6.3.'","")
+
             #final result
-            finalResult  = smalleRemove
+            finalResult  = N63Remove
 
 
             #write final message into file
