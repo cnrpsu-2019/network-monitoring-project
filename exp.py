@@ -211,11 +211,13 @@ def main():
             yURemove = sqbrckRemove.replace("'.y..U.'","")
             questionRemove2 = yURemove.replace("'....?.'","")
             atfRemove = questionRemove2.replace("'.. @F.'","")
-
+            colloonTRemove = atfRemove.replace("'T.:...'","")
+            lkRemove = colloonTRemove.replace("'Lk....'","")
+            lvlRemove = lkRemove.replace("'Lk....'","")
             
             
             #final result
-            Result  = atfRemove
+            Result  = lvlRemove
             
             output.write(Result + "\n")
            
