@@ -127,8 +127,13 @@ def main():
             
             convertsingle = cLApDot11IfSlotId2.replace("'","")
             convertdot = convertsingle.replace("...","")
+            remove2dot = convertdot.replace("..","")
+            removeEq = remove2dot.replace("=","")
+            removepower = removeEq.replace("^","")
+            removesqb = removepower.replace("]","")
+            removeRightsqb = removesqb.replace("[","")
             #final result
-            Result  = convertdot
+            Result  = removeRightsqb
             
             output.write(Result + "\n")
            
