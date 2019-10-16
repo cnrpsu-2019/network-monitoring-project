@@ -126,8 +126,9 @@ def main():
             cLApDot11IfSlotId2 = cLWlanChdEnable.replace("cLApDot11IfSlotId.0","AP interface slot ID:")
             
             convertsingle = cLApDot11IfSlotId2.replace("'","")
+            convertdot = convertsingle.replace("..","")
             #final result
-            Result  = convertsingle
+            Result  = convertdot
             
             output.write(Result + "\n")
            
