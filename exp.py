@@ -67,7 +67,7 @@ def main():
             cLApDot11IfSlotId = cLApRogueClassifiedRSSI.replace("cLApDot11IfSlotId.0", "AP interface Slot ID:")
             cldcClientSSID = cLApDot11IfSlotId.replace("cldcClientSSID.", "Client SSID:")
             bsnAPDot3MacAddress = cldcClientSSID.replace("bsnAPDot3MacAddress.", "AP MAC Address:")
-            bsnAPIfSlotId = bsnAPDot3MacAddress.replace("bsnAPIfSlotId. Wrong Type (should be Gauge32 or Unsigned32):", "AP interface slot ID:")
+            bsnAPIfSlotId = bsnAPDot3MacAddress.replace("bsnAPIfSlotId.0 Wrong Type (should be Gauge32 or Unsigned32):", "AP interface slot ID:")
             cldcClientIPAddress = bsnAPIfSlotId.replace("cldcClientIPAddress.0","Client IP Address:")
 
             cldcClientMacAddress = cldcClientIPAddress.replace("cldcClientMacAddress.0", "Client MAC Address:")
