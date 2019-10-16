@@ -229,8 +229,9 @@ def main():
             htRemove = removezero2.replace("'hT....'","")
             modMac = htRemove.replace("AP MAC Address:0","AP MAC Address:")
             immod = modMac.replace("bsnAPIfSlotId.0 Wrong Type (should be Gauge32 or Unsigned32):","AP slot ID:")
+            blacklist = immod.replace("bsnStationBlacklistingReasonCode.0", "Blacklisted reason:")
             #final result
-            Result  = immod
+            Result  = blacklist
             
             output.write(Result + "\n")
            
