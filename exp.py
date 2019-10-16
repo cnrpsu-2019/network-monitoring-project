@@ -137,7 +137,7 @@ def main():
             backRemove = removeo1.replace("\\","")
             QRemove = backRemove.replace("Q","")
             QRemove.replace("hT.","")
-            
+            QRemove.replace(".Ni.","")
             #final result
             Result  = QRemove            
             output.write(Result + "\n")
