@@ -172,7 +172,7 @@ def main():
              
             #final result
             Result  = input           
-            output.write(Result)
+            output.write(Result + "\n")
            
 
         except EOFError:
