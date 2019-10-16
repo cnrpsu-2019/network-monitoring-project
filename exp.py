@@ -233,7 +233,7 @@ def main():
             #final result
             Result  = blacklist
             
-            output.write(Result + "\n")
+            output.write(Result.split + "\n")
            
 
         except EOFError:
