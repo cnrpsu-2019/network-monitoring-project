@@ -143,6 +143,10 @@ def main():
             QRemove.replace("?","")
             QRemove.replace("N","")
             QRemove.replace(":f ", ":")
+            QRemove.replace(".Nj.","")
+            QRemove.replace("D-","")
+            QRemove.replace("-","")
+            QRemove.replace("_","")
             #final result
             Result  = QRemove            
             output.write(Result + "\n")
