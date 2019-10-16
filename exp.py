@@ -123,10 +123,10 @@ def main():
             modApname0 = cLLastDetectingRadioMACAddress.replace("AP Name:0", "AP name:")
 
             cLWlanChdEnable = modApname0.replace("cLWlanChdEnable.1", "Wlan channel enable:")
-            cLApDot11IfSlotId2 = cLWlanChdEnable.replace("cLApDot11IfSlotId.0","AP slot ID:")
+            cLApDot11IfSlotId2 = cLWlanChdEnable.replace("cLApDot11IfSlotId.0","AP interface slot ID:")
             
             #final result
-            Result  = cLWlanChdEnable
+            Result  = cLApDot11IfSlotId2
             
             output.write(Result + "\n")
            
