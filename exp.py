@@ -151,6 +151,9 @@ def main():
             QRemove.replace(".s","")
             QRemove.replace("@","")
             QRemove.replace(".A","")
+            QRemove.replace("p.","")
+            QRemove.replace("Z.","")
+            QRemove.replace(".lc","")
             #final result
             Result  = QRemove            
             output.write(Result + "\n")
