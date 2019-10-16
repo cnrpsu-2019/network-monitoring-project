@@ -74,9 +74,9 @@ def main():
             cldcIfType = cldcClientMacAddress.replace("cldcIfType.0", "Client interface type:")
             
             clrRrmApTransmitPowerLevel = cldcIfType.replace("clrRrmApTransmitPowerLevel.0", "Controller AP Power Level:")
-            clrRrmTimeStamp = clrRrmApTransmitPowerLevel.replace("clrRrmTimeStamp.0","Controller AP timestamp:")
+            clrRrmTimeStamp = clrRrmApTransmitPowerLevel.replace("clrRrmTimeStamp.0 Wrong Type (should be Timeticks)","Controller AP timestamp:")
             clrRrmClientType = clrRrmTimeStamp.replace("clrRrmClientType.0","Controller AP client type:")
-            clrRrmRssiHistogramLength = clrRrmClientType.replace("clrRrmRssiHistogramLength.0", "RSSI Histogram length:")
+            clrRrmRssiHistogramLength = clrRrmClientType.replace("clrRrmRssiHistogramLength.0 Wrong Type (should be Gauge32 or Unsigned32)", "RSSI Histogram length:")
             clrRrmRssiHistogramMaxIndex = clrRrmRssiHistogramLength.replace("clrRrmRssiHistogramMaxIndex.0","RSSI histogram max:")
             clrRrmRssiHistogramMinIndex = clrRrmRssiHistogramMaxIndex.replace("clrRrmRssiHistogramMinIndex.0","RSSI histogram min:")
             clrRrmRssiHistogramValues = clrRrmRssiHistogramMinIndex.replace("clrRrmRssiHistogramValues.0","RSSI histogram values:")
