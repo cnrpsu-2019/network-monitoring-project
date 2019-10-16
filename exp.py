@@ -134,9 +134,11 @@ def main():
             removeRightsqb = removesqb.replace("[","")
             removeZ = removeRightsqb.replace(".Z.","")
             removeo1 = removeZ.replace("o1","")
+            backRemove = removeo1.replace("\\","")
+            QRemove = backRemove.replace("Q","")
             
             #final result
-            Result  = removeo1            
+            Result  = QRemove            
             output.write(Result + "\n")
            
 
