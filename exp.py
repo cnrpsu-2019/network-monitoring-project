@@ -141,7 +141,7 @@ def main():
             QRemove.replace("<","")
             QRemove.replace(".g?","")
             QRemove.replace("?","")
-            QRemove.replace("N","")
+            QRemove.replace(".N","")
             QRemove.replace(":f ", ":")
             QRemove.replace(".Nj.","")
             QRemove.replace("D-","")
@@ -154,6 +154,8 @@ def main():
             QRemove.replace("p.","")
             QRemove.replace("Z.","")
             QRemove.replace(".lc","")
+            QRemove.replace(".Ni.","")
+            QRemove.replace("&","")
             #final result
             Result  = QRemove            
             output.write(Result + "\n")
