@@ -132,9 +132,11 @@ def main():
             removepower = removeEq.replace("^","")
             removesqb = removepower.replace("]","")
             removeRightsqb = removesqb.replace("[","")
-            #final result
-            Result  = removeRightsqb
+            removeZ = removeRightsqb.replace(".Z.","")
+            removeo1 = removeZ.replace("o1","")
             
+            #final result
+            Result  = removeo1            
             output.write(Result + "\n")
            
 
