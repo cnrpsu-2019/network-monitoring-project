@@ -125,8 +125,9 @@ def main():
             cLWlanChdEnable = modApname0.replace("cLWlanChdEnable.1", "Wlan channel enable:")
             cLApDot11IfSlotId2 = cLWlanChdEnable.replace("cLApDot11IfSlotId.0","AP interface slot ID:")
             
+            convertsingle = cLApDot11IfSlotId2.replace("'","0")
             #final result
-            Result  = cLApDot11IfSlotId2
+            Result  = convertsingle
             
             output.write(Result + "\n")
            
