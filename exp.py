@@ -13,7 +13,7 @@ def main():
     while running:
         try:
             input = raw_input()
-            filtered = input.translate("<UNKNOWN>","")
+            filtered = input.replace("<UNKNOWN>","")
             #final result
             Result  = filtered           
             output.write(Result + "\n")
