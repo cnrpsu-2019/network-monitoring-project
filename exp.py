@@ -14,6 +14,7 @@ def main():
         try:
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","")
+            
             #final result
             Result  = filtered           
             output.write(Result + "\n")
