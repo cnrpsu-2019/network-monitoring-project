@@ -13,9 +13,9 @@ def main():
     while running:
         try:
             input = raw_input()
-
+            filtered = input.translate("<UNKNOWN>","")
             #final result
-            Result  = input           
+            Result  = filtered           
             output.write(Result + "\n")
            
 
