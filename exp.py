@@ -14,11 +14,12 @@ def main():
         try:
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","")
-            
+            wrongtypeRemove = filtered.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
+
+
             #final result
-            Result  = filtered           
+            Result  = wrongtypeRemove           
             output.write(Result + "\n")
-           
 
         except EOFError:
             running = False
