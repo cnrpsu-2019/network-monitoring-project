@@ -15,7 +15,7 @@ def main():
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","")
             wrongtypeRemove = filtered.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
-            ''.join(e for e in wrongtypeRemove if e.isalnum())
+            re.sub('[^A-Za-z0-9]+', '', wrongtypeRemove)
 
             #final result
             Result  = wrongtypeRemove           
