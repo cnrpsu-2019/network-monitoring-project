@@ -16,7 +16,7 @@ def main():
         try:
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","")
-            dot0replace = filtered.replace(".0 ", '')
+            dot0replace = filtered.replace(".0 ", ' ')
             wrongtypeRemove = dot0replace.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
             
             bad_chars = "/\\!$^&*(-{)[}>_<],~+=#$%;`@?'"
