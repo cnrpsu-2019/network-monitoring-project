@@ -44,7 +44,7 @@ def main():
 
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
-            pattern = ["^.'.....'$", "^.'......'$"]
+            pattern = "^.'.....'$" or "^.'......'$"
             result = re.sub(pattern, '', outstr)
             
             output.write(result + '\n')
