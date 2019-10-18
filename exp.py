@@ -22,7 +22,7 @@ def main():
             #rgx = re.compile('[%s]' % bad_chars)
 
             #final result
-            Result  = re.sub(bad_chars, '', wrongtypeRemove)           
+            Result  = wrongtypeRemove.translate(None, bad_chars)           
             output.write(Result + "\n")
 
         except EOFError:
