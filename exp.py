@@ -38,7 +38,7 @@ def main():
             # weirdList = ['.hx.F','..E.','.Tb','. ','.98y','.p.','.hx ','..o1','.XVM.','b.5.','.T','.Hn','.L','...0r','.A.','..A.','..0', '.gx.','.hx','.X','.i.','.W.g','.W','...j','.c ','.L','.    . ','.LkY ','... ','". ','"','..0','.p. ','.. ','. ','.M.',' : ','.c.q.','..p','..U','.hx','.pU.I','.H.0','v.','.. ','.j.','. ','.  ','..EB.M','Z','J','Q','..e.','..A.','..9.','.l.1.Fb','.p.','..x','..L.','.z.','..f','..N..j.','.i.', '.N.','.K','.h.','......','...','..','hx','wt','.o.']
             # weirdRemove = replaceMultiple(hideMIB, weirdList, '')
             weirdList = ['.0',". ",'.1 ']
-            weirdRemove = replaceMultiple(event, weirdList, ' ')
+            weirdRemove = replaceMultiple(event, weirdList, '')
             bad_chars = "/\\!$^&*|({)[}>_<]~+=#$%;`@?"
             #rgx = re.compile('[%s]' % bad_chars)
             pattern = "^.A-Za-Z0-9'&{8,9}"
