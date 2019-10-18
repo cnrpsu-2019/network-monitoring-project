@@ -47,7 +47,7 @@ def main():
             outstr  = weirdRemove.translate(None, bad_chars)
             toFilterout = re.sub(pattern,replace,outstr)
 
-            result = outstr.translate(None, toFilterout)
+            result = weirdRemove.translate(None, toFilterout)
             output.write(result + '\n')
 
         except EOFError:
