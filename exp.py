@@ -19,10 +19,10 @@ def main():
             wrongtypeRemove = filtered.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
             
             bad_chars = '/\\!$^&*(-{)[}],+=#$%?'
-            rgx = re.compile('[%s]' % bad_chars)
+            #rgx = re.compile('[%s]' % bad_chars)
 
             #final result
-            Result  = re.sub(rgx, '', wrongtypeRemove)           
+            Result  = re.sub(bad_chars, '', wrongtypeRemove)           
             output.write(Result + "\n")
 
         except EOFError:
