@@ -41,7 +41,7 @@ def main():
             #rgx = re.compile('[%s]' % bad_chars)
 
             #final result
-            result  = hideMIB.translate(None, bad_chars)           
+            result  = event.translate(None, bad_chars)           
             output.write(result + '\n')
 
         except EOFError:
