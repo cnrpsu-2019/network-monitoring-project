@@ -15,9 +15,9 @@ def main():
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","")
             wrongtypeRemove = filtered.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
-
+            filterstr = wrongtypeRemove.translate({ord(i): None for i in "'$%&@!()[]{\\}+?^*_,|"})
             #final result
-            Result  = wrongtypeRemove           
+            Result  = filterstr           
             output.write(Result + "\n")
 
         except EOFError:
