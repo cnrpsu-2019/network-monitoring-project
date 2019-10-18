@@ -27,8 +27,8 @@ def main():
             filtered = input.replace("<UNKNOWN>","")
             dot0replace = filtered.replace(".0 ", ' ')
             wrongtypeRemove = dot0replace.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
-            timestamp = wrongtypeRemove.replace("UDP: 172.30.232.2:32768-172.30.232.250:162",strnow)
-            mibList = ['SNMPv2-MIB::snmpTrapOID','DISMAN-EVENT-MIB::','CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::','CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::']
+            timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::UDP: 172.30.232.2:32768-172.30.232.250:162",strnow)
+            mibList = ['SNMPv2-MIB::snmpTrapOID','CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::','CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::']
             hideMIB = replaceMultiple(timestamp, mibList, '')
 
             # weirdList = ['.hx.F','..E.','.Tb','. ','.98y','.p.','.hx ','..o1','.XVM.','b.5.','.T','.Hn','.L','...0r','.A.','..A.','..0', '.gx.','.hx','.X','.i.','.W.g','.W','...j','.c ','.L','.    . ','.LkY ','... ','". ','"','..0','.p. ','.. ','. ','.M.',' : ','.c.q.','..p','..U','.hx','.pU.I','.H.0','v.','.. ','.j.','. ','.  ','..EB.M','Z','J','Q','..e.','..A.','..9.','.l.1.Fb','.p.','..x','..L.','.z.','..f','..N..j.','.i.', '.N.','.K','.h.','......','...','..','hx','wt','.o.']
