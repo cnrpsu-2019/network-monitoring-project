@@ -27,9 +27,9 @@ def main():
             filtered = input.replace("<UNKNOWN>","")
             dot0replace = filtered.replace(".0 ", ' ')
             wrongtypeRemove = dot0replace.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
-            weirdRemove = replaceMultiple(wrongtypeRemove, ['.z.','..f','..N..j.','.i.', '.N.','.K','.h.'], '')
+            weirdRemove = replaceMultiple(wrongtypeRemove, ['.z.','..f','..N..j.','.i.', '.N.','.K','.h.','......','...','..','hx','wt','.o.'], '')
             
-            bad_chars = "/\\!$^&*({)[}>_<],~+=#$%;`@?'"
+            bad_chars = "/\\!$^&*|({)[}>_<],~+=#$%;`@?'"
             #rgx = re.compile('[%s]' % bad_chars)
 
             #final result
