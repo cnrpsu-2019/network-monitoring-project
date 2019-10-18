@@ -18,12 +18,11 @@ def main():
             filtered = input.replace("<UNKNOWN>","")
             wrongtypeRemove = filtered.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
             
-            bad_chars = "'/\\@!$^&*(-{)[}],+=#$%?"
+            bad_chars = '/\\!$^&*(-{)[}],+=#$%?'
             rgx = re.compile('[%s]' % bad_chars)
-            badFilter = rgx.sub("", wrongtypeRemove)
-            
+
             #final result
-            Result  = badFilter           
+            Result  = rgx.sub('', wrongtypeRemove)           
             output.write(Result + "\n")
 
         except EOFError:
