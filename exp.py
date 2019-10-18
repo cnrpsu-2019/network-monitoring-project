@@ -35,8 +35,8 @@ def main():
             'CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::',
             'CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::']
             hideMIB = replaceMultiple(timestamp, mibList, '')
-            event = hideMIB.replace("snmpTrapOID","Event ")
-            prefixList = ['bsn','cL','cldc']
+            event = hideMIB.replace("snmpTrapOID","Event")
+            prefixList = ['bsn','cL','cldc','Dot11','Dot3']
             weirdList = ['.0',". ",'.1 ','"',' : ']
             prefixRemove = replaceMultiple(event, prefixList, '')
             weirdRemove = replaceMultiple(prefixRemove, weirdList, '')
