@@ -48,7 +48,7 @@ def main():
             pattern = "^'...'$"
             result = re.match(pattern, outstr)
             if(result):
-                output.write(result.translate(None, pattern) + '\n')
+                output.write(outstr.translate(None, pattern) + '\n')
 
         except EOFError:
             running = False
