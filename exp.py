@@ -43,9 +43,12 @@ def main():
             bad_chars = "/\\!$^&*|({)[}>_<]~+=#$%;`@?"
             #rgx = re.compile('[%s]' % bad_chars)
 
-            #final result
-            result  = weirdRemove.translate(None, bad_chars)           
-            output.write(result + '\n')
+            #outstr
+            outstr  = weirdRemove.translate(None, bad_chars)
+            pattern = "^'...'$"
+            result = re.match(pattern, outstr)
+            if(result):
+                output.write(result.translate(None, pattern) + '\n')
 
         except EOFError:
             running = False
