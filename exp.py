@@ -2,6 +2,15 @@ import datetime
 import re
 import string
 
+def replaceMultiple(mainString, toBeReplaces, newString):
+    # Iterate over the strings to be replaced
+    for elem in toBeReplaces :
+        # Check if string is in the main string
+        if elem in mainString :
+            # Replace the string
+            mainString = mainString.replace(elem, newString)
+    
+    return  mainString     
 
 def main():
     running = True
@@ -18,13 +27,14 @@ def main():
             filtered = input.replace("<UNKNOWN>","")
             dot0replace = filtered.replace(".0 ", ' ')
             wrongtypeRemove = dot0replace.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
+            weirdRemove = replaceMultiple(wrongtypeRemove, ['.z.','..f','..N..j.','.i.', '.N.','.K','.h.'], '')
             
             bad_chars = "/\\!$^&*({)[}>_<],~+=#$%;`@?'"
             #rgx = re.compile('[%s]' % bad_chars)
 
             #final result
-            Result  = wrongtypeRemove.translate(None, bad_chars)           
-            output.write(Result + "\n")
+            result  = weirdRemove.translate(None, bad_chars)           
+            output.write(result + "\n")
 
         except EOFError:
             running = False
