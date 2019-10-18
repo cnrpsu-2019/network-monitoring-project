@@ -41,7 +41,7 @@ def main():
             weirdRemove = replaceMultiple(event, weirdList, ' ')
             bad_chars = "/\\!$^&*|({)[}>_<]~+=#$%;`@?"
             #rgx = re.compile('[%s]' % bad_chars)
-            pattern = "[^.A-Za-z0-9'$]"
+            pattern = "[^.A-Za-z0-9'$]{8,9}"
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
             toFilterout = re.sub(pattern,'',outstr)
