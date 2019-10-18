@@ -44,12 +44,9 @@ def main():
 
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
-            pattern = "^.......'$" #9 charaters long
+            pattern = "^.'$" #9 charaters long
             result = re.sub(pattern, '', outstr)
-            pattern2 = "^......'$" #8 cha long
-            result2 = re.sub(pattern2, '', result)
-            
-            output.write(result2 + '\n')
+            output.write(result + '\n')
 
         except EOFError:
             running = False
