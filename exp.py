@@ -25,7 +25,7 @@ def main():
         try:
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","" )
-            showDate = filtered.replace("UDP: 172.30.232.2:32768-172.30.232.250:162", strnow)
+            showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
             
             dot0replace = showDate.replace(".0 ", ' ')
             wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:']
