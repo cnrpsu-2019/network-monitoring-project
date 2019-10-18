@@ -47,8 +47,8 @@ def main():
             outstr  = weirdRemove.translate(None, bad_chars)
             pattern = "^'...'$"
             result = re.match(pattern, outstr)
-            
-            output.write(result.translate(None, pattern) + '\n')
+            final = result.translate(None, pattern)
+            output.write(final + '\n')
 
         except EOFError:
             running = False
