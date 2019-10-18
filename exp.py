@@ -41,11 +41,10 @@ def main():
             weirdRemove = replaceMultiple(event, weirdList, ' ')
             bad_chars = "/\\!$^&*|({)[}>_<]~+=#$%;`@?"
             #rgx = re.compile('[%s]' % bad_chars)
-
+            pattern = "^.'${4,8}"
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
-            pattern = "^.'$" #9 charaters long
-            result = re.sub(pattern, '', outstr)
+            result = re.sub(pattern,'', outstr)
             output.write(result + '\n')
 
         except EOFError:
