@@ -31,7 +31,7 @@ def main():
 
             wrongtypeRemove = replaceMultiple(showDate, wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
-            mibList = ['CISCO-LWAPP-RRM-MIB::','CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::','CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::']
+            mibList = ['CISCO-LWAPP-SI-MIB::','CISCO-LWAPP-RRM-MIB::','CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::','CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::']
             hideMIB = replaceMultiple(timestamp, mibList, '')
             event = hideMIB.replace("SNMPv2-MIB::snmpTrapOID ","Event : ")
 
