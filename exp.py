@@ -44,9 +44,9 @@ def main():
             pattern = "[^.A-Za-z0-9'$]"
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
-            toFilterout = re.sub(pattern,'',outstr)
-            result = outstr.replace(toFilterout, outstr)
-            output.write(result + '\n')
+            # toFilterout = re.sub(pattern,'',outstr)
+            # result = outstr.replace(toFilterout, outstr)
+            output.write(outstr + '\n')
 
         except EOFError:
             running = False
