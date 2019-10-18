@@ -39,7 +39,7 @@ def main():
 
             #final result
             result  = hideMIB.translate(None, bad_chars)           
-            output.write(result + "\n")
+            output.write(result )
 
         except EOFError:
             running = False
