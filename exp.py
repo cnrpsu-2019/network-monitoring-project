@@ -19,7 +19,7 @@ def main():
             dot0replace = filtered.replace(".0 ", ' ')
             wrongtypeRemove = dot0replace.replace("Wrong Type (should be Gauge32 or Unsigned32)","")
             
-            bad_chars = "/\\!$^&*(-{)[}>_<],~+=#$%;`@?'"
+            bad_chars = "/\\!$^&*({)[}>_<],~+=#$%;`@?'"
             #rgx = re.compile('[%s]' % bad_chars)
 
             #final result
