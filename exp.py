@@ -30,7 +30,7 @@ def main():
             weirdList = ['.A.','..A.','..0', '.gx.','.hx','.X','.i.','.W.g','W','...j','.c ','.L','.    . ','.LkY ','... ','". ','"','..0','.p. ','.. ','. ','.M.',' : ','.c.q.','..p','..U','.hx','.pU.I','.H.0','v.','.. ','.j.','. ','.  ','..EB.M','Z','J','Q','..e.','..A.','..9.','.l.1.Fb','.p.','..x','..L.','.z.','..f','..N..j.','.i.', '.N.','.K','.h.','......','...','..','hx','wt','.o.']
             weirdRemove = replaceMultiple(wrongtypeRemove, weirdList, '')
             
-            bad_chars = "/\\!$^&*|({)[}>_<],~+=#$%;`@?'"
+            bad_chars = "/\\!$^&*|({)[}>_<]~+=#$%;`@?'"
             #rgx = re.compile('[%s]' % bad_chars)
 
             #final result
