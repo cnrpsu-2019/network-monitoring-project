@@ -44,7 +44,7 @@ def main():
             # pattern = "^.A-Za-Z0-9'&{8,9}"
             # replace = ''
             #outstr
-            bad_list = [".'......'",".'hx.G'",".'p....'",".'hT....'",".'.....'",".'.a.bk'",".'.Z....'","    .",".'.N..N.'",".'.k.7.9'",".'hx...'"]
+            bad_list = [".'......'",".'.N..i.'",".'H..F..'",".'....-.'",".'......'",".'hx.G'",".'p....'",".'hT....'",".'.....'",".'.a.bk'",".'.Z....'","    .",".'.N..N.'",".'.k.7.9'",".'hx...'"]
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,'')
 
