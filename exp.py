@@ -47,7 +47,7 @@ def main():
             #outstr
             bad_list = ['.......','..N...','.t....','..N..i.','..V...','..:..j',
             '......f','......','..a.bk','    .','....np','..N..j.','.hx.G','...z.A.','..p-:.e'
-            ,'.p....','.hT....','..o1..','.....-.','.,a....']
+            ,'.p....','.hT....','..o1..','.....-.','.,a....','..N..N.']
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,'')
 
