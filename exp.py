@@ -41,7 +41,7 @@ def main():
             weirdRemove = replaceMultiple(event, weirdList, ' ')
             bad_chars = "/\\!$^&*|({)[}>_<]~+=#$%;`@?"
             #rgx = re.compile('[%s]' % bad_chars)
-            pattern = "[^.'$]{4,8}"
+            pattern = "[^.'$]"
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
             result = re.sub(pattern,'',outstr)
