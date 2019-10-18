@@ -45,7 +45,8 @@ def main():
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
             result = re.sub(pattern,'',outstr)
-            output.write(result + '\n')
+            result2 = result.translate(None, result)
+            output.write(result2 + '\n')
 
         except EOFError:
             running = False
