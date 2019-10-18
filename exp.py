@@ -25,7 +25,7 @@ def main():
         try:
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","" + '\n')
-            dot0replace = filtered.replace(".0 ", ' ')
+            dot0replace = filtered.replace(".0 ", ' ' + '\n')
             wrongtypeRemove = dot0replace.replace("Wrong Type (should be Gauge32 or Unsigned32)","" + '\n')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::UDP: 172.30.232.2:32768-172.30.232.250:162",strnow + '\n')
             mibList = ['CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::','CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::']
@@ -38,7 +38,7 @@ def main():
             #rgx = re.compile('[%s]' % bad_chars)
 
             #final result
-            result  = hideMIB.translate(None, '\n' + bad_chars)           
+            result  = hideMIB.translate(None, bad_chars)           
             output.write(result )
 
         except EOFError:
