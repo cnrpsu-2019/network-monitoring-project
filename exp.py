@@ -27,7 +27,8 @@ def main():
             filtered = input.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
         
-            wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:']
+            wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:'
+            ,'Wrong Type should be Timeticks:']
 
             wrongtypeRemove = replaceMultiple(showDate, wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
@@ -65,7 +66,8 @@ def main():
             ,'QY.','.N6.3.','7.N','.zO.','..PF..','.Df..z.','f.f','6.N','.4Bb','B.HT','o.l','g.','.D.M','cx','.z','.8q.m','.Lk','.LPuY'
             ,'.,a.5','.TrOi','.Lk.',',.2.','.LV.v.K','R.','.,V.','.hT.','.05.','.V.','lt.','E.','.7.','.H','6.J','F.','.pa.','c.I.','.xOC'
             ,'.p.','.H.k.x',',.','.k.x','.P','i.','.b1','VM','.8i','.kV','.lMs.e.','u.r','.S.','.BO','cv.','.Dn6','.L.q','J',' ','.8qX'
-            ,' O.','N.','Q.','k.','.f.a','.L.q',' h ','CG','.TbA.','V.','.W','.o.Y','.X','.K0.','.TrO5','.4.-Y.',' . ','.  ','S.','.L.1ItK']
+            ,' O.','N.','Q.','k.','.f.a','.L.q',' h ','CG','.TbA.','V.','.W','.o.Y','.X','.K0.','.TrO5','.4.-Y.',' . ','.  ','S.','.L.1ItK',' Z ',' np '
+            ,'  a ','.hT','l.Y.','  .3 ']
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,' ')
 
