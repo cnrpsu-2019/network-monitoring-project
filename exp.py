@@ -39,7 +39,7 @@ def main():
             prefixList = ['bsn','cL','cldc','Dot11','Dot3','AirespaceAP','ciscoLwapp','sys','SiIdr','Si','clrRrm']
             weirdList = ['.0',". ",'.1 ','"',' : ']
             prefixRemove = replaceMultiple(event, prefixList, '')
-            weirdRemove = replaceMultiple(prefixRemove, weirdList, '')
+            weirdRemove = replaceMultiple(prefixRemove, weirdList, ' ')
             bad_chars = "/\\!$^&*|'({)[}>_<]~+=#$%;`@?"
             #rgx = re.compile('[%s]' % bad_chars)
             # pattern = "^.A-Za-Z0-9'&{8,9}"
