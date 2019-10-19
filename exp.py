@@ -67,7 +67,7 @@ def main():
             ,'.p.','.H.k.x',',.','.k.x','.P','i.','.b1','VM','.8i','.kV','.lMs.e.','u.r','.S.','.BO','cv.','.Dn6','.L.q','J',' ','.8qX'
             ,'L','N.','Q.','k.','.f.a','.L.q','.L.q','CG','.TbA.','V.','.W','.o.Y','.X','.K0.']
             outstr  = weirdRemove.translate(None, bad_chars)
-            result = replaceMultiple(outstr,bad_list,'')
+            result = replaceMultiple(outstr,bad_list,' ')
 
             output.write(result + '\n')
 
