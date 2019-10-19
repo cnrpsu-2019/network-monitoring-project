@@ -64,7 +64,7 @@ def main():
             ,'.t..c.w','..PF..','-.','.l..oT','.xaZ..','.vE.','.8-.','.Tb..G','.Q.','.V5','t..','..','.0.','..S','V.Oj','.vE.','.z..','.pv.'
             ,'QY.','.N6.3.','7.N','.zO.','..PF..','.Df..z.','f.f','6.N','.4Bb','B.HT','o.l','g.','.D.M','cx','.z','.8q.m','.Lk','.LPuY'
             ,'.,a.5','.TrOi','.Lk.',',.2.','.LV.v.K','R.','.,V.','.hT.','.05.','.V.','lt.','E.','.7.','.H','6.J','F.','.pa.','c.I.','.xOC'
-            ,'.p.','.H.k.x',',.']
+            ,'.p.','.H.k.x',',.','.k.x','.P','']
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,'')
 
