@@ -27,16 +27,16 @@ def main():
             filtered = input.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
         
-            wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:']
+            wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:']
 
             wrongtypeRemove = replaceMultiple(showDate, wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
             mibList = ['SNMPv2-MIB::','CISCO-LWAPP-SI-MIB::','CISCO-LWAPP-RRM-MIB::',
             'CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::',
-            'CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::']
+            'CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-RF-MIB::']
             hideMIB = replaceMultiple(timestamp, mibList, '')
             event = hideMIB.replace("snmpTrapOID","Event")
-            prefixList = ['bsn','cL','cldc','Dot11','Dot3','AirespaceAP','ciscoLwapp','sys']
+            prefixList = ['bsn','cL','cldc','Dot11','Dot3','AirespaceAP','ciscoLwapp','sys','SiIdr','Si']
             weirdList = ['.0',". ",'.1 ','"',' : ']
             prefixRemove = replaceMultiple(event, prefixList, '')
             weirdRemove = replaceMultiple(prefixRemove, weirdList, '')
@@ -61,7 +61,8 @@ def main():
             ,'.. ..','.l.k,..','.xOC.k3','.XN..','...W...','....I..','..PF.P','.....r','.pp....','.t...Y.','.....j','.x..u.','.....y.'
             ,'..A..v.','....i..','.:','...i..','.h..1:S','....4.','..o...','..mR...','.Lk....','..N..N.','.,a....','.....-.','..o1..'
             ,'.hT....','......    .','..k.7.9','.0.r.','CX..','.Z.','..z..u','..Ag','.Tb..q','.t.OxE.','..YqWR','.t..c.w','..YqWR','..UX'
-            ,'.t..c.w']
+            ,'.t..c.w','..PF..','-.','.l..oT','.xaZ..','.vE.','.8-.','.Tb..G','.Q.','.V5','t..','..','.0.','..S','V.Oj','.vE.','.z..','.pv.'
+            ,'QY.','.N6.3.','7.N','.zO.','..PF..','.Df..z.']
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,'')
 
