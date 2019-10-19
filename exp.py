@@ -64,7 +64,8 @@ def main():
             ,'.t..c.w','..PF..','-.','.l..oT','.xaZ..','.vE.','.8-.','.Tb..G','.Q.','.V5','t..','..','.0.','..S','V.Oj','.vE.','.z..','.pv.'
             ,'QY.','.N6.3.','7.N','.zO.','..PF..','.Df..z.','f.f','6.N','.4Bb','B.HT','o.l','g.','.D.M','cx','.z','.8q.m','.Lk','.LPuY'
             ,'.,a.5','.TrOi','.Lk.',',.2.','.LV.v.K','R.','.,V.','.hT.','.05.','.V.','lt.','E.','.7.','.H','6.J','F.','.pa.','c.I.','.xOC'
-            ,'.p.','.H.k.x',',.','.k.x','.P','i.','.b1','VM','.8i','.kV','.lMs.e.','u.r','.S.','.BO','cv.','.Dn6','.L.q','J','W']
+            ,'.p.','.H.k.x',',.','.k.x','.P','i.','.b1','VM','.8i','.kV','.lMs.e.','u.r','.S.','.BO','cv.','.Dn6','.L.q','J','W','.8qX'
+            ,'']
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,'')
 
