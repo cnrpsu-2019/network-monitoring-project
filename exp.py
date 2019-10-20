@@ -28,7 +28,7 @@ def main():
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
         
             wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:'
-            ,'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:']
+            ,'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:','Wrong Type should be Timeticks:']
 
             wrongtypeRemove = replaceMultiple(showDate, wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
