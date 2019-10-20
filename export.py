@@ -8,14 +8,14 @@ def main():
     #log file date
     fileDate = now.strftime("%d-%b-%Y")
     fileName = "trapd-" + fileDate + ".log"
-    input = open('/home/bass/trap-receiver/' + fileName, 'r')
+    read = open('/home/bass/trap-receiver/' + fileName, 'r')
 
     while running:
         try:
-            print(input.readline)
+            print(read.readline)
         except EOFError:
             running = False
-    input.close()
+    read.close()
 if __name__ == '__main__':
     main()
     
