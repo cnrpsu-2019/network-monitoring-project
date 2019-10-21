@@ -79,7 +79,8 @@ def main():
             ,' H., ',' c ',' .YS ',' jj.M ',' y U ',' zB ','.D .6 ','.p O ',' e.B ',' f 3 ',' - ','.L K ',' c.Cb ',' .n ','.Tb 5 ',' .r ','.D .6 '
             ,' K.46G ',' t.6 ',' H ',' Md ',' 8 ',' , ',' 6 ',' .qB ','.8q ',' Rw ','.t.8T ','.dZ.9 ',' 5t ','.LfA.b ',' jj.M ',' x.5 ','.F ',' i '
             ,' .o ',' yp ',' P.gg ',' W ',' 5 ','.l  ',' 7N ',' Q ',' fr ','.x.ER0 ',' m ','.k ',' d ','.8.G.g ','.lf ','.02Z ',' .K '
-            ,'.h f ',' Wrong Type should be Timeticks:','.l ',' .5h ','.d ','  ',' 0 ',' g ','.xg ',' r ','Wrong Type should be OCTET STRING:']
+            ,'.h f ',' Wrong Type should be Timeticks:','.l ',' .5h ','.d ','  ',' 0 ',' g ','.xg ',' r ','Wrong Type should be OCTET STRING:'
+            ,' Dw f ', ' I ',' b.c ']
 
             outstr  = weirdRemove.translate(None, bad_chars)
             
