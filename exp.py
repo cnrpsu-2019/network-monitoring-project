@@ -72,16 +72,16 @@ def main():
             ,'.l P. ',' p. ','. ',' .w ','.l P. ',' No ',' x ',' 4.5 ','.L  ',' U X ',' .aW. ','.LW ',' .4. ',' xwA. ',' .k , ',' M. ',' uj '
             ,'.LV ',' Z. ','.pU, ',' 1 ','.m ',' M ',' n ',' z.3B ','.L 1.T ',' .k ',' e ','.4 TA: ',' .gT ','.pp ',' .S ',' .6W ',' y8 '
             ,' A ',' z ',' o ',' Dcp ',' Wg ',' MpH ','.4 .p ',' .x ','.k , ',' hv.D ',' o ',' 7 ',' U1Un ',' H.2 ',' Wj ',' .L ',' a N ','.k , '
-            ,'.x6.r ',' 2.L ',' Lyr ',' f a ']
-            outstr  = weirdRemove.translate(None, bad_chars)
-            fine_filter_list = [' 5 ',' TQD ',' 8p ',' .A ',' K v ',' d i ',' k ','.x ','.D - ',' 2 ',' 3D ',' zC ',' H ',' vo 5 ',' j '
+            ,'.x6.r ',' 2.L ',' Lyr ',' f a '' 5 ',' TQD ',' 8p ',' .A ',' K v ',' d i ',' k ','.x ','.D - ',' 2 ',' 3D ',' zC ',' H ',' vo 5 ',' j '
             ,' .K9 ','.D ',' .aW ',' 4 ',' N ',' mRHT ',' y ','.dZ.9 ',' F ',' jj.M ',' Y ','.T.c 8 ',' Uv.M ','.p O ',' .57 ',' I.v ',
             ' Uv.M ',' 8 ','.Tb ',' 2 7N ',' 3 ',' t ',' K.s ',' v2 ','.87 ',' 9 ',' K v ','.hZ.8f ',' v ',' 2 ',' EGf ','.0 X ',' M.O '
             ,' P ',' c.D ',' 9 ','.pU I ',' T.L ',' k E ','., ',' 8 ','.4 ',' q ',' l ',' w ',' t.d ',' Wgn ',' c.D ',' Dc.B ',' H.3 ',' j '
             ,' H., ',' c ',' .YS ',' jj.M ',' y U ',' zB ','.D .6 ','.p O ',' e.B ',' f 3 ',' - ','.L K ',' c.Cb ',' .n ','.Tb 5 ',' .r ','.D .6 '
-            ,' K.46G ',' t.6 ',' H ',' Md ',' 8 ',' , ',' 6 ',' .qB ','.8q ',' Rw ','.t.8T ','.dZ.9 ',' 5t ','.LfA.b ',' jj.M ',' x.5 ','.F ',' i ','']
-            fineFilter = outstr.translate(None, fine_filter_list)
-            result = replaceMultiple(fineFilter,bad_list,' ')
+            ,' K.46G ',' t.6 ',' H ',' Md ',' 8 ',' , ',' 6 ',' .qB ','.8q ',' Rw ','.t.8T ','.dZ.9 ',' 5t ','.LfA.b ',' jj.M ',' x.5 ','.F ',' i ']
+            
+            outstr  = weirdRemove.translate(None, bad_chars)
+            
+            result = replaceMultiple(outstr,bad_list,' ')
 
             output.write(result + '\n')
 
