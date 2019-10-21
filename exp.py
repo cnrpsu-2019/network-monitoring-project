@@ -69,8 +69,8 @@ def main():
             ,' O.','N.','Q.','k.','.f.a','.L.q',' h ','CG','.TbA.','V.','.W','.o.Y','.X','.K0.','.TrO5','.4.-Y.',' . ','.  ','S.','.L.1ItK',' Z ',' np '
             ,'  a ','.hT','l.Y.','  .3 ',' K   ',' p ',' U. ',' .5. ',' t. ',' .vj ','.h.2  ',' m ',' D ',' D. ',' 4.C. ',' Wd.K ',' 1.x '
             ,'.p:Q  ',' C ',' f. 1 ',' .c  ','.dp3  ','  ','.0 y5 ',' 3.d. ','.8 ','.3 ',' B ',' T ','.x   ','.d.C r ',' n ',' W: ',' f.e '
-            ,'.l P. ',' p. ','. ',' .w ','.l P. ',' No ',' x ',' 4.5 ','.L  ',' U X ',' .aW. ','.LW ',' .4. ',' xwA. ','.k , ',' M. ',' uj '
-            ,'.LV ',' Z. ','.pU, ',' 1 ','.m ']
+            ,'.l P. ',' p. ','. ',' .w ','.l P. ',' No ',' x ',' 4.5 ','.L  ',' U X ',' .aW. ','.LW ',' .4. ',' xwA. ',' .k , ',' M. ',' uj '
+            ,'.LV ',' Z. ','.pU, ',' 1 ','.m ',' M ',' n ',' z.3B ','.L 1.T ',' .k ']
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,' ')
 
