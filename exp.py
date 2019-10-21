@@ -81,7 +81,7 @@ def main():
             ,' H., ',' c ',' .YS ',' jj.M ',' y U ',' zB ','.D .6 ','.p O ',' e.B ',' f 3 ',' - ','.L K ',' c.Cb ',' .n ','.Tb 5 ',' .r ','.D .6 '
             ,' K.46G ',' t.6 ',' H ',' Md ',' 8 ',' , ',' 6 ',' .qB ','.8q ',' Rw ','.t.8T ','.dZ.9 ',' 5t ','.LfA.b ',' jj.M ',' x.5 ','.F ',' i ','']
             fineFilter = replaceMultiple(outstr, fine_filter_list, ' ')
-            result = replaceMultiple(fineFilter,bad_list,' ')
+            result = replaceMultiple(fineFilter,bad_list,'')
 
             output.write(result + '\n')
 
