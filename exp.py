@@ -71,7 +71,7 @@ def main():
             ,'.p:Q  ',' C ',' f. 1 ',' .c  ','.dp3  ','  ','.0 y5 ',' 3.d. ','.8 ','.3 ',' B ',' T ','.x   ','.d.C r ',' n ',' W: ',' f.e '
             ,'.l P. ',' p. ','. ',' .w ','.l P. ',' No ',' x ',' 4.5 ','.L  ',' U X ',' .aW. ','.LW ',' .4. ',' xwA. ',' .k , ',' M. ',' uj '
             ,'.LV ',' Z. ','.pU, ',' 1 ','.m ',' M ',' n ',' z.3B ','.L 1.T ',' .k ',' e ','.4 TA: ',' .gT ','.pp ',' .S ',' .6W ',' y8 '
-            ,' A ',' z ']
+            ,' A ',' z ',' o ',' Dcp ']
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,' ')
 
