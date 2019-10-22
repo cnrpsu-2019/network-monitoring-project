@@ -87,7 +87,8 @@ def main():
             ,' cb:c ',' ., ',' 8.y ','.pi ',' VP ','.Tb.YY. ',' .IF ',' w. ',' c ','. c ',' A ',' .Nx ','. ',' c 2 ',' H.T. ','.Tb.2 ',' Gp ','.l fhr '
             ,' .G ',' z 2 ',' c.i ',' .h ','.x  ',' F 1j ','.k , ',' I.U ','.05 M ',' X. ',' cT.M ',' K 4 ',' .I ',' .e ',' s ',' l.v '
             ,' .i ',' UGf ',' c.-t ',' f.- ',' .Y ',' .u ',' L ',' x.p ',' : ','.4.7n ','.,4 ',' 1i ',' a ','.t ','.0ck ',' T.I ','.,MT '
-            ,' f.- ','.4.7n ',' .M ',' XA ',' Em ',' sY ',' Wf ',' oFu ',' U ',' .9w ','.x.nW ',' WBv1 ',' v.n ',' D4 ']
+            ,' f.- ','.4.7n ',' .M ',' XA ',' Em ',' sY ',' Wf ',' oFu ',' U ',' .9w ','.x.nW ',' WBv1 ',' v.n ',' D4 ','.l.1 ',' .i9 '
+            ,'.dp3.DA ',' BT ',' Np ','.T ','.y ',' 2C ',' -Y ']
 
             outstr  = weirdRemove.translate(None, bad_chars)
             
