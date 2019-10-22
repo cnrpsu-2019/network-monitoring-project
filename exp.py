@@ -88,7 +88,7 @@ def main():
             ,' .G ',' z 2 ',' c.i ',' .h ','.x  ',' F 1j ','.k , ',' I.U ','.05 M ',' X. ',' cT.M ',' K 4 ',' .I ',' .e ',' s ',' l.v '
             ,' .i ',' UGf ',' c.-t ',' f.- ',' .Y ',' .u ',' L ',' x.p ',' : ','.4.7n ','.,4 ',' 1i ',' a ','.t ','.0ck ',' T.I ','.,MT '
             ,' f.- ','.4.7n ',' .M ',' XA ',' Em ',' sY ',' Wf ',' oFu ',' U ',' .9w ','.x.nW ',' WBv1 ',' v.n ',' D4 ','.l.1 ',' .i9 '
-            ,'.dp3.DA ',' BT ',' Np ','.T ','.y ',' 2C ',' -Y ','.xa.V ',' kn1 ',' 72 ','.0 ',' 9c ',' 5.R ',' IY ',' FIz ']
+            ,'.dp3.DA ',' BT ',' Np ','.T ','.y ',' 2C ',' -Y ','.xa.V ',' kn1 ',' 72 ','.0 ',' 9c ',' 5.R ',' IY ',' FIz ','.h ']
 
             outstr  = weirdRemove.translate(None, bad_chars)
             
