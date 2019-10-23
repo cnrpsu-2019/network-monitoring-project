@@ -1,0 +1,14 @@
+influxdb:
+  server:
+    - name: local
+      ip: 172.30.232.250
+      db: telegraf
+      user: syslog
+      pass: sabaszx
+all:
+  measurement: snmptraps
+  tags:
+    host_dns: host_name
+    host_ip: host_ip
+mappings:
+  

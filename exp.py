@@ -1,6 +1,22 @@
 import datetime
 import re
 import string
+import yaml
+from influxdb import InfluxDBClient
+
+def get_all_traps_influx_datapoint(config, trap):
+    varbinds = ", ".join(trap['varbinds'])
+    datapoint = {
+        "measurement" : config['all']['measurement'],
+        "tags": {
+            config['all']['tags'].get('host_dns', 'host_dns'): trap['host_dns'],
+            config['all']['tags'].get('host_ip', 'host_ip'): trap['host_ip'],
+        },
+        "fields" : {
+            "varbinds" : varbinds
+        }
+    }
+    return datapoint
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
@@ -92,8 +108,8 @@ def main():
             ,' Bq ',' Zr ','.t.a ',' .g ',' wt ',' QB ','.pU ','.5 ','.2 ',' zj ','.Df ',' 5P ','.l.1.Fb ',' .6Z ',' b ',' h ',' R ']
 
             outstr  = weirdRemove.translate(None, bad_chars)
-            
             result = replaceMultiple(outstr,bad_list,' ')
+            
 
             output.write(result + '\n')
 
