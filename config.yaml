@@ -10,5 +10,25 @@ all:
   tags:
     host_dns: host_name
     host_ip: host_ip
+    
+# Special processing based on Event
 mappings:
+  UpTimeInstance:
+    measurement: link
+    tags:
+      - UpTimeInstance
+    fields:
+      - UpTimeInstance
+  ClientSessionTrap:
+    measurement: link
+    tags:
+      - ApIfSlotId
+      - ApName
+      - ClientUsername
+      - ClientByIpAddress
+      - ApMacAddress
+    fields:
+      - UpTimeInstance
+      - ApIfSlotId
+      - ApName
   

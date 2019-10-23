@@ -2,6 +2,7 @@ import datetime
 import re
 import string
 import yaml
+import sys
 from influxdb import InfluxDBClient
 
 def get_all_traps_influx_datapoint(config, trap):
@@ -58,9 +59,7 @@ def main():
             prefixRemove = replaceMultiple(event, prefixList, '')
             weirdRemove = replaceMultiple(prefixRemove, weirdList, ' ')
             bad_chars = "/\\!$^&*|'({)[}>_<]~+=#$%;`@?"
-            #rgx = re.compile('[%s]' % bad_chars)
-            # pattern = "^.A-Za-Z0-9'&{8,9}"
-            # replace = ''
+           
             #outstr
             bad_list = ['.......','..N...','.t....','..N..i.','..V...','..:..j',
             '......f','......','..a.bk','    .','....np','..N..j.','.hx.G','...z.A.','..p-:.e'
@@ -109,6 +108,10 @@ def main():
 
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,' ')
+            #read config
+            
+
+
             
 
             output.write(result + '\n')
