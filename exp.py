@@ -109,11 +109,12 @@ def main():
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,' ')
             #read config
-            
+            config_file = open('./config.yaml', 'r')
+            config = yaml.load(config_file, yaml.SafeLoader)
+            lines = sys.stdin.readlines()
 
 
-            
-
+        
             output.write(result + '\n')
 
         except EOFError:
