@@ -111,7 +111,7 @@ def main():
             #read config
             # config_file = open('./config.yaml', 'r')
             # config = yaml.load(config_file, yaml.SafeLoader)
-            lines = sys.stdin.readlines()
+            #lines = sys.stdin.readlines()
 
 
         
