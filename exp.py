@@ -120,6 +120,6 @@ def main():
         except EOFError:
             running = False
         # finally:
-        output.close()
+    output.close()
 if __name__ == '__main__':
     main()
