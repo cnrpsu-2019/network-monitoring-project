@@ -5,19 +5,19 @@ import string
 import sys
 from influxdb import InfluxDBClient
 
-def get_all_traps_influx_datapoint(config, trap):
-    varbinds = ", ".join(trap['varbinds'])
-    datapoint = {
-        "measurement" : config['all']['measurement'],
-        "tags": {
-            config['all']['tags'].get('host_dns', 'host_dns'): trap['host_dns'],
-            config['all']['tags'].get('host_ip', 'host_ip'): trap['host_ip'],
-        },
-        "fields" : {
-            "varbinds" : varbinds
-        }
-    }
-    return datapoint
+# def get_all_traps_influx_datapoint(config, trap):
+#     varbinds = ", ".join(trap['varbinds'])
+#     datapoint = {
+#         "measurement" : config['all']['measurement'],
+#         "tags": {
+#             config['all']['tags'].get('host_dns', 'host_dns'): trap['host_dns'],
+#             config['all']['tags'].get('host_ip', 'host_ip'): trap['host_ip'],
+#         },
+#         "fields" : {
+#             "varbinds" : varbinds
+#         }
+#     }
+#     return datapoint
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
