@@ -105,7 +105,7 @@ def main():
             ,' f.- ','.4.7n ',' .M ',' XA ',' Em ',' sY ',' Wf ',' oFu ',' U ',' .9w ','.x.nW ',' WBv1 ',' v.n ',' D4 ','.l.1 ',' .i9 '
             ,'.dp3.DA ',' BT ',' Np ','.T ','.y ',' 2C ',' -Y ','.xa.V ',' kn1 ',' 72 ','.0 ',' 9c ',' 5.R ',' IY ',' FIz ','.h ','.0R '
             ,' Bq ',' Zr ','.t.a ',' .g ',' wt ',' QB ','.pU ','.5 ','.2 ',' zj ','.Df ',' 5P ','.l.1.Fb ',' .6Z ',' b ',' h ',' R ',' GSg '
-            ,' .k.q ',' B ',' Z ',' .q ',' O ','.6 ']
+            ,' .k.q ',' B ',' Z ',' .q ',' O ','.6 ',' X ','.T.yA ',' .t1 ']
 
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,' ')
@@ -117,8 +117,91 @@ def main():
             output.write(result + '\n')
             readForexport = open('/home/bass/trap-receiver/' + fileName, 'rt')
             readForexport.readlines()
-            
-            
+
+            # parsing SNMP stuff
+            # trap['oid'] = None
+            # trap['sysuptime'] = None
+            # trap['varbinds'] = []
+            # trap['varbinds_dict'] = {}
+            # for line in lines[2:]:
+            #     if trap['sysuptime'] is None:
+            #         if "sysUpTime" in line:
+            #             trap['sysuptime'] = line.split(" ")[1].strip()
+            #             continue
+            #     if trap['oid'] is None:
+            #         if "snmpTrapOID" in line:
+            #             varbind = line.strip().split(" ", 1)
+            #             trap['varbinds_dict'][varbind[0]] = varbind[1]
+            #             trap['oid'] = varbind[1].strip()
+            #             logger.debug("OID: %s" % trap['oid'])
+            #             continue
+            #     trap['varbinds'].append(line.strip().replace(" ", "="))
+            #     varbind = line.strip().split(" ", 1)
+            #     trap['varbinds_dict'][varbind[0]] = varbind[1]
+            #     logger.debug(line.strip())
+
+            # logger.info("received trap: %s" % str(trap))
+
+            # # preparing data for influxdb
+            # # putting combined mesrsage into the one measurement for all taps
+            # datapoints = []
+            # if config.get('all', None) is not None:
+            #     if config['all'].get('measurement', None) is not None:
+            #         if config['all'].get('permit', None) is not None:
+            #             for rule in config['all']['permit']:
+            #                 if rule in trap['oid']:
+            #                     logger.debug("permit rule %s matching oid %s" % (rule, trap['oid']))
+            #                     datapoints.append(get_all_traps_influx_datapoint(config, trap))
+            #         elif config['all'].get('deny', None) is not None:
+            #             for rule in config['all']['deny']:
+            #                 if rule in trap['oid']:
+            #                     logger.debug("deny rule %s matching oid %s" % (rule, trap['oid']))
+            #                     break
+            #             else:
+            #                 # if deny rule is not match
+            #                 datapoints.append(get_all_traps_influx_datapoint(config, trap))
+            #         else:
+            #             # no permit or deny rules, so permit everything
+            #             datapoints.append(get_all_traps_influx_datapoint(config, trap))
+            #     else:
+            #         logger.warning("configuration file missing 'all/measurement' part")
+            # else:
+            #     logger.warning("configuration file missing 'all' part")
+
+            # # processing for each type of traps according to the mappings configuration
+            # cfg_mappings = config.get('mappings', None)
+            # if cfg_mappings is not None:
+            #     mapping = cfg_mappings.get(trap['oid'], None)
+            #     if mapping is not None:
+            #         oid_datapoint = {}
+            #         oid_datapoint['measurement'] = mapping['measurement']
+            #         oid_datapoint['tags'] = {}
+            #         oid_datapoint['tags'].update({ config['all']['tags'].get('host_dns', 'host_dns'): trap['host_dns'] })
+            #         oid_datapoint['tags'].update({ config['all']['tags'].get('host_ip', 'host_ip'): trap['host_ip'] })
+            #         oid_datapoint['fields'] = {}
+            #         for varbind in trap['varbinds_dict'].keys():
+            #             for element in mapping['tags']:
+            #                 if element in varbind:
+            #                     oid_datapoint['tags'].update({ element : trap['varbinds_dict'][varbind] })
+            #             for element in mapping['fields']:
+            #                 if element in varbind:
+            #                     oid_datapoint['fields'].update({ element: trap['varbinds_dict'][varbind] })
+            #         logger.debug("add oid_datapoint %s" % (oid_datapoint))
+            #         datapoints.append(copy.deepcopy(oid_datapoint))
+            #     else:
+            #         logger.debug("configuraton no mappings for trap %s" % (trap['oid']))
+            # else:
+            #     logger.info("configuration file missing 'mappings' part")
+
+            # # export to influxdb
+            # if datapoints != [] and config.get('influxdb', None) is not None:
+            #     dbclients = []
+            #     for server in config['influxdb'].get('server', []):
+            #         dbclient = InfluxDBClient(host=server['ip'], port=server['port'], username=server['user'], password=server['pass'], database=server['db'])
+            #         dbclients.append(dbclient)
+            #     if dbclients != []:
+            #         for dbclient in dbclients:
+            #             dbclient.write_points(datapoints)
 
         except EOFError:
             running = False
