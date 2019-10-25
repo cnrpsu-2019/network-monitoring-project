@@ -105,7 +105,8 @@ def main():
             ,' f.- ','.4.7n ',' .M ',' XA ',' Em ',' sY ',' Wf ',' oFu ',' U ',' .9w ','.x.nW ',' WBv1 ',' v.n ',' D4 ','.l.1 ',' .i9 '
             ,'.dp3.DA ',' BT ',' Np ','.T ','.y ',' 2C ',' -Y ','.xa.V ',' kn1 ',' 72 ','.0 ',' 9c ',' 5.R ',' IY ',' FIz ','.h ','.0R '
             ,' Bq ',' Zr ','.t.a ',' .g ',' wt ',' QB ','.pU ','.5 ','.2 ',' zj ','.Df ',' 5P ','.l.1.Fb ',' .6Z ',' b ',' h ',' R ',' GSg '
-            ,' .k.q ',' B ',' Z ',' .q ',' O ','.6 ',' X ','.T.yA ',' .t1 ']
+            ,' .k.q ',' B ',' Z ',' .q ',' O ','.6 ',' X ','.T.yA ',' .t1 ',' cu ',' 9VRK ',' voxu ',' .fk ',' zG ',' .c ',' z ',' 3.7z '
+            ,' ,Bm ',' ES8 ',' 87 ',' .Gm ',' vtjN ',' a, ','.g ']
 
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,' ')
