@@ -3,9 +3,7 @@ influxdb:
     - name: local
       ip: 172.30.232.250
       port: 8086
-      db: telegraf
-      user: syslog
-      pass: sabaszx
+      
 all:
   measurement: snmptraps
   tags:
