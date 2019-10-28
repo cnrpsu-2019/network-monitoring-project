@@ -107,7 +107,7 @@ def main():
             ,' Bq ',' Zr ','.t.a ',' .g ',' wt ',' QB ','.pU ','.5 ','.2 ',' zj ','.Df ',' 5P ','.l.1.Fb ',' .6Z ',' b ',' h ',' R ',' GSg '
             ,' .k.q ',' B ',' Z ',' .q ',' O ','.6 ',' X ','.T.yA ',' .t1 ',' cu ',' 9VRK ',' voxu ',' .fk ',' zG ',' .c ',' z ',' 3.7z '
             ,' ,Bm ',' ES8 ',' 87 ',' .Gm ',' vtjN ',' a, ','.g ',' l ',' zE ',' .G.O ',' EB.M ',' X ',' O '
-            ,' 6I ']
+            ,' 6I ',' hcB ',' kn ',' .U ']
 
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,bad_list,' ')
