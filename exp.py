@@ -40,8 +40,8 @@ def main():
     
     while running:
         try:
-            input = raw_input()
-            filtered = input.replace("<UNKNOWN>","" )
+            read_input = input()
+            filtered = read_input.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
         
             wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:'
@@ -207,7 +207,6 @@ def main():
 
         except EOFError:
             running = False
-        # finally:
     output.close()
 if __name__ == '__main__':
     main()
