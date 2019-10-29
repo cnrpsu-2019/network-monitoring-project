@@ -45,7 +45,7 @@ bad_list = ['.......','..N...','.t....','..N..i.','..V...','..:..j',
             ,' .k.q ',' B ',' Z ',' .q ',' O ','.6 ',' X ','.T.yA ',' .t1 ',' cu ',' 9VRK ',' voxu ',' .fk ',' zG ',' .c ',' z ',' 3.7z '
             ,' ,Bm ',' ES8 ',' 87 ',' .Gm ',' vtjN ',' a, ','.g ',' l ',' zE ',' .G.O ',' EB.M ',' X ',' O '
             ,' 6I ',' hcB ',' kn ',' .U ','.hx ',' ji ',' Dc5 ',' r.o.- ',' 1 ',' 4A ',' w7 ','.x.e ',' g3 ',' G ','.4.- ',' ql ',' .uT ',' j.A ','.lMs ',' .a.s '
-            ,' Vj ',' Oa ',' bX ','.M ','.x.q ','']
+            ,' Vj ',' Oa ',' bX ','.M ','.x.q ','  ']
 
 wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:'
             ,'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:','Wrong Type should be Timeticks:']
