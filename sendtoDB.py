@@ -39,10 +39,10 @@ def main():
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
-           
-            print(result + '\n')
+               
         except EOFError:
             running = False
+    print(result + '\n')
     readInput.close()
 if __name__ == '__main__':
     main()
