@@ -1,4 +1,3 @@
-import influxdb
 import datetime
 import re
 import string
