@@ -1,66 +1,4 @@
-import datetime
-import re
-import string
-import sys
-
-def get_all_traps_influx_datapoint(config, trap):
-    varbinds = ", ".join(trap['varbinds'])
-    datapoint = {
-        "measurement" : config['all']['measurement'],
-        "tags": {
-            config['all']['tags'].get('host_dns', 'host_dns'): trap['host_dns'],
-            config['all']['tags'].get('host_ip', 'host_ip'): trap['host_ip'],
-        },
-        "fields" : {
-            "varbinds" : varbinds
-        }
-    }
-    return datapoint
-
-def replaceMultiple(mainString, toBeReplaces, newString):
-    # Iterate over the strings to be replaced
-    for elem in toBeReplaces :
-        # Check if string is in the main string
-        if elem in mainString :
-            # Replace the string
-            mainString = mainString.replace(elem, newString)
-    
-    return  mainString     
-
-def main():
-    running = True
-    now = datetime.datetime.now()
-    strnow = now.strftime("%X") #current time
-    #log file date
-    fileDate = now.strftime("%d-%b-%Y")
-    fileName = "trapd-" + fileDate + ".log"
-    readForexport = open('/home/bass/trap-receiver/' + fileName, 'rt')
-    input = readForexport.readlines()
-    
-    while running:
-        try:
-            
-            filtered = input.replace("<UNKNOWN>","" )
-            showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
-        
-            wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:'
-            ,'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:','Wrong Type should be Timeticks:']
-
-            wrongtypeRemove = replaceMultiple(showDate, wronglist, '')
-            timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
-            mibList = ['SNMPv2-MIB::','CISCO-LWAPP-SI-MIB::','CISCO-LWAPP-RRM-MIB::',
-            'CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::',
-            'CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-RF-MIB::','CISCO-LWAPP-WLAN-MIB::']
-            hideMIB = replaceMultiple(timestamp, mibList, '')
-            event = hideMIB.replace("snmpTrapOID","Event")
-            prefixList = ['bsn','cL','cldc','Dot11','Dot3','AirespaceAP','ciscoLwapp','sys','SiIdr','Si','clrRrm']
-            weirdList = ['.0',". ",'.1 ','"',' : ']
-            prefixRemove = replaceMultiple(event, prefixList, '')
-            weirdRemove = replaceMultiple(prefixRemove, weirdList, ' ')
-            bad_chars = "/\\!$^&*|'({)[}>_<]~+=#$%;`@?"
-           
-            #outstr
-            bad_list = ['.......','..N...','.t....','..N..i.','..V...','..:..j',
+bad_list = ['.......','..N...','.t....','..N..i.','..V...','..:..j',
             '......f','......','..a.bk','    .','....np','..N..j.','.hx.G','...z.A.','..p-:.e'
             ,'.p....','.p..6s','. G..U.','. y.c..','...7L..','...6..','.....','.P....','.tp.s6.','....:2.','.hx...','.Tb.3..','.H..8.'
             ,'.d...Z.','.0...,j','.....M','....i.','..lcQZ.','...h.R','....s.','.0.M...','.....uj','....T..','..8pw..','..o.-p','..xABn.'
@@ -109,18 +47,12 @@ def main():
             ,' 6I ',' hcB ',' kn ',' .U ','.hx ',' ji ',' Dc5 ',' r.o.- ',' 1 ',' 4A ',' w7 ','.x.e ',' g3 ',' G ','.4.- ',' ql ',' .uT ',' j.A ','.lMs ',' .a.s '
             ,' Vj ',' Oa ']
 
-            outstr  = weirdRemove.translate(None, bad_chars)
-            result = replaceMultiple(outstr,bad_list,' ')
-            #read config
-            config_file = open('./config.yaml', 'r')
-            config = yaml.load(config_file, yaml.SafeLoader)
+wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:'
+            ,'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:','Wrong Type should be Timeticks:']
 
-            
+mibList = ['SNMPv2-MIB::','CISCO-LWAPP-SI-MIB::','CISCO-LWAPP-RRM-MIB::',
+            'CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::',
+            'CISCO-LWAPP-DOT11-CLIENT-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-AP-MIB::','CISCO-LWAPP-RF-MIB::','CISCO-LWAPP-WLAN-MIB::']
 
-          
-        except EOFError:
-            running = False
-
-    readForexport.close()
-if __name__ == '__main__':
-    main()
+prefixList = ['bsn','cL','cldc','Dot11','Dot3','AirespaceAP','ciscoLwapp','sys','SiIdr','Si','clrRrm']
+weirdList = ['.0',". ",'.1 ','"',' : ']           
