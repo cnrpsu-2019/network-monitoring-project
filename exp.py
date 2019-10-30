@@ -22,7 +22,7 @@ def main():
     #log file date
     fileDate = now.strftime("%d-%b-%Y")
     fileName = "trapd-" + fileDate + ".log"
-    output = open('/home/bass/trap-receiver/' + fileName, 'a')
+    output = open('/home/bass/receive/' + fileName, 'a')
     
     while running:
         try:
