@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import datetime
 import re
 import string
@@ -46,3 +47,6 @@ def main():
     readInput.close()
 if __name__ == '__main__':
     main()
+=======
+import datetime
+>>>>>>> 2bc782a470fb23601395c46ac3c4bb1f8862e695
