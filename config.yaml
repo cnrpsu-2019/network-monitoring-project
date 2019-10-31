@@ -1,33 +1,23 @@
-influxdb:
-  server:
-    - name: local
-      ip: 172.30.232.250
-      port: 8086
-      
+# All traps processing configuration
 all:
-  measurement: snmptraps
-  tags:
-    host_dns: host_name
-    host_ip: host_ip
-    
-# Special processing based on Event
+  measurement: Event
+  fields:
+    - UptimeInstance
+# Special processing based on Event ??
 mappings:
-  UpTimeInstance:
-    measurement: link
-    tags:
-      - UpTimeInstance
-    fields:
-      - UpTimeInstance
   ClientSessionTrap:
-    measurement: link
+    measurement: Event
     tags:
-      - ApIfSlotId
       - ApName
-      - ClientUsername
-      - ClientByIpAddress
-      - ApMacAddress
+      - SSID
     fields:
-      - UpTimeInstance
-      - ApIfSlotId
+      - ClientIpAddress
+      - ClientUsername
+  ClientMovedToRunState:
+    measurement: Event
+    tags:
       - ApName
-  
+      - SSID
+    fields:
+      - ClientIpAddress
+      - ClientUsername 
