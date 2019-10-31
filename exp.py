@@ -4,6 +4,7 @@ import string
 # import yaml
 import sys
 import Filterx
+from influxdb import InfluxDBClient
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
@@ -40,6 +41,9 @@ def main():
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
+
+            client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
+
            
             output.write(result + '\n')
        
