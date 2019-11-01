@@ -1,7 +1,7 @@
 import datetime
 import re
 import string
-import yaml
+#import yaml
 import sys
 import Filterx
 from influxdb import InfluxDBClient
@@ -31,8 +31,8 @@ def get_all_traps_influx_datapoint(config, trap):
     return datapoint
 
  # Read config file
-    config_file = open('./config.yaml', 'r')
-    config = yaml.load(config_file, yaml.SafeLoader)
+ #   config_file = open('./config.yaml', 'r')
+    #config = yaml.load(config_file, yaml.SafeLoader)
 
 def main():
     running = True
@@ -61,7 +61,7 @@ def main():
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
-            lines = sys.stdin.readlines(result)
+            #lines = sys.stdin.readlines(result)
 
             client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
 
