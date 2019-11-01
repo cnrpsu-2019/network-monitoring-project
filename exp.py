@@ -61,61 +61,7 @@ def main():
             #outstr
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
-            #lines = sys.stdin.readlines(result)
-
-            #client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
-
-            trap['ApName'] = None
-            trap['UptimeInstance'] = None
-            trap['varbinds'] = []
-            trap['varbinds_dict'] = {}
-            for line in lines[2:]:
-                if trap['UptimeInstance'] is None:
-                    if "UptimeInstance" in line:
-                        trap['UptimeInstance'] = line.split(" ")[1].strip()
-                        continue
-                if trap['oid'] is None:
-                    if "snmpTrapOID" in line:
-                        varbind = line.strip().split(" ", 1)
-                        trap['varbinds_dict'][varbind[0]] = varbind[1]
-                        trap['ApName'] = varbind[1].strip()
-                        continue
-                trap['varbinds'].append(line.strip().replace(" ", "="))
-                varbind = line.strip().split(" ", 1)
-                trap['varbinds_dict'][varbind[0]] = varbind[1]
-
-
-            # preparing data for influxdb
-            # putting combined mesrsage into the one measurement for all taps
-            datapoints = []
-            if config.get('all', None) is not None:
-                if config['all'].get('measurement', None) is not None:
-                    if config['all'].get('permit', None) is not None:
-                        for rule in config['all']['permit']:
-                            if rule in trap['ApName']:
-                                datapoints.append(get_all_traps_influx_datapoint(config, trap))
-                    elif config['all'].get('deny', None) is not None:
-                        for rule in config['all']['deny']:
-                            if rule in trap['ApName']:
-                                break
-                        else:
-                            # if deny rule is not match
-                            datapoints.append(get_all_traps_influx_datapoint(config, trap))
-                    else:
-                        # no permit or deny rules, so permit everything
-                        datapoints.append(get_all_traps_influx_datapoint(config, trap))
-            
-
-            
-            # export to influxdb
-            if datapoints != [] and config.get('influxdb', None) is not None:
-                dbclients = []
-                for server in config['influxdb'].get('server', []):
-                    dbclient = InfluxDBClient(host=server['172.30.232.250'], port=server['8086'], username=server['sabaszx'], password=server['admin'], database=server['snmptrapd'])
-                    dbclients.append(dbclient)
-                if dbclients != []:
-                    for dbclient in dbclients:
-                        dbclient.write_points(datapoints)
+           
            
             output.write(result + '\n')
        
