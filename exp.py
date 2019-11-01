@@ -1,7 +1,6 @@
 import datetime
 import re
 import string
-#import yaml
 import sys
 import Filterx
 from influxdb import InfluxDBClient
