@@ -1,89 +1,119 @@
-StationDeauthenticate = {
-    "StationAPMacAddr": "",
-    "StationAPIfSlotId": "",
-    "StationReasonCode": "",
-    "UserIpAddress": "",
-    "StationUserName": "",
-    "StationMacAddress": "",
-    "APName": ""
-}
+import datetime
+now = datetime.datetime.now()
+strnow = now.strftime("%X") #current time
 
-StationDisassociate = {
-    "StationAPMacAddr": "",
-    "StationAPIfSlotId": "",
-    "StationReasonCode": "",
-    "UserIpAddress": "",
-    "StationUserName": "",
-    "StationMacAddress": "",
-    "APName": ""
-}
+json_body_StationDeauthenticate = [
+        {
+            "measurement": "StationDeauthenticate",
+            "tags": {
+                "UserIpAddress": "",
+                "StationAPMacAddr": ""
+            },
+            "time": strnow,
+            "fields": {
+                "APName": ""
+            }
+        }
+    ]
 
-StationAsssociate = {
-    "StationAPMacAddr": "",
-    "StationAPIfSlotId": "",
-    "UserIpAddress": "",
-    "StationUserName": "",
-    "StationMacAddress": "",
-    "APName": ""
-}
+json_body_StationDisassociate = [
+        {
+            "measurement": "StationDisassociate",
+            "tags": {
+                "UserIpAddress": "",
+                "StationAPMacAddr": ""
+            },
+            "time": strnow,
+            "fields": {
+                "APName": ""
+            }
+        }
+    ]
 
-ClientMovedToRunState = {
-    "ClientMacAddress": "",
-    "ApName": "",
-    "ApMacAddress": "",
-    "ApIfSlotId": "",
-    "ClientIPAddress": "",
-    "ClientUsername": "",
-    "ClientSSID": ""
-}
+json_body_StationAsssociate = [
+        {
+            "measurement": "StationDeauthenticate",
+            "tags": {
+                "UserIpAddress": "",
+                "StationAPMacAddr": ""
+            },
+            "time": strnow,
+            "fields": {
+                "APName": ""
+            }
+        }
+    ]
 
-ClientSessionTrap = {
-    "ApIfSlotId": "",
-    "ApName": "",
-    "ClientByIpAddressType": "",
-    "ClientByIpAddress": "",
-    "ClientUsername": "",
-    "ClientSSID": "",
-    "ClientSessionID": "",
-    "ApMacAddress": ""
-}
+json_body_ClientMovedToRunState = [
+        {
+            "measurement": "ClientMovedToRunState",
+            "tags": {
+                "ClientIPAddress": "",
+                "ApMacAddress": ""
+            },
+            "time": strnow,
+            "fields": {
+                "ApName": "",
+                "ClientSSID": ""
+            }
+        }
+    ]
 
-ApRogueDetected = {
-    "ApSysMacAddress": "",
-    "ApName": "",
-    "ApRogueApMacAddress": "",
-    "ApEthernetIfSlotId": "",
-    "ApIfType": "",
-    "ApRogueDetectedChannel": "",
-    "ApRSSI": "",
-    "ApSNR": "",
-    "ApRogueAPOnWiredNetwork": "",
-    "ApAdhocRogue": "",
-    "ApRogueApSsid": "",
-    "ApRogueClassType": "",
-    "ApRogueMode": "",
-    "ApRogueIsClassifiedByRule": "",
-    "ApSeverityScore": "",
-    "ApRuleName": "",
-    "ApRogueClassifiedApMacAddress": "",
-    "ApRogueClassifiedRSSI": ""
-}
+json_body_ClientSessionTrap = [
+        {
+            "measurement": "ClientSessionTrap",
+            "tags": {
+                "ClientByIpAddress": "",
+                "ApMacAddress": ""
+            },
+            "time": strnow,
+            "fields": {
+                "ApName": "",
+                "ClientSSID": ""
+            }
+        }
+    ]
 
-RogueClientDetected = {
-    "ClientMacAddress": "",
-    "LastDetectingRadioMACAddress": "",
-    "ApRogueApMacAddress": "",
-    "ApRogueMode": "",
-    "RogueClientTotalDetectingAPs": "",
-    "RogueClientFirstReported": "",
-    "RogueClientLastReported": "",
-    "RogueClientGatewayMac": ""
-}
+json_body_ApRogueDetected = [
+        {
+            "measurement": "ApRogueDetected",
+            "tags": {
+                "ApSysMacAddress": "",
+                "ApMacAddress": ""
+            },
+            "time": strnow,
+            "fields": {
+                "ApName": "",
+                "ApRSSI": "",
+                "ApRuleName": ""
+            }
+        }
+    ]
 
-RogueAPRemoved = {
-    "RogueAPMacAddress": "",
-    "RogueAPMacAddress": "",
-    "RogueAPSlotId": "",
-    "RogueAPRadioType": "",
-    "RogueAPName": ""
-}
+json_body_RogueClientDetected = [
+        {
+            "measurement": "RogueClientDetected",
+            "tags": {
+                "ClientMacAddress": "",
+                "ApMacAddress": ""
+            },
+            "time": strnow,
+            "fields": {
+                "RogueClientTotalDetectingAPs": ""
+            }
+        }
+    ]
+
+json_body_RogueAPRemoved = [
+        {
+            "measurement": "RogueAPRemoved",
+            "tags": {
+                "RogueAPMacAddress": "",
+                "RogueAPRadioType": ""
+            },
+            "time": strnow,
+            "fields": {
+                "RogueAPName": ""
+            }
+        }
+    ]
