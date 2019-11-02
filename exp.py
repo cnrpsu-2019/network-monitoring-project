@@ -14,6 +14,8 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             mainString = mainString.replace(elem, newString)
     
     return  mainString
+#def writeData(measure, fieldss):
+#    client.write(['measure',''])
 
 def main():
     running = True
@@ -45,7 +47,8 @@ def main():
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
             output.write(result + '\n')
-
+            
+            
             #write to database section
             
 
