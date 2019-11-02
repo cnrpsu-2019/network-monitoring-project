@@ -3,6 +3,8 @@ import re
 import string
 import sys
 import Filterx
+import sendtoDB
+
 from influxdb import InfluxDBClient
 
 def replaceMultiple(mainString, toBeReplaces, newString):
@@ -14,14 +16,6 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             mainString = mainString.replace(elem, newString)
     
     return  mainString
-
-#def writeData(measure, fieldss):
-  #  pointValues = {
-  #          "measurement": measure,
- #           "fields": fieldss,
- #           }
-#    client.write(pointValues)
-
 
 def main():
     running = True
@@ -36,8 +30,9 @@ def main():
 
     client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
     client.switch_database('snmptrapd')
-   
+
     
+   
     while running:
         try:
             input = raw_input()
@@ -56,7 +51,6 @@ def main():
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
             output.write(result + '\n')
             
-
             
         except EOFError:
             running = False
