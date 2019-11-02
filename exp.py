@@ -1,7 +1,6 @@
 import datetime
 import re
 import string
-#import yaml
 import sys
 import Filterx
 from influxdb import InfluxDBClient
@@ -16,24 +15,6 @@ def replaceMultiple(mainString, toBeReplaces, newString):
     
     return  mainString
 
-def get_all_traps_influx_datapoint(config, trap):
-    varbinds = ", ".join(trap['varbinds'])
-    datapoint = {
-        "measurement" : config['all']['measurement'],
-        "tags": {
-            config['all']['tags'].get('ApName', 'ApName'): trap['ApName'],
-            config['all']['tags'].get('SSID', 'SSID'): trap['SSID'],
-        },
-        "fields" : {
-            "varbinds" : varbinds
-        }
-    }
-    return datapoint
-
- # Read config file
- #   config_file = open('./config.yaml', 'r')
-    #config = yaml.load(config_file, yaml.SafeLoader)
-
 def main():
     running = True
     now = datetime.datetime.now()
@@ -43,6 +24,8 @@ def main():
     fileName = "trapd-" + fileDate + ".log"
     output = open('/home/bass/receive/' + fileName, 'a')
 
+    client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
+    client.switch_database('snmptrapd')
    
     
     while running:
@@ -58,12 +41,15 @@ def main():
             prefixRemove = replaceMultiple(event, Filterx.prefixList, '')
             weirdRemove = replaceMultiple(prefixRemove, Filterx.weirdList, ' ')
             bad_chars = "/\\!$^&*|'({)[}>_<]~+=#$%;`@?"
-            #outstr
+            #outstr - write log files into local server
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
-           
-           
             output.write(result + '\n')
+
+            #write to database section
+            
+
+
        
         except EOFError:
             running = False
