@@ -14,13 +14,14 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             mainString = mainString.replace(elem, newString)
     
     return  mainString
-def writeData(measure, fieldss):
-    pointValues = {
-            "measurement": measure,
-            "fields": fieldss,
-            }
-    }
-    client.write(pointValues)
+
+#def writeData(measure, fieldss):
+  #  pointValues = {
+  #          "measurement": measure,
+ #           "fields": fieldss,
+ #           }
+#    client.write(pointValues)
+
 
 def main():
     running = True
@@ -33,7 +34,7 @@ def main():
     #read same data
     toReadData = open('/home/bass/receive/' + fileName, 'r')
 
-    global client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
+    client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
     client.switch_database('snmptrapd')
    
     
