@@ -23,6 +23,8 @@ def main():
     fileDate = now.strftime("%d-%b-%Y")
     fileName = "trapd-" + fileDate + ".log"
     output = open('/home/bass/receive/' + fileName, 'a')
+    #read same data
+    toReadData = open('/home/bass/receive/' + fileName, 'r')
 
     client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
     client.switch_database('snmptrapd')
