@@ -7,6 +7,7 @@ import sendtoDB
 
 from influxdb import InfluxDBClient
 
+
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
     for elem in toBeReplaces :
@@ -51,9 +52,12 @@ def main():
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
             output.write(result + '\n')
             
-            
+            print(toReadData.read())
+
+                        
         except EOFError:
             running = False
     output.close()
+    toReadData.close()
 if __name__ == '__main__':
     main()
