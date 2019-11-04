@@ -3,7 +3,7 @@ import re
 import string
 import sys
 import Filterx
-import sendtoDB
+
 
 from influxdb import InfluxDBClient
 
@@ -31,13 +31,11 @@ def main():
 
     client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
     client.switch_database('snmptrapd')
-
-    
    
     while running:
         try:
-            input = raw_input()
-            filtered = input.replace("<UNKNOWN>","" )
+            read = raw_input()
+            filtered = read.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
         
             wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
@@ -50,14 +48,18 @@ def main():
             #outstr - write log files into local server
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
-            output.write(result + '\n')
+            output.write(result+ '\n')
             
-            print(toReadData.read())
+            #print(toReadData.read())
+            
+            payload = toReadData.read()
+            print(payload[5:])
 
-                        
+           
         except EOFError:
             running = False
     output.close()
     toReadData.close()
+    client.close()
 if __name__ == '__main__':
     main()
