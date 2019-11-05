@@ -1,23 +1,42 @@
+---
+# logging
+logging: debug
+
+  # Influx DB configuration
+influxdb:
+  server:
+    - name: syslog
+      ip: 172.30.232.250
+      port: 8086
+      db: snmptrapd
+      user: sabaszx 
+      pass: admin
+
 # All traps processing configuration
+
 all:
-  measurement: Event
-  fields:
-    - UptimeInstance
-# Special processing based on Event ??
+  measurement: snmptraps
+  tags:
+    event: event_name
+    apname: ap_name
+
+# Special processing based on strange event
 mappings:
-  ClientSessionTrap:
-    measurement: Event
+  IF-MIB::linkUp:
+    measurement: link
     tags:
-      - ApName
-      - SSID
+      - snmpTrapOID
+      - ifIndex
+      - ifName
     fields:
-      - ClientIpAddress
-      - ClientUsername
-  ClientMovedToRunState:
-    measurement: Event
+      - ifAdminStatus
+      - ifOperStatus
+  IF-MIB::linkDown:
+    measurement: link
     tags:
-      - ApName
-      - SSID
+      - snmpTrapOID
+      - ifIndex
+      - ifName
     fields:
-      - ClientIpAddress
-      - ClientUsername 
+      - ifAdminStatus
+      - ifOperStatus

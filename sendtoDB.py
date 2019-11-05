@@ -27,10 +27,10 @@ def main():
                         },
                         "time": int(now.strftime('%s')),
                         "fields":{
-                            "MACAddress":"",
-                            "Username":"",
-                            "Event":"",
-                            "ApName":"",
+                            "MACAddress": None,
+                            "Username": None,
+                            "Event": None,
+                            "ApName": None,
                             }
                         }
                     ]
@@ -39,23 +39,23 @@ def main():
             print('before parsing')
             if 'ApIfSlotId' in line:
                 payload = line.split()
-                json_body["tags"]["InterfaceID"] = int(payload[1])
+                json_body["tags"]["InterfaceID"][0] = int(payload[1])
                 print(payload[1])
             if 'Event' in line:
                 payload = line.split()
-                json_body["fields"]["Event"] = payload[1]
+                json_body["fields"]["Event"][0] = payload[1]
                 print(payload[1])
             if 'ApName' in line:
                 payload = line.split()
-                json_body["fields"]["APName"] = payload[1]
+                json_body["fields"]["APName"][0] = payload[1]
                 print(payload[1])
             if 'ApMacAddress' in line:
                 payload = line.split()
-                json_body["fields"]["MACAddress"] = payload[1]
+                json_body["fields"]["MACAddress"][0] = payload[1]
                 print(payload[1])
             if 'ClientUsername' in line:
                 payload = line.split()
-                json_body["fields"]["Username"] = payload[1]
+                json_body["fields"]["Username"][0] = payload[1]
                 print(payload[1])
             try:
                 print('in block try')
