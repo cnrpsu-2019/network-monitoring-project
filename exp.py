@@ -4,10 +4,6 @@ import string
 import sys
 import Filterx
 
-
-from influxdb import InfluxDBClient
-
-
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
     for elem in toBeReplaces :
@@ -26,12 +22,7 @@ def main():
     fileDate = now.strftime("%d-%b-%Y")
     fileName = "trapd-" + fileDate + ".log"
     output = open('/home/bass/receive/' + fileName, 'a')
-    #read same data
-    toReadData = open('/home/bass/receive/' + fileName, 'r')
-
-    client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
-    client.switch_database('snmptrapd')
-   
+ 
     while running:
         try:
             read = raw_input()
@@ -50,16 +41,9 @@ def main():
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
             output.write(result+ '\n')
             
-            #print(toReadData.read())
-            
-            payload = toReadData.read()
-            print(payload[5:])
-
            
         except EOFError:
             running = False
     output.close()
-    toReadData.close()
-    client.close()
 if __name__ == '__main__':
     main()
