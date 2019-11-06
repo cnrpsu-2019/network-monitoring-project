@@ -38,7 +38,8 @@ def main():
             bad_chars = "/\\!$^&*|'({)[}>_<]~+=#$%;`@?"
             #outstr - write log files into local server
             outstr  = weirdRemove.translate(None, bad_chars)
-            result = replaceMultiple(outstr,Filterx.bad_list,' ')
+            sameAp = outstr.replace("ApName", "APName")
+            result = replaceMultiple(sameAp,Filterx.bad_list,' ')
             output.write(result+ '\n')
             
            
