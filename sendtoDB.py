@@ -24,6 +24,6 @@ strnow = now.strftime("%X") #current time
 #log file date
 fileDate = now.strftime("%d-%b-%Y")
 fileName = "trapd-" + fileDate + ".log"
-read = open('/home/bass/receive/' + fileName, 'ar+')
+read = open('/home/bass/receive/' + fileName, 'r+')
 
 line = read.readlines()
