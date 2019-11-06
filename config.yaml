@@ -1,4 +1,3 @@
----
 # logging
 logging: debug
 
@@ -14,10 +13,11 @@ influxdb:
 
 # All traps processing configuration
 all:
-  measurement: trapEvent
+  measurement: snmptraps
   tags:
-    event: event_name
-    apName: apname
+    host_dns: host_name
+    host_ip: host_ip
+    oid: oid
 
 # Special processing based on OID
 mappings:

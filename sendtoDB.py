@@ -1,79 +1,29 @@
+import yaml
+import sys
 import datetime
-import string
-from influxdb import InfluxDBClient
-import time
+import exp
 
-def main():
-    running = True
-    now = datetime.datetime.today()
-    strnow = now.strftime("%X") #current time
-    #log file date
-    fileDate = now.strftime("%d-%b-%Y")
-    fileName = "trapd-" + fileDate + ".log"
-    toReadData = open('/home/bass/receive/' + fileName, 'r')
+def get_all_traps_influx_datapoint(config, trap):
+    varbinds = ", ".join(trap['varbinds'])
+    datapoint = {
+        "measurement" : config['all']['measurement'],
+        "tags": {
+            config['all']['tags'].get('host_dns', 'host_dns'): trap['host_dns'],
+            config['all']['tags'].get('host_ip', 'host_ip'): trap['host_ip'],
+            config['all']['tags'].get('oid', 'oid'): trap['oid']
+        },
+        "fields" : {
+            "varbinds" : varbinds
+        }
+    }
+    return datapoint
 
-    client = InfluxDBClient('localhost',8090,'sabaszx','admin','snmptrapd',use_udp=True)
-    #client.switch_database('snmptrapd')
-    #series = []
-    while running:
-        try:
-            #reading file continuously
-            line = toReadData.readline()
-            json_body = [
-                    {
-                        "measurement":"trap_daemon",
-                        "tags":{
-                            "InterfaceID":""
-                        },
-                        "time": int(now.strftime('%s')),
-                        "fields":{
-                            "MACAddress": None,
-                            "Username": None,
-                            "Event": None,
-                            "ApName": None,
-                            }
-                        }
-                    ]
-            if not line:
-                time.sleep(1)
-            print('before parsing')
-            if 'ApIfSlotId' in line:
-                payload = line.split()
-                json_body["tags"]["InterfaceID"][0] = int(payload[1])
-                print(payload[1])
-            if 'Event' in line:
-                payload = line.split()
-                json_body["fields"]["Event"][0] = payload[1]
-                print(payload[1])
-            if 'ApName' in line:
-                payload = line.split()
-                json_body["fields"]["APName"][0] = payload[1]
-                print(payload[1])
-            if 'ApMacAddress' in line:
-                payload = line.split()
-                json_body["fields"]["MACAddress"][0] = payload[1]
-                print(payload[1])
-            if 'ClientUsername' in line:
-                payload = line.split()
-                json_body["fields"]["Username"][0] = payload[1]
-                print(payload[1])
-            try:
-                print('in block try')
-                if protocol == json:
-                    client.write(json_body)
-            except:
-                print('error')
+running = True
+now = datetime.datetime.now()
+strnow = now.strftime("%X") #current time
+#log file date
+fileDate = now.strftime("%d-%b-%Y")
+fileName = "trapd-" + fileDate + ".log"
+read = open('/home/bass/receive/' + fileName, 'ar+')
 
-            #reset values
-            #json_body["tags"]["InterfaceID"] = ""
-            #json_body["fields"]["Event"] = ""
-            #json_body["fields"]["APName"] = ""
-            #json_body["fields"]["MACAddress"] = ""
-            #json_body["fields"]["Username"] = ""
-            
-        except EOFError:
-            running = False
-    toReadData.close()
-
-if __name__ == '__main__':
-    main()
+line = read.readlines()
