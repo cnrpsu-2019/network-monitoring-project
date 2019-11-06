@@ -13,14 +13,13 @@ influxdb:
       pass: admin
 
 # All traps processing configuration
-
 all:
-  measurement: snmptraps
+  measurement: trapEvent
   tags:
     event: event_name
-    apname: ap_name
+    apName: apname
 
-# Special processing based on strange event
+# Special processing based on OID
 mappings:
   IF-MIB::linkUp:
     measurement: link
