@@ -13,11 +13,11 @@ influxdb:
 
 # All traps processing configuration
 all:
-  measurement: snmptraps
+  measurement: TrapEvent
   tags:
-    host_dns: host_name
-    host_ip: host_ip
-    oid: oid
+    ap: ap_name
+    event: event
+    mac_addr: mac_addr
 
 # Special processing based on OID
 mappings:
