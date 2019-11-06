@@ -25,7 +25,7 @@ def main():
  
     while running:
         try:
-            read = raw_input()
+            read = sys.stdin.read()
             filtered = read.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
         
