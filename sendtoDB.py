@@ -2,6 +2,7 @@ import yaml
 import sys
 import datetime
 import exp
+import string
 
 def get_all_traps_influx_datapoint(config, trap):
     varbinds = ", ".join(trap['varbinds'])
@@ -24,6 +25,19 @@ strnow = now.strftime("%X") #current time
 #log file date
 fileDate = now.strftime("%d-%b-%Y")
 fileName = "trapd-" + fileDate + ".log"
-read = open('/home/bass/receive/' + fileName, 'r+')
+read = open('/home/bass/receive/' + fileName, 'r')
 
-line = read.readlines()
+line = read.read()
+print(line)
+
+# Read config file
+config_file = open('/home/bass/config.yaml', 'r')
+config = yaml.load(config_file, yaml.SafeLoader)
+print('yaml file loaded')
+
+trap = {}
+trap['event'] = lines[0].strip()
+socket = lines[1]
+trap['event'] = socket[socket.find('Event') + 1:socket.find('Event')]
+
+print(str(trap['event']))
