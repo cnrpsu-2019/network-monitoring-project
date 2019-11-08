@@ -64,6 +64,26 @@ while running:
         if 'AP211-Shop' in line:
             json_body = [{"measurement":"ap_event","tags":{"name":"AP211-Shop","floor":"01","macAddr":"f4:4e:5:b5:24:b0"},"fields":{"item": 1}}]
             dbClient.write_points(json_body)
+        #floor 02
+        if 'AP2-7-R020-153' in line:
+             json_body = [{"measurement":"ap_event","tags":{"name":"AP2-7-R020-153","floor":"02","macAddr":"88:1d:fc:a:f1:20"},"fields":{"item": 1}}]
+             dbClient.write_points(json_body)
+        if 'AP2-8-R020-154' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP2-8-R020-154","floor":"02","macAddr":"88:1d:fc:6:3f:b0"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP213-R202' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP213-R202","floor":"02","macAddr":"70:10:5c:b1:a4:d0"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP214-R203' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP214-R203","floor":"02","macAddr":"a0:e0:af:3d:c7:80"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP206-R204' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP206-R204","floor":"02","macAddr":"f4:4e:5:a2:a1:10"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP205-R207' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP205-R207","floor":"02","macAddr":"f4:4e:5:b5:65:90"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        #rogue ap event
         if 'RogueAPRemoved' in line:
             json_body = [{"measurement":"ap_event_rogue","tags":{"event":"RogueAPRemoved","type":"Informational_rogue"},"fields":{"item": 1}}]
             dbClient.write_points(json_body)
