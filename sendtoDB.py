@@ -106,6 +106,14 @@ while running:
         if 'AP219-R303' in line:
             json_body = [{"measurement":"ap_event","tags":{"name":"AP219-R303","floor":"03","macAddr":"68:3b:78:e9:47:40"},"fields":{"item": 1}}]
             dbClient.write_points(json_body)
+        #floor4
+        if 'AP112-R400' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP112-R400","floor":"04","macAddr":"a0:e0:af:22:6e:70"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP109-R404' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP109-R404","floor":"04","macAddr":"a0:3d:6f:31:b7:f0"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        
         #rogue ap event
         if 'RogueAPRemoved' in line:
             json_body = [{"measurement":"ap_event_rogue","tags":{"event":"RogueAPRemoved","type":"Informational_rogue"},"fields":{"item": 1}}]
