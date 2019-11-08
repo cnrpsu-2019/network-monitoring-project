@@ -1,22 +1,6 @@
-import yaml
-import sys
 import datetime
-import exp
-
-def get_all_traps_influx_datapoint(config, trap):
-    varbinds = ", ".join(trap['description'])
-    datapoint = {
-        "measurement" : config['all']['measurement'],
-        "tags": {
-            config['all']['tags'].get('ap', 'ap'): trap['ap'],
-            config['all']['tags'].get('event', 'event'): trap['event'],
-            config['all']['tags'].get('mac_addr', 'mac_addr'): trap['mac_addr']
-        },
-        "fields" : {
-            "description" : varbinds
-        }
-    }
-    return datapoint
+import time
+from influxdb import InfluxDBClient
 
 running = True
 now = datetime.datetime.now()
@@ -24,60 +8,70 @@ strnow = now.strftime("%X") #current time
 #log file date
 fileDate = now.strftime("%d-%b-%Y")
 fileName = "trapd-" + fileDate + ".log"
-read = open('/home/bass/receive/' + fileName, 'r')
+readfile = open('/home/bass/receive/' + fileName, 'r')
+#line = readfile.read()
 
-line = read.readlines()
+#print(line)
 
-# Read config file
-config_file = open('/home/bass/config.yaml', 'r')
-config = yaml.load(config_file, yaml.SafeLoader)
+dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
+dbClient.create_database('trapEvent')
 
-# parsing SNMP stuff
-trap = {}
-trap['mac_addr'] = None
-trap['ap'] = None
-trap['description'] = []
-trap['description_dict'] = {}
-for line in line[2:]:
-    if trap['ap'] is None:
-        if "APName" in line:
-            trap['ap'] = line.split(" ")[1].strip()
-            continue
-    if trap['description'] is None:
-        if "ClientUsername" in line:
-            varbind = line.strip().split(" ", 1)
-            trap['description_dict'][varbind[0]] = varbind[1]
-            trap['description'] = varbind[1].strip()
-            continue
-    trap['description'].append(line.strip().replace(" ", "="))
-    varbind = line.strip().split(" ", 1)
-    trap['description'][varbind[0]] = varbind[1]
+#print('Database created, go check in shell')
 
-# preparing data for influxdb
-# putting combined mesrsage into the one measurement for all taps
-datapoints = []
-if config.get('all', None) is not None:
-    if config['all'].get('measurement', None) is not None:
-        if config['all'].get('permit', None) is not None:
-            for rule in config['all']['permit']:
-                if rule in trap['oid']:
-                    datapoints.append(get_all_traps_influx_datapoint(config, trap))
-        elif config['all'].get('deny', None) is not None:
-            for rule in config['all']['deny']:
-                if rule in trap['oid']:
-                    break
-            else:
-                # if deny rule is not match
-                datapoints.append(get_all_traps_influx_datapoint(config, trap))
-        else:
-            # no permit or deny rules, so permit everything
-            datapoints.append(get_all_traps_influx_datapoint(config, trap))
+dbClient.switch_database('trapEvent')
+#a = dbClient.get_list_measurements()
 
-if datapoints != [] and config.get('influxdb', None) is not None:
-    dbclients = []
-    for server in config['influxdb'].get('server', []):
-        dbclient = InfluxDBClient(host=server['ip'], port=server['port'], username=server['user'], password=server['pass'], database=server['db'])
-        dbclients.append(dbclient)
-    if dbclients != []:
-        for dbclient in dbclients:
-            dbclient.write_points(datapoints)
+print(dbClient.get_list_users())
+#print(dbClient.get_list_measurements())
+
+while running:
+    try:
+        line = readfile.read()
+        if not line:
+            time.sleep(1)
+        #client event
+        if 'SessionTrap' in line:
+            json_body = [{"measurement": "client_event","tags": {"event": "SessionTrap","type": "Informational"},"fields": {"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'MovedToRunState' in line:
+           json_body = [{"measurement": "client_event","tags": {"event":"MovedToRunState","type":"Informational"},"fields":{"item": 1}}]
+           dbClient.write_points(json_body)
+        if 'AssociateFail' in line:
+            json_body = [{"measurement":"client_event","tags":{"event":"AssociateFail","type":"Informational_fail"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        #client.write(['interface,path=address,elementss=link value=3'],{'db':'yourdb'},204,'line')
+        if 'Deauthenticate' in line:
+            json_body = [{"measurement":"client_event","tags":{"event":"Deauthenticate","type":"Informational_fail"},"fields":{"item": 1}}]
+        if 'Blacklisted' in line:
+            json_body = [{"measurement":"client_event","tags":{"event":"Blacklisted","type":"Informational_blacklisted"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        #Ap event
+        if 'AP3-46-R010-146' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP3-46-R010-146","floor":"01","macAddr":"bc:16:f5:98:8:0"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP218-FL01-E' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP218-FL01-E","floor":"01","macAddr":"24:fb:65:65:9a:4f"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP217-FL01-W' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP217-FL01-W","floor":"01","macAddr":"68:3b:78:e1:94:20"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP204-R100' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP204-R100","floor":"01","macAddr":"f4:4e:5:a2:a1:d0"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP216-R101' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP216-R101","floor":"01","macAddr":"dc:8c:37:4c:2e:e0"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'AP211-Shop' in line:
+            json_body = [{"measurement":"ap_event","tags":{"name":"AP211-Shop","floor":"01","macAddr":"f4:4e:5:b5:24:b0"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'RogueAPRemoved' in line:
+            json_body = [{"measurement":"ap_event_rogue","tags":{"event":"RogueAPRemoved","type":"Informational_rogue"},"fields":{"item": 1}}]
+            dbClient.write_points(json_body)
+        if 'ApRogueDetected' in line:
+            json_body = [{"measurement":"ap_event_rogue","tags":{"event":"ApRogueDetected","type":"Informational_rogue"},"fields":{"item": 1}}]
+        print(line)
+        #json_body = [{"measurement":"client_event","tags":{"event":"Deauthenticate","type":"Informational_fail"},"fields":{"item": 1}}]
+    except EOFError:
+        running = False
+
+readfile.close()
