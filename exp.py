@@ -5,9 +5,6 @@ import sys
 import Filterx
 import sendtoDB
 
-from influxdb import InfluxDBClient
-
-
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
     for elem in toBeReplaces :
