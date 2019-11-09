@@ -3,6 +3,7 @@ import re
 import string
 import sys
 import Filterx
+import sendtoDB
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
@@ -41,7 +42,9 @@ def main():
             sameAp = outstr.replace("ApName", "APName")
             result = replaceMultiple(sameAp,Filterx.bad_list,' ')
             output.write(result+ '\n')
-            
+
+            #send to database
+            sendtoDB.send()
            
         except EOFError:
             running = False
