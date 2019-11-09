@@ -26,13 +26,7 @@ def main():
     fileDate = now.strftime("%d-%b-%Y")
     fileName = "trapd-" + fileDate + ".log"
     output = open('/home/bass/receive/' + fileName, 'a')
-    #read same data
-    toReadData = open('/home/bass/receive/' + fileName, 'r')
-
-    client = InfluxDBClient('localhost',8086,'sabaszx','admin','snmptrapd')
-    client.switch_database('snmptrapd')
-
-    
+   
    
     while running:
         try:
@@ -51,13 +45,13 @@ def main():
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
             output.write(result + '\n')
-            
-            print(toReadData.read())
 
+            #export to db
+            sendtoDB.send()
                         
         except EOFError:
             running = False
     output.close()
-    toReadData.close()
+   
 if __name__ == '__main__':
     main()
