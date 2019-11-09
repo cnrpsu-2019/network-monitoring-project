@@ -40,7 +40,7 @@ def main():
             outstr  = weirdRemove.translate(None, bad_chars)
             sameAp = outstr.replace("ApName", "APName")
             result = replaceMultiple(sameAp,Filterx.bad_list,' ')
-            output.write(result+ '\n')
+            output.write(result + '\n')
             
            
         except EOFError:
