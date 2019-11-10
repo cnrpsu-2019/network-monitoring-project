@@ -127,7 +127,7 @@ def send():
                 dbClient.write_points(json_body)
             if 'ApRogueDetected' in line:
                 json_body = [{"measurement":"ap_event_rogue","tags":{"event":"ApRogueDetected","type":"Informational_rogue"},"fields":{"item": 1}}]
-            print(line)
+            #print(line)
             #json_body = [{"measurement":"client_event","tags":{"event":"Deauthenticate","type":"Informational_fail"},"fields":{"item": 1}}]
         except EOFError:
             running = False
