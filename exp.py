@@ -13,7 +13,7 @@ def replaceMultiple(mainString, toBeReplaces, newString):
         if elem in mainString :
             # Replace the string
             mainString = mainString.replace(elem, newString)
-    
+
     return  mainString
 
 def main():
@@ -33,14 +33,14 @@ def main():
     #print('Database created, go check in shell')
 
     dbClient.switch_database('trapEvent')
-   
-   
+
+
     while running:
         try:
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
-        
+
             wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
             hideMIB = replaceMultiple(timestamp, Filterx.mibList, '')
@@ -156,10 +156,13 @@ def main():
                 dbClient.write_points(json_body)
             if 'ApRogueDetected' in line:
                 json_body = [{"measurement":"ap_event_rogue","tags":{"event":"ApRogueDetected","type":"Informational_rogue"},"fields":{"item": 1}}]
-                        
+                dbClient.write_points(json_body)
+            #json_body2 = [{"measurement":"ssid_event","tags":{"event":"ApRogueDetected","type":"Informational_rogue"},"fields":{"item": 1}}]
+            #if line in ['CoEWiFi', 'PSU WiFi 802.1x','TrueMove H']:
+
         except EOFError:
             running = False
     output.close()
-   
+
 if __name__ == '__main__':
     main()
