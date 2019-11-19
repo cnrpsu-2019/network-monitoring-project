@@ -33,10 +33,14 @@ while running:
         line = readfile.read()
         if not line:
             time.sleep(1)
+<<<<<<< HEAD
         print(line)
         #print(len(line_split))
         known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
          #json_body = [{"measurement":"client_event","tags":{"event":"Deauthenticate","type":"Informational_fail"},"fields":{"item": 1}}]
+=======
+        
+>>>>>>> 37dca75ddc7c83c94bcc560342ee0317a0854dde
     except EOFError:
         running = False
 readfile.close()
