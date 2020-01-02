@@ -48,7 +48,8 @@ bad_list = ['.......', '..N...', '.t....', '..N..i.', '..V...', '..:..j',
             ,' -M ',' P.N ',' .kR ',' Ot.q ','.LW ',' ke ',' .jP ',' P.r ',' P.r ']
 
 wronglist = ['Wrong Type (should be Gauge32 or Unsigned32)', 'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:'
-            ,'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:','Wrong Type should be Timeticks:']
+            ,'Wrong Type should be Timeticks:','Wrong Type should be OCTET STRING:','Wrong Type should be Timeticks:','Station',
+            'Client','ClientBy','By']
 
 mibList = ['SNMPv2-MIB::','CISCO-LWAPP-SI-MIB::','CISCO-LWAPP-RRM-MIB::',
             'CISCO-LWAPP-ROGUE-MIB::','AIRESPACE-WIRELESS-MIB::',

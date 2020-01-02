@@ -25,7 +25,6 @@ def main():
     fileName = "trapd-" + fileDate + ".log"
     output = open('/home/bass/receive/' + fileName, 'a')
     readfile = open('/home/bass/receive/' + fileName, 'r')
-    #line = readfile.read()
 
     dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
     dbClient.create_database('trapEvent')
@@ -33,14 +32,13 @@ def main():
     #print('Database created, go check in shell')
 
     dbClient.switch_database('trapEvent')
-
+    known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
 
     while running:
         try:
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
-
             wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
             hideMIB = replaceMultiple(timestamp, Filterx.mibList, '')
@@ -51,6 +49,7 @@ def main():
             #outstr - write log files into local server
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
+            #write to local
             output.write(result + '\n')
 
             #export to db
@@ -65,13 +64,13 @@ def main():
                 json_body = [{"measurement": "client_event","tags": {"event":"MovedToRunState","type":"Informational"},"fields":{"item": 1}}]
                 dbClient.write_points(json_body)
             if 'AssociateFail' in line:
-                json_body = [{"measurement":"client_event","tags":{"event":"AssociateFail","type":"Informational_fail"},"fields":{"item": 1}}]
+                json_body = [{"measurement":"client_event_fail/deauth","tags":{"event":"AssociateFail","type":"Informational_fail"},"fields":{"item": 1}}]
                 dbClient.write_points(json_body)
             #client.write(['interface,path=address,elementss=link value=3'],{'db':'yourdb'},204,'line')
             if 'Deauthenticate' in line:
-                json_body = [{"measurement":"client_event","tags":{"event":"Deauthenticate","type":"Informational_fail"},"fields":{"item": 1}}]
+                json_body = [{"measurement":"client_event_fail/deauth","tags":{"event":"Deauthenticate","type":"Informational_fail"},"fields":{"item": 1}}]
             if 'Blacklisted' in line:
-                json_body = [{"measurement":"client_event","tags":{"event":"Blacklisted","type":"Informational_blacklisted"},"fields":{"item": 1}}]
+                json_body = [{"measurement":"client_event_blacklisted","tags":{"event":"Blacklisted","type":"Informational_blacklisted"},"fields":{"item": 1}}]
                 dbClient.write_points(json_body)
             #Ap event
             #floor 01
@@ -157,9 +156,23 @@ def main():
             if 'ApRogueDetected' in line:
                 json_body = [{"measurement":"ap_event_rogue","tags":{"event":"ApRogueDetected","type":"Informational_rogue"},"fields":{"item": 1}}]
                 dbClient.write_points(json_body)
-            #json_body2 = [{"measurement":"ssid_event","tags":{"event":"ApRogueDetected","type":"Informational_rogue"},"fields":{"item": 1}}]
-            #if line in ['CoEWiFi', 'PSU WiFi 802.1x','TrueMove H']:
-
+            #json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"","type":"Informational_rogue"},"fields":{"item": 1}}]
+            #for i in known_ssid_list:
+            if known_ssid_list[0] in line:
+                json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi(802.1x)","type":"counting"},"fields":{"item": 1}}]
+                dbClient.write_points(json_body2)
+            if known_ssid_list[1] in line:
+                json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi 5GHz","type":"counting"},"fields":{"item": 1}}]
+                dbClient.write_points(json_body2)
+            if known_ssid_list[2] in line:
+                json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"TrueMove H","type":"counting"},"fields":{"item": 1}}]
+                dbClient.write_points(json_body2)
+            if known_ssid_list[3] in line:
+                json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"CoEIot","type":"counting"},"fields":{"item": 1}}]
+                dbClient.write_points(json_body2)
+            if known_ssid_list[4] in line:
+                json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"CoEWiFi","type":"counting"},"fields":{"item": 1}}]
+                dbClient.write_points(json_body2)
         except EOFError:
             running = False
     output.close()
