@@ -1,7 +1,4 @@
 import datetime
-import re
-import string
-import sys
 import Filterx
 import time
 from influxdb import InfluxDBClient
