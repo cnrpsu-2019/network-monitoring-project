@@ -36,8 +36,8 @@ def main():
 
     while running:
         try:
-            input = raw_input()
-            filtered = input.replace("<UNKNOWN>","" )
+            rawInput = input('')
+            filtered = rawInput.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
             wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
