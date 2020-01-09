@@ -5,7 +5,7 @@ from influxdb import InfluxDBClient
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
-    for elem in toBeReplaces :
+    for elem in toBeReplaces:
         # Check if string is in the main string
         if elem in mainString :
             # Replace the string
@@ -14,7 +14,6 @@ def replaceMultiple(mainString, toBeReplaces, newString):
     return  mainString
 
 def main():
-    running = True
     now = datetime.datetime.now()
     strnow = now.strftime("%X") #current time
     #log file date
@@ -31,10 +30,10 @@ def main():
     dbClient.switch_database('trapEvent')
     known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
 
-    while running:
+    while True:
         try:
             rawInput = raw_input()
-            filtered = rawInput.replace("<UNKNOWN>","" )
+            filtered = rawInput.replace("<UNKNOWN>","")
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
             wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
@@ -52,10 +51,9 @@ def main():
             #export to db
             line = readfile.read()
             if not line:
-                time.sleep(1)
-            
+                time.sleep(1) 
         except EOFError:
-            running = False
+            break
     output.close()
 
 if __name__ == '__main__':
