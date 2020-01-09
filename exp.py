@@ -3,6 +3,12 @@ import Filterx
 import time
 from influxdb import InfluxDBClient
 
+now = datetime.datetime.now()
+strnow = now.strftime("%X") #current time
+#log file date
+fileDate = now.strftime("%d-%b-%Y")
+fileName = "trapd-" + fileDate + ".log"
+
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
     for elem in toBeReplaces:
@@ -13,21 +19,9 @@ def replaceMultiple(mainString, toBeReplaces, newString):
 
     return  mainString
 
-def main():
-    now = datetime.datetime.now()
-    strnow = now.strftime("%X") #current time
-    #log file date
-    fileDate = now.strftime("%d-%b-%Y")
-    fileName = "trapd-" + fileDate + ".log"
+def main():    
     output = open('/home/bass/receive/' + fileName, 'a')
-    readfile = open('/home/bass/receive/' + fileName, 'r')
-
-    dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
-    dbClient.create_database('trapEvent')
-
-    #print('Database created, go check in shell')
-
-    dbClient.switch_database('trapEvent')
+    
     known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
 
     while True:
@@ -48,13 +42,24 @@ def main():
             #write to local
             output.write(result + '\n')
 
-            #export to db
-            line = readfile.read()
-            if not line:
-                time.sleep(1) 
+            
         except EOFError:
             break
     output.close()
 
+def sendToDB():
+    readfile = open('/home/bass/receive/' + fileName, 'r')
+    dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
+    dbClient.create_database('trapEvent')
+    #export to db
+    line = readfile.read()
+    if not line:
+        time.sleep(1) 
+
+    #print('Database created, go check in shell')
+
+    dbClient.switch_database('trapEvent')
+
 if __name__ == '__main__':
     main()
+    sendToDB()
