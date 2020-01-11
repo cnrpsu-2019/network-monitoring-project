@@ -16,14 +16,11 @@ def replaceMultiple(mainString, toBeReplaces, newString):
         if elem in mainString :
             # Replace the string
             mainString = mainString.replace(elem, newString)
-
     return  mainString
 
-def main():    
+def writeToLocal():    
     output = open('/home/bass/receive/' + fileName, 'a')
-    
-    known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
-
+    #known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
     while True:
         try:
             rawInput = raw_input()
@@ -41,8 +38,6 @@ def main():
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
             #write to local
             output.write(result + '\n')
-
-            
         except EOFError:
             break
     output.close()
@@ -55,11 +50,9 @@ def sendToDB():
     line = readfile.read()
     if not line:
         time.sleep(1) 
-
     #print('Database created, go check in shell')
-
     dbClient.switch_database('trapEvent')
 
 if __name__ == '__main__':
-    main()
+    writeToLocal()
     sendToDB()
