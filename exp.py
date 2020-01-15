@@ -1,13 +1,8 @@
+from influxdb import InfluxDBClient
+import JadeBowx
 import datetime
 import Filterx
 import time
-from influxdb import InfluxDBClient
-
-now = datetime.datetime.now()
-strnow = now.strftime("%X") #current time
-#log file date
-fileDate = now.strftime("%d-%b-%Y")
-fileName = "trapd-" + fileDate + ".log"
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
@@ -42,17 +37,5 @@ def writeToLocal():
             break
     output.close()
 
-def sendToDB():
-    readfile = open('/home/bass/receive/' + fileName, 'r')
-    dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
-    dbClient.create_database('trapEvent')
-    #export to db
-    line = readfile.read()
-    if not line:
-        time.sleep(1) 
-    #print('Database created, go check in shell')
-    dbClient.switch_database('trapEvent')
-
 if __name__ == '__main__':
     writeToLocal()
-    sendToDB()
