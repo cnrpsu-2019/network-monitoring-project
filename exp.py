@@ -13,7 +13,12 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             mainString = mainString.replace(elem, newString)
     return  mainString
 
-def writeToLocal():    
+def writeToLocal():
+    now = datetime.datetime.now()
+    strnow = now.strftime("%X") #current time
+    #log file date
+    fileDate = now.strftime("%d-%b-%Y")
+    fileName = "trapd-" + fileDate + ".log"    
     output = open('/home/bass/receive/' + fileName, 'a')
     #known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
     while True:
