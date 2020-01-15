@@ -4,6 +4,13 @@ import datetime
 import Filterx
 import time
 
+now = datetime.datetime.now()
+strnow = now.strftime("%X") #current time
+#log file date
+fileDate = now.strftime("%d-%b-%Y")
+fileName = "trapd-" + fileDate + ".log"    
+output = open('/home/bass/receive/' + fileName, 'a')
+
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
     for elem in toBeReplaces:
@@ -12,15 +19,7 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             # Replace the string
             mainString = mainString.replace(elem, newString)
     return  mainString
-
 def writeToLocal():
-    now = datetime.datetime.now()
-    strnow = now.strftime("%X") #current time
-    #log file date
-    fileDate = now.strftime("%d-%b-%Y")
-    fileName = "trapd-" + fileDate + ".log"    
-    output = open('/home/bass/receive/' + fileName, 'a')
-    #known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
     while True:
         try:
             rawInput = raw_input()
