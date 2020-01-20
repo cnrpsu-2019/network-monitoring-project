@@ -23,10 +23,10 @@ def prepareDB(username, password):
     dbClient.switch_database('trapEvent')
 def countUser():
         json_body = [{
-                    "measurement": "client_event",
+                    "measurement": "client_user",
                     "tags": {
-                        "event": "SessionTrap",
-                    "type": "Informational"},
+                        "user": "count",
+                    "type": "normal"},
                     "fields": {
                         "item": 1}
                         }

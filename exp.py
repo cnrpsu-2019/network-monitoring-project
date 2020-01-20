@@ -49,3 +49,4 @@ def sendToDB():
             JadeBowx.countUser() 
 if __name__ == '__main__':
     writeToLocal()
+    sendToDB()
