@@ -40,6 +40,15 @@ def writeToLocal():
         except EOFError:
             break
     output.close()
-
+    
+def sendToDB():
+    while True:
+        JadeBowx.readLog()
+        JadeBowx.prepareDB('sabaszx','admin')
+        if 'UserName' or 'StationUsername' in line:
+            JadeBowx.countUser()
+        elif 
+    except EOFError:
+        break
 if __name__ == '__main__':
     writeToLocal()
