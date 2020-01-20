@@ -46,9 +46,6 @@ def sendToDB():
         JadeBowx.readLog()
         JadeBowx.prepareDB('sabaszx','admin')
         if 'UserName' or 'StationUsername' in line:
-            JadeBowx.countUser()
-        elif 
-    except EOFError:
-        break
+            JadeBowx.countUser() 
 if __name__ == '__main__':
     writeToLocal()
