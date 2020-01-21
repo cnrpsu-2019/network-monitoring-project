@@ -43,10 +43,10 @@ def writeToLocal():
     
 def sendToDB():
     while True:
-        JadeBowx.readLog()
-        JadeBowx.prepareDB('sabaszx','admin')
-        if 'UserName' or 'StationUsername' in line:
-            JadeBowx.countUser() 
+        try:
+            output = open('/home/bass/receive/' + fileName, 'r')        
+        except EOFError:
+            break
 if __name__ == '__main__':
     writeToLocal()
     sendToDB()

@@ -10,7 +10,7 @@ def readLog():
     #log file date
     fileDate = now.strftime("%d-%b-%Y")
     fileName = "trapd-" + fileDate + ".log"
-    readfile = open('/home/sabaszx/trap-to-filter/example.log' + fileName, 'r')
+    readfile = open('/home/bass/receive/' + fileName, 'r')
     #export to db
     line = readfile.read()
     if not line:
