@@ -44,12 +44,12 @@ def writeToLocal():
 def sendToDB():
     while True:
         try:
-            output = open('/home/bass/receive/' + fileName, 'r')
+            readfile = open('/home/bass/receive/' + fileName, 'r')
             line = readfile.read()
             if not line:
-                 time.sleep(1)
-            JadeBowx.prepareDB('sabaszx','admin')
-            if 'Username' in line:
+                time.sleep(1)
+            #JadeBowx.prepareDB('sabaszx','admin')
+            if 'UserName' in line:
                 JadeBowx.countUser()
         except EOFError:
             break

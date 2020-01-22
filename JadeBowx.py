@@ -1,13 +1,12 @@
-import datetime
-import Filterx
-import time
 from influxdb import InfluxDBClient
 
-def prepareDB(username, password): 
-    dbClient = InfluxDBClient('localhost', 8086, username, password, 'trapEvent', ssl=False, verify_ssl=False)
-    dbClient.create_database('trapEvent')
-    #print('Database created, go check in shell')
-    dbClient.switch_database('trapEvent')
+
+#def prepareDB(username, password): 
+dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
+#dbClient.create_database('trapEvent')
+#print('Database created, go check in shell')
+dbClient.switch_database('trapEvent')
+
 def countUser():
         json_body = [{
                     "measurement": "client_user",
@@ -30,6 +29,9 @@ def countEvent():
                     }
                 ]
         dbClient.write_points(json_body)
+def countSSID():
+        json_body = []
+        pass
 
 
     # #client event
