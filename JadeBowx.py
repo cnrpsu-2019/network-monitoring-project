@@ -30,8 +30,26 @@ def countEvent():
                 ]
         dbClient.write_points(json_body)
 def countSSID():
-        json_body = []
-        pass
+    '''
+    802.1x, 5GHz, eduroam, truemoveH, rouge
+    '''
+    known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi","eduroam"]
+    if known_ssid_list[0] in line:
+        json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi(802.1x)","type":"counting"},"fields":{"item": 1}}]
+        dbClient.write_points(json_body2)
+    if known_ssid_list[1] in line:
+        json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi 5GHz","type":"counting"},"fields":{"item": 1}}]
+        dbClient.write_points(json_body2)
+    if known_ssid_list[2] in line:
+        json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"TrueMove H","type":"counting"},"fields":{"item": 1}}]
+        dbClient.write_points(json_body2)
+    if known_ssid_list[3] in line:
+        json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"CoEIot","type":"counting"},"fields":{"item": 1}}]
+        dbClient.write_points(json_body2)
+    if known_ssid_list[4] in line:
+        json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"CoEWiFi","type":"counting"},"fields":{"item": 1}}]
+        dbClient.write_points(json_body2)
+    pass
 
 
     # #client event
