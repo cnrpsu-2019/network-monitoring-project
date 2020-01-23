@@ -53,8 +53,8 @@ def countPSU5Ghz():
                 "fields": {
                     "item": 1}
                     }
-                ]
-        dbClient.write_points(json_body)
+                ] 
+            dbClient.write_points(json_body)
 def countTruemove():
             json_body = [{
                 "measurement": "ssid_count",
@@ -65,7 +65,7 @@ def countTruemove():
                     "item": 1}
                     }
                 ]
-        dbClient.write_points(json_body)
+            dbClient.write_points(json_body)
 def countCoeIot():
             json_body = [{
                 "measurement": "ssid_count",
@@ -76,7 +76,7 @@ def countCoeIot():
                     "item": 1}
                     }
                 ]
-        dbClient.write_points(json_body)
+            dbClient.write_points(json_body)
 def countCoeWifi():
             json_body = [{
                 "measurement": "ssid_count",
@@ -87,7 +87,7 @@ def countCoeWifi():
                     "item": 1}
                     }
                 ]
-        dbClient.write_points(json_body)
+            dbClient.write_points(json_body)
 def countRogue():
             json_body = [{
                 "measurement": "ssid_count",
@@ -98,7 +98,7 @@ def countRogue():
                     "item": 1}
                     }
                 ]
-        dbClient.write_points(json_body)
+            dbClient.write_points(json_body)
 
     # elif 'MovedToRunState' in line:
     #     json_body = [{"measurement": "client_event","tags": {"event":"MovedToRunState","type":"Informational"},"fields":{"item": 1}}]
