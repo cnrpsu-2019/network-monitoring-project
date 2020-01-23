@@ -7,54 +7,99 @@ dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ss
 #print('Database created, go check in shell')
 dbClient.switch_database('trapEvent')
 
-def countUser():
+def countUserAssociate():
         json_body = [{
                     "measurement": "client_user",
                     "tags": {
-                        "user": "count",
-                    "type": "normal"},
+                        "user": "user_associate",
+                    "type": "associate"},
                     "fields": {
                         "item": 1}
                         }
                     ]
         dbClient.write_points(json_body)
-def countEvent():
+def countUserDauth():
         json_body = [{
-                "measurement": "client_event",
+                "measurement": "client_user",
                 "tags": {
-                    "event": "SessionTrap",
-                "type": "Informational"},
+                    "user": "user_dissassociate",
+                "type": "deauthenticate"},
                 "fields": {
                     "item": 1}
                     }
                 ]
         dbClient.write_points(json_body)
-    #def countSSID():
-    '''
-    802.1x, 5GHz, eduroam, truemoveH, rouge
-    '''
 
-known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi","eduroam"]
+# '''
+# 802.1x, 5GHz, eduroam, truemoveH, rouge
+# '''
 def count802():
-    json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi(802.1x)","type":"counting"},"fields":{"item": 1}}]
-    dbClient.write_points(json_body2)
+        json_body = [{
+                "measurement": "ssid_count",
+                "tags": {
+                    "SSIDName": "PSU Wifi 802.1x",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": 1}
+                    }
+                ]
+        dbClient.write_points(json_body)
 def countPSU5Ghz():
-    json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi 5GHz","type":"counting"},"fields":{"item": 1}}]
-    dbClient.write_points(json_body2)
+            json_body = [{
+                "measurement": "ssid_count",
+                "tags": {
+                    "SSIDName": "PSU Wifi 5Ghz",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": 1}
+                    }
+                ]
+        dbClient.write_points(json_body)
 def countTruemove():
-    json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"TrueMove H","type":"counting"},"fields":{"item": 1}}]
-    dbClient.write_points(json_body2)
+            json_body = [{
+                "measurement": "ssid_count",
+                "tags": {
+                    "SSIDName": "TrueMove H",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": 1}
+                    }
+                ]
+        dbClient.write_points(json_body)
 def countCoeIot():
-    json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"CoEIot","type":"counting"},"fields":{"item": 1}}]
-    dbClient.write_points(json_body2)
+            json_body = [{
+                "measurement": "ssid_count",
+                "tags": {
+                    "SSIDName": "CoEIIoT",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": 1}
+                    }
+                ]
+        dbClient.write_points(json_body)
 def countCoeWifi():
-    json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"CoEWiFi","type":"counting"},"fields":{"item": 1}}]
-    dbClient.write_points(json_body2)
+            json_body = [{
+                "measurement": "ssid_count",
+                "tags": {
+                    "SSIDName": "CoEWiFi",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": 1}
+                    }
+                ]
+        dbClient.write_points(json_body)
+def countRogue():
+            json_body = [{
+                "measurement": "ssid_count",
+                "tags": {
+                    "SSIDName": "unknown",
+                "type": "others"},
+                "fields": {
+                    "item": 1}
+                    }
+                ]
+        dbClient.write_points(json_body)
 
-    # #client event
-    # if 'SessionTrap' in line:
-    #     json_body = [{"measurement": "client_event","tags": {"event": "SessionTrap","type": "Informational"},"fields": {"item": 1}}]
-    #     dbClient.write_points(json_body)
     # elif 'MovedToRunState' in line:
     #     json_body = [{"measurement": "client_event","tags": {"event":"MovedToRunState","type":"Informational"},"fields":{"item": 1}}]
     #     dbClient.write_points(json_body)
@@ -66,7 +111,7 @@ def countCoeWifi():
     # elif 'Blacklisted' in line:
     #     json_body = [{"measurement":"client_event_blacklisted","tags":{"event":"Blacklisted","type":"Informational_blacklisted"},"fields":{"item": 1}}]
     #     dbClient.write_points(json_body)
-    # #Ap event
+
     # #floor 01
     # elif 'AP3-46-R010-146' in line:
     #     json_body = [{"measurement":"ap_event","tags":{"name":"AP3-46-R010-146","floor":"01","macAddr":"bc:16:f5:98:8:0"},"fields":{"item": 1}}]
@@ -144,26 +189,3 @@ def countCoeWifi():
     #     json_body = [{"measurement":"ap_event","tags":{"name":"AP215-R409","floor":"04","macAddr":"70:10:5c:b1:a4:d0"},"fields":{"item": 1}}]
     #     dbClient.write_points(json_body)
     # #rogue ap event
-    # elif 'RogueAPRemoved' in line:
-    #     json_body = [{"measurement":"ap_event_rogue","tags":{"event":"RogueAPRemoved","type":"Informational_rogue"},"fields":{"item": 1}}]
-    #     dbClient.write_points(json_body)
-    # elif 'ApRogueDetected' in line:
-    #     json_body = [{"measurement":"ap_event_rogue","tags":{"event":"ApRogueDetected","type":"Informational_rogue"},"fields":{"item": 1}}]
-    #     dbClient.write_points(json_body)
-    # #json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"","type":"Informational_rogue"},"fields":{"item": 1}}]
-    # #for i in known_ssid_list:
-    # elif known_ssid_list[0] in line:
-    #     json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi(802.1x)","type":"counting"},"fields":{"item": 1}}]
-    #     dbClient.write_points(json_body2)
-    # elif known_ssid_list[1] in line:
-    #     json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi 5GHz","type":"counting"},"fields":{"item": 1}}]
-    #     dbClient.write_points(json_body2)
-    # elif known_ssid_list[2] in line:
-    #     json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"TrueMove H","type":"counting"},"fields":{"item": 1}}]
-    #     dbClient.write_points(json_body2)
-    # elif known_ssid_list[3] in line:
-    #     json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"CoEIot","type":"counting"},"fields":{"item": 1}}]
-    #     dbClient.write_points(json_body2)
-    # elif known_ssid_list[4] in line:
-    #     json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"CoEWiFi","type":"counting"},"fields":{"item": 1}}]
-    #     dbClient.write_points(json_body2)

@@ -42,15 +42,29 @@ def writeToLocal():
     output.close()
     
 def sendToDB():
-    while True:
+    while True: 
         try:
+            #read file
             readfile = open('/home/bass/receive/' + fileName, 'r')
             line = readfile.read()
             if not line:
                 time.sleep(1)
-            #JadeBowx.prepareDB('sabaszx','admin')
-            if 'UserName' in line:
-                JadeBowx.countUser()
+            if 'Associate' in line:
+                JadeBowx.countUserAssociate()
+            elif 'AssociateFail' in line:
+                JadeBowx.countUserDauth()
+            elif 'CoEWiFi' in line:
+                JadeBowx.countCoeWifi()
+            elif 'TrueMove H' in line:
+                JadeBowx.countTruemove()
+            elif 'PSU WiFi 802.1x' in line:
+                JadeBowx.count802()
+            elif 'PSU WiFi 5GHz' in line:
+                JadeBowx.countPSU5Ghz()
+            elif 'CoEIoT' in line:
+                JadeBowx.countCoeIot()
+            elif 'RogueClientDetected' in line:
+                JadeBowx.countRogue()
         except EOFError:
             break
 if __name__ == '__main__':
