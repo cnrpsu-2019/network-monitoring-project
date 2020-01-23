@@ -51,19 +51,19 @@ def sendToDB():
                 time.sleep(1)
             if 'Associate' in line:
                 JadeBowx.countUserAssociate()
-            elif 'AssociateFail' in line:
+            if 'AssociateFail' in line:
                 JadeBowx.countUserDauth()
-            elif 'CoEWiFi' in line:
+            if 'CoEWiFi' in line:
                 JadeBowx.countCoeWifi()
-            elif 'TrueMove H' in line:
+            if 'TrueMove H' in line:
                 JadeBowx.countTruemove()
-            elif 'PSU WiFi 802.1x' in line:
+            if 'PSU WiFi 802.1x' in line:
                 JadeBowx.count802()
-            elif 'PSU WiFi 5GHz' in line:
+            if 'PSU WiFi 5GHz' in line:
                 JadeBowx.countPSU5Ghz()
-            elif 'CoEIoT' in line:
+            if 'CoEIoT' in line:
                 JadeBowx.countCoeIot()
-            elif 'RogueClientDetected' in line:
+            if 'RogueClientDetected' in line:
                 JadeBowx.countRogue()
         except EOFError:
             break
