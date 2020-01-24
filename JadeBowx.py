@@ -1,10 +1,5 @@
 from influxdb import InfluxDBClient
-
-
-#def prepareDB(username, password): 
 dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
-#dbClient.create_database('trapEvent')
-#print('Database created, go check in shell')
 dbClient.switch_database('trapEvent')
 
 def countUserAssociate():
