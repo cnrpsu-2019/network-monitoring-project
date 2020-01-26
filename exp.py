@@ -1,9 +1,8 @@
-import datetime
-import sys
-import Filterx
-import time
-import JadeBowx
 from influxdb import InfluxDBClient
+import time
+import datetime
+import Filterx
+import JadeBowx
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
@@ -59,8 +58,17 @@ def main():
             #client event
             if 'SessionTrap' or 'MovedToRunState' in line:
                 JadeBowx.countUserAssociate()
-            if 'AssociateFail' or 'Deauthenticate' or 'Blacklisted' in line:
-                JadeBowx.countUserDauth()            
+            elif 'AuthenticationFailure' in line:
+                JadeBowx.countUserDauth()
+            #count SSID 
+            elif 'CoEWiFi' in line:
+                JadeBowx.countCoeWifi()
+            elif 'PSU WiFi 802.1x' in line:
+                JadeBowx.count802();
+            elif 'PSU WiFi 5Ghz' in line:
+                JadeBowx.countPSU5Ghz()
+            elif 'TrueMove H' in line:
+                JadeBowx.countTruemove()  
         except EOFError:
             running = False
     output.close()
