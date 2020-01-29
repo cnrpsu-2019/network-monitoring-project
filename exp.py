@@ -56,19 +56,23 @@ def main():
             if not line:
                 time.sleep(1)
             #client event
-            if 'SessionTrap' or 'MovedToRunState' in line:
+            if 'SessionTrap' in line:
                 JadeBowx.countUserAssociate()
-            elif 'AuthenticationFailure' in line:
+            if 'Deauthenticate' in line:
                 JadeBowx.countUserDauth()
             #count SSID 
-            elif 'CoEWiFi' in line:
+            if 'CoEWiFi' in line:
                 JadeBowx.countCoeWifi()
-            elif 'PSU WiFi 802.1x' in line:
+            if 'PSU WiFi 802.1x' in line:
                 JadeBowx.count802();
-            elif 'PSU WiFi 5Ghz' in line:
+            if 'PSU WiFi 5GHz' in line:
                 JadeBowx.countPSU5Ghz()
-            elif 'TrueMove H' in line:
-                JadeBowx.countTruemove()  
+            if 'TrueMove H' in line:
+                JadeBowx.countTruemove()
+            if  'CoEIoT' in line:
+                JadeBowx.countCoeIot()
+            if 'RogueDetected' in line:
+                JadeBowx.countRogue()
         except EOFError:
             running = False
     output.close()

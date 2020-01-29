@@ -17,7 +17,7 @@ def countUserDauth():
         json_body = [{
                 "measurement": "client_user",
                 "tags": {
-                    "user": "user_dissassociate",
+                    "user": "user_deauthenticate",
                 "type": "deauthenticate"},
                 "fields": {
                     "item": 1}
