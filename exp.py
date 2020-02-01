@@ -38,6 +38,8 @@ def main():
             input = raw_input()
             filtered = input.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
+
+            #filter out lookoup from Filterx  module 
             wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
             hideMIB = replaceMultiple(timestamp, Filterx.mibList, '')
@@ -48,6 +50,7 @@ def main():
             #outstr - write log files into local server
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
+
             #write to local
             output.write(result + '\n')
 
@@ -56,7 +59,7 @@ def main():
             if not line:
                 time.sleep(1)
             #client event
-            if 'SessionTrap' in line:
+            if 'Associate' in line:
                 JadeBowx.countUserAssociate()
             if 'Deauthenticate' in line:
                 JadeBowx.countUserDauth()
