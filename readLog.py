@@ -1,11 +1,13 @@
 import datetime
 import time
 import re
+
 now = datetime.datetime.now()
 strnow = now.strftime("%X") #current time
 #log file date
 fileDate = now.strftime("%d-%b-%Y")
 fileName = "trapd-" + fileDate + ".log"
+
 def readUPS():
     with open('/var/log/client_logs/172.30.254.201/UPS.log',"r") as clientLog:
         for line in clientLog:

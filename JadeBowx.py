@@ -25,9 +25,6 @@ def countUserDauth():
                 ]
         dbClient.write_points(json_body)
 
-# '''
-# 802.1x, 5GHz, eduroam, truemoveH, rouge
-# '''
 def count802():
         json_body = [{
                 "measurement": "ssid_count",

@@ -3,6 +3,7 @@ import time
 import datetime
 import Filterx
 import JadeBowx
+import re
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
@@ -13,7 +14,6 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             mainString = mainString.replace(elem, newString)
 
     return  mainString
-
 
 def main():
     running = True
@@ -31,7 +31,6 @@ def main():
     #print('Database created, go check in shell')
 
     dbClient.switch_database('trapEvent')
-    known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
 
     while running:
         try:
@@ -53,17 +52,25 @@ def main():
 
             #write to local
             output.write(result + '\n')
-
             #export to db
             line = readfile.read()
             if not line:
                 time.sleep(1)
-            #client event
-            if 'Associate' in line:
+            #ssid known list        
+            known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
+            knownSSID = re.findall(known_ssid_list,line)
+            #associate users
+            associate = re.findall('Associate' or 'Sessiontrap',line)
+            deauth = re.findall('StationDeauthenticate', line)
+            if associate:
                 JadeBowx.countUserAssociate()
-            if 'Deauthenticate' in line:
+            if deauth:
                 JadeBowx.countUserDauth()
-            #count SSID 
+#            if 'Associate' in line:
+#                JadeBowx.countUserAssociate()
+#            if 'Deauthenticate' in line:
+#                JadeBowx.countUserDauth()
+            #count SSID  
             if 'CoEWiFi' in line:
                 JadeBowx.countCoeWifi()
             if 'PSU WiFi 802.1x' in line:
