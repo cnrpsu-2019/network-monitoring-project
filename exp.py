@@ -12,7 +12,6 @@ def replaceMultiple(mainString, toBeReplaces, newString):
         if elem in mainString :
             # Replace the string
             mainString = mainString.replace(elem, newString)
-
     return  mainString
 
 def main():
@@ -29,12 +28,12 @@ def main():
     dbClient.create_database('trapEvent')
 
     #print('Database created, go check in shell')
-
     dbClient.switch_database('trapEvent')
 
     while running:
         try:
             input = raw_input()
+            #filter weird string sction
             filtered = input.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
 
@@ -46,6 +45,7 @@ def main():
             prefixRemove = replaceMultiple(event, Filterx.prefixList, '')
             weirdRemove = replaceMultiple(prefixRemove, Filterx.weirdList, ' ')
             bad_chars = "/\\!$^&*|'({)[}>_<]~+=#$%;`@?"
+
             #outstr - write log files into local server
             outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
@@ -56,33 +56,70 @@ def main():
             line = readfile.read()
             if not line:
                 time.sleep(1)
-            #ssid known list        
-            known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
-            knownSSID = re.findall(known_ssid_list,line)
             #associate users
-            associate = re.findall('Associate' or 'Sessiontrap',line)
-            deauth = re.findall('StationDeauthenticate', line)
-            if associate:
-                JadeBowx.countUserAssociate()
-            if deauth:
-                JadeBowx.countUserDauth()
-#            if 'Associate' in line:
-#                JadeBowx.countUserAssociate()
-#            if 'Deauthenticate' in line:
-#                JadeBowx.countUserDauth()
-            #count SSID  
+            PatternAssociate = ['Associate', 'Sessiontrap''MovedToRunState','Username']
+            for patterns in PatternAssociate:
+                if re.search(patterns, line):
+                    JadeBowx.countUserAssociate()
+                    print('associated')
+
+            PatternDeauth = ['StationDeauthenticate', 'Disassociate','Deauthenticate']
+            for patterns in PatternDeauth:
+                if re.search(patterns, line):
+                    JadeBowx.countUserDauth()
+
+            # ap each floor list
+            floor_01_list = ['AP3-46-R010-146','AP218-FL01-E','AP217-FL01-W','AP204-R100','AP216-R101','AP211-Shop']
+            floor_02_list = ['AP2-7-R020-153','AP2-8-R020-154','AP213-R202','AP214-R203','AP206-R204','AP205-R207']
+            floor_03_list = ['AP108-R300','AP209-R302-1','AP209-R302-2','AP110-R311','AP221-R301A','AP221-R301B','AP219-R303']
+            floor_04_list = ['AP112-R400','AP109-R404','AP212-IDL','AP111-R405','AP215-R409']
+            rogue_list = ['RogueAPRemoved','RogueClientDetected','ApRogueDetected']
+
+            for patterns in floor_01_list:
+                if re.search(patterns, line):
+                    JadeBowx.countFloor01()
+                    print('floor1')
+
+            for patterns in floor_02_list:
+                if re.search(patterns, line):
+                    JadeBowx.countFloor02()
+                    print('floor2')
+                    
+            for patterns in floor_03_list:
+                if re.search(patterns, line):
+                    JadeBowx.countFloor03()
+                    print('floor3')
+
+            for patterns in floor_04_list:
+                if re.search(patterns,line):
+                    JadeBowx.countFloor04()
+                    print('floor4')
+                        
             if 'CoEWiFi' in line:
                 JadeBowx.countCoeWifi()
+                print('CoE WiFi')
+
             if 'PSU WiFi 802.1x' in line:
-                JadeBowx.count802();
+                JadeBowx.count802()
+                print('802.1x')
+
             if 'PSU WiFi 5GHz' in line:
                 JadeBowx.countPSU5Ghz()
+                print('PSU 5ghz')
+
             if 'TrueMove H' in line:
                 JadeBowx.countTruemove()
+                print('truemove')
+
             if  'CoEIoT' in line:
                 JadeBowx.countCoeIot()
-            if 'RogueDetected' in line:
-                JadeBowx.countRogue()
+                print('coeiot')
+
+            for patterns in rogue_list:
+                if re.search(patterns, line):
+                    JadeBowx.countRogue()
+                    print('others')
+
         except EOFError:
             running = False
     output.close()
