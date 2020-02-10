@@ -156,8 +156,7 @@ def main():
             if 'ApRogueDetected' in line:
                 json_body = [{"measurement":"ap_event_rogue","tags":{"event":"ApRogueDetected","type":"Informational_rogue"},"fields":{"item": 1}}]
                 dbClient.write_points(json_body)
-            #json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"","type":"Informational_rogue"},"fields":{"item": 1}}]
-            #for i in known_ssid_list:
+            
             if known_ssid_list[0] in line:
                 json_body2 = [{"measurement":"ssid_event","tags":{"ssid_name":"PSU WiFi(802.1x)","type":"counting"},"fields":{"item": 1}}]
                 dbClient.write_points(json_body2)
