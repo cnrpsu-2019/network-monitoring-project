@@ -1,6 +1,62 @@
 from influxdb import InfluxDBClient
+<<<<<<< HEAD
 dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verdefy_ssl=False)
+=======
+import time
+
+dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
+>>>>>>> 67dc365823cf746693117e0d529e719f53ae9392
 dbClient.switch_database('trapEvent')
+
+#each floor
+def countFloor01():
+        json_body = [{
+                    "measurement": "client_each_floor",
+                    "tags": {
+                        "floor_number": "01",
+                    "type": "activities"},
+                    "fields": {
+                        "item": 1}
+                        }
+                    ]
+        dbClient.write_points(json_body)
+
+def countFloor02():
+        json_body = [{
+                    "measurement": "client_each_floor",
+                    "tags": {
+                        "floor_number": "02",
+                    "type": "activities"},
+                    "fields": {
+                        "item": 1}
+                        }
+                    ]
+        dbClient.write_points(json_body)
+
+def countFloor03():
+        json_body = [{
+                    "measurement": "client_each_floor",
+                    "tags": {
+                        "floor_number": "03",
+                    "type": "activities"},
+                    "fields": {
+                        "item": 1}
+                        }
+                    ]
+        dbClient.write_points(json_body)
+        time.sleep(1)
+
+def countFloor04():
+        json_body = [{
+                    "measurement": "client_each_floor",
+                    "tags": {
+                        "floor_number": "04",
+                    "type": "activities"},
+                    "fields": {
+                        "item": 1}
+                        }
+                    ]
+        dbClient.write_points(json_body)
 
 def countUserAssociate():
         json_body = [{
@@ -13,6 +69,7 @@ def countUserAssociate():
                         }
                     ]
         dbClient.write_points(json_body)
+
 def countUserDauth():
         json_body = [{
                 "measurement": "client_user",
@@ -36,6 +93,7 @@ def count802():
                     }
                 ]
         dbClient.write_points(json_body)
+
 def countPSU5Ghz():
             json_body = [{
                 "measurement": "ssid_count",
@@ -47,6 +105,7 @@ def countPSU5Ghz():
                     }
                 ] 
             dbClient.write_points(json_body)
+
 def countTruemove():
             json_body = [{
                 "measurement": "ssid_count",
@@ -58,6 +117,7 @@ def countTruemove():
                     }
                 ]
             dbClient.write_points(json_body)
+
 def countCoeIot():
             json_body = [{
                 "measurement": "ssid_count",
@@ -69,7 +129,12 @@ def countCoeIot():
                     }
                 ]
             dbClient.write_points(json_body)
+<<<<<<< HEAD
 def countCoeWdefi():
+=======
+
+def countCoeWifi():
+>>>>>>> 67dc365823cf746693117e0d529e719f53ae9392
             json_body = [{
                 "measurement": "ssid_count",
                 "tags": {
@@ -80,6 +145,7 @@ def countCoeWdefi():
                     }
                 ]
             dbClient.write_points(json_body)
+
 def countRogue():
             json_body = [{
                 "measurement": "ssid_count",
