@@ -6,11 +6,9 @@ def main():
     txt = readTest.read() #raw txt files
 
     resultMac = re.findall(pattern, txt) #now there's only list of mac addresses
-    # print(resultMac)
+    print(resultMac)
+    #close file
     readTest.close()
-
-    
-
 if __name__ == "__main__":
     main() 
     
