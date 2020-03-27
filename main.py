@@ -4,6 +4,7 @@ import Filterx
 import JadeBowx
 import re
 import subprocess
+import collections
 
 now = datetime.datetime.now()
 strnow = now.strftime("%X") #current time
@@ -59,9 +60,9 @@ def replaceMultiple(mainString, toBeReplaces, newString):
 
 def readAndInsert():
     with open(path + fileName,'r') as readTest:
-        #delete specific lines (session ID)
+        #delete specific lines (session ID):
         subprocess.call(['sed','-i','/.*SessionID.*/d',path + fileName])
-        macPattern = compileMacPattern(txt) #this return all mac addresses
+        macPattern = compileMacPattern(readTest) #this return all mac addresses
         duplicateMac = listDuplicates(macPattern) # return dupliccated mac addresses (include ap)
         
         #return number of client addres
