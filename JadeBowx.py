@@ -149,3 +149,15 @@ def countRogue():
                     }
                 ]
             dbClient.write_points(json_body)
+
+def countClient(receive):
+            json_body = [{
+                "measurement": "number_of_client",
+                "tags": {
+                    "SSIDName": "number",
+                "type": "number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+            dbClient.write_points(json_body)

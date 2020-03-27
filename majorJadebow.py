@@ -149,3 +149,4 @@ def countRogue():
                     }
                 ]
             dbClient.write_points(json_body)
+
