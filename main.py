@@ -31,12 +31,12 @@ floor04_mac_list = ['a0:e0:af:22:6e:70','a0:3d:6f:31:b7:f0','a0:3d:6f:31:b7:d0',
 buildingMacList = floor01_mac_list + floor02_mac_list + floor03_mac_list + floor04_mac_list
 
 def listDuplicates(seq):
-  seen = set()
-  seen_add = seen.add
-  # adds all elements it doesn't know yet to seen and all other to seen_twice
-  seen_twice = set( x for x in seq if x in seen or seen_add(x) )
-  # turn the set into a list (as requested)
-  return list( seen_twice )
+    seen = set()
+    seen_add = seen.add
+    # adds all elements it doesn't know yet to seen and all other to seen_twice
+    seen_twice = set( x for x in seq if x in seen or seen_add(x) )
+    # turn the set into a list (as requested)
+    return list( seen_twice )
 
 def findDuplicates(seq):
     result = ([item for item, count in collections.Counter(seq).items() if count > 1])
@@ -45,7 +45,7 @@ def findDuplicates(seq):
 def compileMacPattern(receive):
     pattern = re.compile(r'(?:[0-9a-fA-F]:?){12}')
     resultMac = re.findall(pattern, receive) #now there's only list of mac addresses
-    return resultMac
+    return str(resultMac)
 
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
