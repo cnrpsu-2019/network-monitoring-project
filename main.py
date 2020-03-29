@@ -61,7 +61,6 @@ def replaceMultiple(mainString, toBeReplaces, newString):
 def readAndInsert():
     with open(path + fileName,'r') as readTest:
         #delete specific lines (session ID):
-        subprocess.call(['sed','-i','/.*SessionID.*/d',path + fileName])
         macPattern = compileMacPattern(readTest) #this return all mac addresses
         duplicateMac = listDuplicates(macPattern) # return dupliccated mac addresses (include ap)
         
@@ -80,6 +79,7 @@ def main():
         try:
             input_raw = input()
             #filter weird string sction
+            subprocess.call(['sed','-i','/.*SessionID.*/d',path + fileName])
             filtered = input_raw.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
 
