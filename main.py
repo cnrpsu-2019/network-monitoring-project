@@ -75,6 +75,7 @@ def readAndInsertSSID():
     per5G   = 0
     perAis  = 0
     perIot  = 0
+    perOthers = 0
 
     #show percentage
     try:
