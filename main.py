@@ -61,7 +61,7 @@ def replaceMultiple(mainString, toBeReplaces, newString):
 def readAndInsert():
     with open(path + fileName,'r') as readTest:
         #delete specific lines (session ID):
-        macPattern = compileMacPattern(readTest) #this return all mac addresses
+        macPattern = compileMacPattern(str(readTest)) #this return all mac addresses
         duplicateMac = listDuplicates(macPattern) # return dupliccated mac addresses (include ap)
         
         #return number of client addres
