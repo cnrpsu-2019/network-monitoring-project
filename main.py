@@ -59,7 +59,7 @@ def replaceMultiple(mainString, toBeReplaces, newString):
 def readAndInsertSSID():
     #extract specific line
     output = ''
-    with open('sample.log','r') as f:
+    with open(path + fileName,'r') as f:
         for line in f:
             line = line.rstrip()
             if re.search('SSID', line):
