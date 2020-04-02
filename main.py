@@ -68,6 +68,13 @@ def readAndInsertSSID():
    
     #overAll ssids
     overall = int(output.count('TrueMove H')) + int(output.count('CoEWiFi')) + int(output.count('PSU WiFi 802.1x')) + int(output.count('PSU WiFi 5GHz')) + int(output.count('AIS SMART Login')) + int(output.count('CoEIoT')) 
+    
+    perTrue = 0
+    perCoE  = 0
+    perPsu  = 0
+    per5G   = 0
+    perAis  = 0
+    perIot  = 0
 
     #show percentage
     try:
@@ -77,7 +84,7 @@ def readAndInsertSSID():
         per5G = (int(output.count('PSU WiFi 5GHz')) / overall) * 100
         perAis = (int(output.count('AIS SMART Login')) / overall) * 100
         perIot = (int(output.count('CoEIoT')) / overall) * 100
-        percenSum = perTrue + perCoE + perPsu + perAis + perIot
+        percenSum = perTrue + perCoE + perPsu + perAis + perIot + per5G
         perOthers = 100 - percenSum
 
     except ZeroDivisionError:
