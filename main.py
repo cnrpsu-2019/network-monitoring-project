@@ -9,7 +9,7 @@ import collections
 now = datetime.datetime.now()
 strnow = now.strftime("%X") #current time
 #log file date
-fileDate = now.strftime("%d-%b-%Y")
+fileDate = now.strftime("%d-%b-%Y") #day-month-year
 path = '/home/bass/receive/'
 fileName = "trapd-" + fileDate + ".log"
 
@@ -30,7 +30,7 @@ floor04_mac_list = ['a0:e0:af:22:6e:70','a0:3d:6f:31:b7:f0','a0:3d:6f:31:b7:d0',
 
 buildingMacList = floor01_mac_list + floor02_mac_list + floor03_mac_list + floor04_mac_list
 
-def listDuplicates(seq):
+def listDuplicates(seq): 
     seen = set()
     seen_add = seen.add
     # adds all elements it doesn't know yet to seen and all other to seen_twice
@@ -56,8 +56,47 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             mainString = mainString.replace(elem, newString)
     return  mainString
 
-#read and insert
+def readAndInsertSSID():
+    #extract specific line
+    output = ''
+    with open('sample.log','r') as f:
+        for line in f:
+            line = line.rstrip()
+            if re.search('SSID', line):
+                output += line.replace('SSID ','')
+    f.close()
+   
+    #overAll ssids
+    overall = int(output.count('TrueMove H')) + int(output.count('CoEWiFi')) + int(output.count('PSU WiFi 802.1x')) + int(output.count('PSU WiFi 5GHz')) + int(output.count('AIS SMART Login')) + int(output.count('CoEIoT')) 
 
+    #show percentage
+    perTrue = (int(output.count('TrueMove H')) / overall) * 100
+    perCoE = (int(output.count('CoEWiFi')) / overall) * 100
+    perPsu = (int(output.count('PSU WiFi 802.1x')) / overall) * 100
+    per5G = (int(output.count('PSU WiFi 5GHz')) / overall) * 100
+    perAis = (int(output.count('AIS SMART Login')) / overall) * 100
+    perIot = (int(output.count('CoEIoT')) / overall) * 100
+    percenSum = perTrue + perCoE + perPsu + perAis + perIot
+    perOthers = 100 - percenSum
+    
+    #insert into database
+    JadeBowx.count802(int(output.count('PSU WiFi 802.1x')))
+    JadeBowx.countCoeIot(int(output.count('CoEIoT')))
+    JadeBowx.countCoeWifi(int(output.count('CoEWiFi')))
+    JadeBowx.countPSU5Ghz(int(output.count('PSU WiFi 5GHz')))
+    JadeBowx.countTruemove(int(output.count('TrueMove H')))
+    JadeBowx.countAIS(int(output.count('AIS SMART Login')))
+
+    #insert percentage to present pie graph
+    JadeBowx.percentage802(perPsu)
+    JadeBowx.percentageCoeIot(perIot)
+    JadeBowx.percentageCoeWifi(perCoE)
+    JadeBowx.percentagePSU5Ghz(per5G)
+    JadeBowx.percentageTruemove(perTrue)
+    JadeBowx.percentageAIS(perAis)
+    JadeBowx.percentageOthers(perOthers)
+
+#read and insert
 def readAndInsert():
     with open(path + fileName,'r') as readTest:
         #delete specific lines (session ID):

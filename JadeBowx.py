@@ -1,58 +1,7 @@
 from influxdb import InfluxDBClient
-import time
 
 dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
 dbClient.switch_database('trapEvent')
-
-#each floor
-def countFloor01():
-        json_body = [{
-                    "measurement": "client_each_floor",
-                    "tags": {
-                        "floor_number": "01",
-                    "type": "activities"},
-                    "fields": {
-                        "item": 1}
-                        }
-                    ]
-        dbClient.write_points(json_body)
-
-def countFloor02():
-        json_body = [{
-                    "measurement": "client_each_floor",
-                    "tags": {
-                        "floor_number": "02",
-                    "type": "activities"},
-                    "fields": {
-                        "item": 1}
-                        }
-                    ]
-        dbClient.write_points(json_body)
-
-def countFloor03():
-        json_body = [{
-                    "measurement": "client_each_floor",
-                    "tags": {
-                        "floor_number": "03",
-                    "type": "activities"},
-                    "fields": {
-                        "item": 1}
-                        }
-                    ]
-        dbClient.write_points(json_body)
-        time.sleep(1)
-
-def countFloor04():
-        json_body = [{
-                    "measurement": "client_each_floor",
-                    "tags": {
-                        "floor_number": "04",
-                    "type": "activities"},
-                    "fields": {
-                        "item": 1}
-                        }
-                    ]
-        dbClient.write_points(json_body)
 
 def countUserAssociate():
         json_body = [{
@@ -78,77 +27,164 @@ def countUserDauth():
                 ]
         dbClient.write_points(json_body)
 
-def count802():
+def percentageAIS(receive):
+    json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "AIS Smart Login",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+    dbClient.write_points(json_body)
+
+
+def percentage802(receive):
+        json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "PSU Wifi 802.1x",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+        dbClient.write_points(json_body)
+
+def percentagePSU5Ghz(receive):
+            json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "PSU Wifi 5Ghz",
+                "type": "known_ssid_number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ] 
+            dbClient.write_points(json_body)
+
+def percentageTruemove(receive):
+            json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "TrueMove H",
+                "type": "known_ssid_number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+            dbClient.write_points(json_body)
+
+def percentageCoeIot(receive):
+            json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "CoEIIoT",
+                "type": "known_ssid_number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+            dbClient.write_points(json_body)
+
+def percentageCoeWifi(receive):
+            json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "CoEWifi",
+                "type": "known_ssid_number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+            dbClient.write_points(json_body)
+
+def percentageOthers(receive):
+            json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "unknown_number",
+                "type": "others"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+            dbClient.write_points(json_body)
+            
+def percentageAIS(receive):
+    json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "AIS Smart Login",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+    dbClient.write_points(json_body)
+
+
+def count802(receive):
         json_body = [{
                 "measurement": "ssid_count",
                 "tags": {
                     "SSIDName": "PSU Wifi 802.1x",
                 "type": "known_ssid"},
                 "fields": {
-                    "item": 1}
+                    "item": receive}
                     }
                 ]
         dbClient.write_points(json_body)
 
-def countPSU5Ghz():
+def countPSU5Ghz(receive):
             json_body = [{
                 "measurement": "ssid_count",
                 "tags": {
                     "SSIDName": "PSU Wifi 5Ghz",
-                "type": "known_ssid"},
+                "type": "known_ssid_number"},
                 "fields": {
-                    "item": 1}
+                    "item": receive}
                     }
                 ] 
             dbClient.write_points(json_body)
 
-def countTruemove():
+def countTruemove(receive):
             json_body = [{
                 "measurement": "ssid_count",
                 "tags": {
                     "SSIDName": "TrueMove H",
-                "type": "known_ssid"},
+                "type": "known_ssid_number"},
                 "fields": {
-                    "item": 1}
+                    "item": receive}
                     }
                 ]
             dbClient.write_points(json_body)
 
-def countCoeIot():
+def countCoeIot(receive):
             json_body = [{
                 "measurement": "ssid_count",
                 "tags": {
                     "SSIDName": "CoEIIoT",
-                "type": "known_ssid"},
+                "type": "known_ssid_number"},
                 "fields": {
-                    "item": 1}
+                    "item": receive}
                     }
                 ]
             dbClient.write_points(json_body)
 
-def countCoeWifi():
+def countCoeWifi(receive):
             json_body = [{
                 "measurement": "ssid_count",
                 "tags": {
                     "SSIDName": "CoEWifi",
-                "type": "known_ssid"},
+                "type": "known_ssid_number"},
                 "fields": {
-                    "item": 1}
+                    "item": receive}
                     }
                 ]
             dbClient.write_points(json_body)
 
-def countRogue():
-            json_body = [{
-                "measurement": "ssid_count",
-                "tags": {
-                    "SSIDName": "unknown",
-                "type": "others"},
-                "fields": {
-                    "item": 1}
-                    }
-                ]
-            dbClient.write_points(json_body)
 
 def countClient(receive):
             json_body = [{
