@@ -124,6 +124,17 @@ def percentageAIS(receive):
                 ]
     dbClient.write_points(json_body)
 
+def countAIS(receive):
+    json_body = [{
+                "measurement": "ssid_percentage",
+                "tags": {
+                    "SSIDName": "AIS Smart Login",
+                "type": "known_ssid"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+    dbClient.write_points(json_body)
 
 def count802(receive):
         json_body = [{
