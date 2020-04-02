@@ -3,29 +3,6 @@ from influxdb import InfluxDBClient
 dbClient = InfluxDBClient('localhost', 8086, 'sabaszx', 'admin', 'trapEvent', ssl=False, verify_ssl=False)
 dbClient.switch_database('trapEvent')
 
-def countUserAssociate():
-        json_body = [{
-                    "measurement": "client_user",
-                    "tags": {
-                        "user": "user_associate",
-                    "type": "associate"},
-                    "fields": {
-                        "item": 1}
-                        }
-                    ]
-        dbClient.write_points(json_body)
-
-def countUserDauth():
-        json_body = [{
-                "measurement": "client_user",
-                "tags": {
-                    "user": "user_deauthenticate",
-                "type": "deauthenticate"},
-                "fields": {
-                    "item": 1}
-                    }
-                ]
-        dbClient.write_points(json_body)
 
 def percentageAIS(receive):
     json_body = [{
@@ -124,9 +101,11 @@ def percentageAIS(receive):
                 ]
     dbClient.write_points(json_body)
 
+
+#count number
 def countAIS(receive):
     json_body = [{
-                "measurement": "ssid_percentage",
+                "measurement": "ssid_number",
                 "tags": {
                     "SSIDName": "AIS Smart Login",
                 "type": "known_ssid"},
