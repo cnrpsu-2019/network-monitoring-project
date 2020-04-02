@@ -69,13 +69,13 @@ def readAndInsertSSID():
     #overAll ssids
     overall = int(output.count('TrueMove H')) + int(output.count('CoEWiFi')) + int(output.count('PSU WiFi 802.1x')) + int(output.count('PSU WiFi 5GHz')) + int(output.count('AIS SMART Login')) + int(output.count('CoEIoT')) 
     
-    perTrue = ''
-    perCoE  = ''
-    perPsu  = ''
-    per5G   = ''
-    perAis  = ''
-    perIot  = ''
-    perOthers = ''
+    perTrue = 1
+    perCoE  = 1
+    perPsu  = 1
+    per5G   = 1
+    perAis  = 1
+    perIot  = 1
+    perOthers = 1
 
     #show percentage
     try:
