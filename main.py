@@ -82,7 +82,14 @@ def readAndInsertSSID():
     #total number of ssids
     overall = int(output.count('TrueMove H')) + int(output.count('CoEWiFi')) + int(output.count('PSU WiFi 802.1x')) + int(output.count('PSU WiFi 5GHz')) + int(output.count('AIS SMART Login')) + int(output.count('CoEIoT'))
 
-    
+    #insert to database
+    JadeBowx.countTruemove(sumTrue)
+    JadeBowx.countCoeWifi(sumCoE)
+    JadeBowx.count802(sumPsu)
+    JadeBowx.countPSU5Ghz(sum5G)
+    JadeBowx.countAIS(sumAis)
+    JadeBowx.countCoeIot(sumIot)
+        
 #read and insert
 def readAndInsert():
     with open(path + fileName,'r') as readTest:
