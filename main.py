@@ -39,9 +39,9 @@ def listDuplicates(seq):
     # turn the set into a list (as requested)
     return list( seen_twice )
 
-def findDuplicates(seq):
-    result = ([item for item, count in collections.Counter(seq).items() if count > 1])
-    return result 
+# def findDuplicates(seq):
+#     result = ([item for item, count in collections.Counter(seq).items() if count > 1])
+#     return result 
 
 def compileMacPattern(receive):
     pattern = re.compile(r'(?:[0-9a-fA-F]:?){12}')
@@ -57,50 +57,32 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             mainString = mainString.replace(elem, newString)
     return  mainString
 
+# def calculatePercentage(value,total):
+#     percentage = (value/total) * 100
+#     return percentage
+
 def readAndInsertSSID():
     #extract specific line
-    output = ''
+    output = '' #empty string to be merge into long single line
     with open(path + fileName,'r') as f:
         for line in f:
             line = line.rstrip()
             if re.search('SSID', line):
-                output += line.replace('SSID ','')
-    f.close()
-   
+                output += line.replace('SSID ','') #concat string and replace string
+    f.close() #close file
   
-    #show percentage
-    try:
-        #overAll ssids
-        overall = int(output.count('TrueMove H')) + int(output.count('CoEWiFi')) + int(output.count('PSU WiFi 802.1x')) + int(output.count('PSU WiFi 5GHz')) + int(output.count('AIS SMART Login')) + int(output.count('CoEIoT')) 
-        perTrue = (int(output.count('TrueMove H')) / overall) * 100
-        perCoE = (int(output.count('CoEWiFi')) / overall) * 100
-        perPsu = (int(output.count('PSU WiFi 802.1x')) / overall) * 100
-        per5G = (int(output.count('PSU WiFi 5GHz')) / overall) * 100
-        perAis = (int(output.count('AIS SMART Login')) / overall) * 100
-        perIot = (int(output.count('CoEIoT')) / overall) * 100
-        percenSum = perTrue + perCoE + perPsu + perAis + perIot + per5G
-        perOthers = 100 - percenSum
+    #value of each ssid
+    sumTrue = (int(output.count('TrueMove H')))
+    sumCoE = (int(output.count('CoEWiFi')))
+    sumPsu = (int(output.count('PSU WiFi 802.1x')))
+    sum5G  = (int(output.count('PSU WiFi 5GHz')))
+    sumAis = (int(output.count('AIS SMART Login')))
+    sumIot = (int(output.count('CoEIoT')))
 
-    except ZeroDivisionError:
-        overall = 100
-        
-    #insert into database
-    JadeBowx.count802(int(output.count('PSU WiFi 802.1x')))
-    JadeBowx.countCoeIot(int(output.count('CoEIoT')))
-    JadeBowx.countCoeWifi(int(output.count('CoEWiFi')))
-    JadeBowx.countPSU5Ghz(int(output.count('PSU WiFi 5GHz')))
-    JadeBowx.countTruemove(int(output.count('TrueMove H')))
-    JadeBowx.countAIS(int(output.count('AIS SMART Login')))
+    #total number of ssids
+    overall = int(output.count('TrueMove H')) + int(output.count('CoEWiFi')) + int(output.count('PSU WiFi 802.1x')) + int(output.count('PSU WiFi 5GHz')) + int(output.count('AIS SMART Login')) + int(output.count('CoEIoT'))
 
-    #insert percentage to present pie graph
-    JadeBowx.percentage802(perPsu)
-    JadeBowx.percentageCoeIot(perIot)
-    JadeBowx.percentageCoeWifi(perCoE)
-    JadeBowx.percentagePSU5Ghz(per5G)
-    JadeBowx.percentageTruemove(perTrue)
-    JadeBowx.percentageAIS(perAis)
-    JadeBowx.percentageOthers(perOthers)
-
+    
 #read and insert
 def readAndInsert():
     with open(path + fileName,'r') as readTest:
