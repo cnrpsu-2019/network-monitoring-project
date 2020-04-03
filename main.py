@@ -5,6 +5,7 @@ import JadeBowx
 import re
 import subprocess
 import collections
+import os
 
 now = datetime.datetime.now()
 strnow = now.strftime("%X") #current time
@@ -154,6 +155,7 @@ def main():
             break
         finally:
             output.close
+            os.remove(path+fileName)
             
 if __name__ == '__main__':
     main()
