@@ -88,6 +88,83 @@ def countOthers(receive):
                 ]
         dbClient.write_points(json_body)
 
+
+#Percentage
+def countAIS_percentage(receive):
+    json_body = [{
+                "measurement": "percentage_SSID",
+                "tags": {
+                    "SSIDName": "percentage_AIS Smart Login",
+                "type": "percentage"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+    dbClient.write_points(json_body)
+
+def count802_percentage(receive):
+        json_body = [{
+                "measurement": "percentage_SSID",
+                "tags": {
+                    "SSIDName": "percentage_PSU Wifi 802.1x",
+                "type": "percentage"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+        dbClient.write_points(json_body)
+
+def countPSU5Ghz_percentage(receive):
+            json_body = [{
+                "measurement": "percentage_SSID",
+                "tags": {
+                    "SSIDName": "percentage_PSU Wifi 5Ghz",
+                "type": "known_ssid_number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ] 
+            dbClient.write_points(json_body)
+
+def countTruemove_percentage(receive):
+            json_body = [{
+                "measurement": "percentage_SSID",
+                "tags": {
+                    "SSIDName": "percentage_TrueMove H",
+                "type": "known_ssid_number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+            dbClient.write_points(json_body)
+
+def countCoeIot_percentage(receive):
+            json_body = [{
+                "measurement": "percentage_SSID",
+                "tags": {
+                    "SSIDName": "percentage_CoEIIoT",
+                "type": "known_ssid_number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+            dbClient.write_points(json_body)
+
+def countCoeWifi_percentage(receive):
+            json_body = [{
+                "measurement": "percentage_SSID",
+                "tags": {
+                    "SSIDName": "percentage_CoEWifi",
+                "type": "known_ssid_number"},
+                "fields": {
+                    "item": receive}
+                    }
+                ]
+            dbClient.write_points(json_body)
+
+
+
+#count users
 def countClient(receive):
             json_body = [{
                 "measurement": "number_of_client",

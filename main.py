@@ -57,9 +57,9 @@ def replaceMultiple(mainString, toBeReplaces, newString):
             mainString = mainString.replace(elem, newString)
     return  mainString
 
-# def calculatePercentage(value,total):
-#     percentage = (value/total) * 100
-#     return percentage
+def calculatePercentage(value,total):
+    percentage = (value/total) * 100
+    return percentage
 
 def readAndInsertSSID():
     #extract specific line
@@ -89,7 +89,23 @@ def readAndInsertSSID():
     JadeBowx.countPSU5Ghz(sum5G)
     JadeBowx.countAIS(sumAis)
     JadeBowx.countCoeIot(sumIot)
-        
+
+    #insert percentage
+    perTrue = calculatePercentage(sumTrue,overall)
+    perCoe = calculatePercentage(sumCoE,overall)
+    perPsu = calculatePercentage(sumPsu,overall)
+    per5G = calculatePercentage(sum5G,overall)
+    perAis = calculatePercentage(sumAis,overall)
+    perIoT = calculatePercentage(sumIot,overall)
+    
+    #insert percantage
+    JadeBowx.countTruemove_percentage(sumTrue)
+    JadeBowx.countCoeWifi_percentage(sumCoE)
+    JadeBowx.count802_percentage(sumPsu)
+    JadeBowx.countPSU5Ghz_percentage(sum5G)
+    JadeBowx.countAIS_percentage(sumAis)
+    JadeBowx.countCoeIot_percentage(sumIot)
+
 #read and insert
 def readAndInsert():
     with open(path + fileName,'r') as readTest:
