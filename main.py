@@ -90,7 +90,7 @@ def readAndInsertSSID():
         perOthers = 100 - percenSum
 
     except ZeroDivisionError:
-        overall = 0 
+        overall = 1 
         
     #insert into database
     JadeBowx.count802(int(output.count('PSU WiFi 802.1x')))
@@ -155,7 +155,7 @@ def main():
             break
         finally:
             output.close
-            os.remove(path+fileName)
+#            os.remove(path+fileName)
             
 if __name__ == '__main__':
     main()
