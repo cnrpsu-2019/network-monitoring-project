@@ -67,19 +67,11 @@ def readAndInsertSSID():
                 output += line.replace('SSID ','')
     f.close()
    
-    #overAll ssids
-    overall = int(output.count('TrueMove H')) + int(output.count('CoEWiFi')) + int(output.count('PSU WiFi 802.1x')) + int(output.count('PSU WiFi 5GHz')) + int(output.count('AIS SMART Login')) + int(output.count('CoEIoT')) 
-    
-    perTrue = 1
-    perCoE  = 1
-    perPsu  = 1
-    per5G   = 1
-    perAis  = 1
-    perIot  = 1
-    perOthers = 1
-
+  
     #show percentage
     try:
+        #overAll ssids
+        overall = int(output.count('TrueMove H')) + int(output.count('CoEWiFi')) + int(output.count('PSU WiFi 802.1x')) + int(output.count('PSU WiFi 5GHz')) + int(output.count('AIS SMART Login')) + int(output.count('CoEIoT')) 
         perTrue = (int(output.count('TrueMove H')) / overall) * 100
         perCoE = (int(output.count('CoEWiFi')) / overall) * 100
         perPsu = (int(output.count('PSU WiFi 802.1x')) / overall) * 100
@@ -90,7 +82,7 @@ def readAndInsertSSID():
         perOthers = 100 - percenSum
 
     except ZeroDivisionError:
-        overall = 1 
+        overall = 100
         
     #insert into database
     JadeBowx.count802(int(output.count('PSU WiFi 802.1x')))
