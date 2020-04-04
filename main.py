@@ -113,7 +113,7 @@ def readAndInsertSSID():
         JadeBowx.countCoeIot_percentage(sumIot)
     
     
-#read and insert
+#read an    d insert
 def readAndInsert():
     with open(path + fileName,'r') as readTest:
         #delete specific lines (session ID):
