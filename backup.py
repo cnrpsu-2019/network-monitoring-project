@@ -37,8 +37,10 @@ def main():
     while running:
         try:
             raw_input = input()
-            filtered = raw_input.replace("<UNKNOWN>","" )
+            filtered = input_raw.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
+
+            #filter out lookoup from Filterx  module 
             wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
             timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")
             hideMIB = replaceMultiple(timestamp, Filterx.mibList, '')
@@ -46,8 +48,9 @@ def main():
             prefixRemove = replaceMultiple(event, Filterx.prefixList, '')
             weirdRemove = replaceMultiple(prefixRemove, Filterx.weirdList, ' ')
             bad_chars = "/\\!$^&*|'({)[}>_<]~+=#$%;`@?"
+
+            outstr  = replaceMultiple(weirdRemove,bad_chars,'')
             #outstr - write log files into local server
-            outstr  = weirdRemove.translate(None, bad_chars)
             result = replaceMultiple(outstr,Filterx.bad_list,' ')
             #write to local
             output.write(result + '\n')
