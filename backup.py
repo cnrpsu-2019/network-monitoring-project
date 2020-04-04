@@ -37,7 +37,7 @@ def main():
     while running:
         try:
             raw_input = input()
-            filtered = input_raw.replace("<UNKNOWN>","" )
+            filtered = raw_input.replace("<UNKNOWN>","" )
             showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
 
             #filter out lookoup from Filterx  module 
