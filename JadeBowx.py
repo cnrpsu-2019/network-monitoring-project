@@ -11,11 +11,12 @@ def countAIS(receive):
                     "SSIDName": "AIS Smart Login",
                 "type": "known_ssid"},
                 "fields": {
+
                     "item": receive}
                     }
                 ]
     dbClient.write_points(json_body)
-
+    
 def count802(receive):
         json_body = [{
                 "measurement": "countSSID",
