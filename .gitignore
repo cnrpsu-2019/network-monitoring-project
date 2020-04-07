@@ -1,1 +1,4 @@
 exp.py.bak
+*.png
+*.pyc
+experiment.ipynb
