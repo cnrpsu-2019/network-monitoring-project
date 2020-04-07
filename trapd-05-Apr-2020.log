@@ -332,7 +332,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e88c07204:cf:8c:a6:9c:0c743648
 ApMacAddress a0:e0:af:22:6e:70
 
 00:15:27
@@ -376,7 +375,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e88c0af00:24:36:b3:a9:67743649
 ApMacAddress f4:4e:5:df:4e:f0
 
 00:15:34
@@ -405,7 +403,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 00:15:50
@@ -500,7 +497,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e88c1af68:54:fd:f0:df:c6743650
 ApMacAddress 70:10:5c:b1:9e:d0
 
 00:20:45
@@ -523,7 +519,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 00:21:18
@@ -589,7 +584,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF A1 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88c22114:9d:09:40:09:0c743652
 ApMacAddress f4:4e:5:df:4e:f0
 
 00:23:13
@@ -644,7 +638,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e88c28240:b4:cd:39:fa:04743653
 ApMacAddress a0:3d:6f:31:b7:f0
 
 00:26:50
@@ -763,7 +756,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e88c3ef04:cf:8c:cd:2d:df743656
 ApMacAddress a0:3d:6f:31:b7:f0
 
 00:31:30
@@ -786,7 +778,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 00:32:38
@@ -984,7 +975,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 00:46:30
@@ -1089,7 +1079,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 00:50:58
@@ -1124,7 +1113,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF A1 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88c22114:9d:09:40:09:0c743652
 ApMacAddress f4:4e:5:df:4e:f0
 
 00:52:02
@@ -1171,7 +1159,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A0 
 Username 5410110237
 SSID CoEWiFi
-SessionID 5e88c9b3b8:ee:65:ac:99:29743660
 ApMacAddress f4:4e:5:a2:a1:10
 
 00:58:20
@@ -1271,7 +1258,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 BB 
 Username 5410110237
 SSID PSU WiFi 5GHz
-SessionID 5e88cba408:b3:af:fa:b1:af743662
 ApMacAddress f4:4e:5:a2:a1:d0
 
 01:02:49
@@ -1446,7 +1432,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e88ce8f04:cf:8c:a6:9c:0c743665
 ApMacAddress a0:e0:af:22:6e:70
 
 01:15:00
@@ -1497,7 +1482,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 01:19:54
@@ -1552,7 +1536,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e88cfcb68:54:fd:f0:df:c6743666
 ApMacAddress 70:10:5c:b1:9e:d0
 
 01:20:45
@@ -1575,7 +1558,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 01:22:16
@@ -1598,7 +1580,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF A1 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88c22114:9d:09:40:09:0c743652
 ApMacAddress f4:4e:5:df:4e:f0
 
 01:22:50
@@ -1662,7 +1643,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e88d09e40:b4:cd:39:fa:04743667
 ApMacAddress a0:e0:af:22:6e:70
 
 01:24:01
@@ -1780,7 +1760,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e88d20b04:cf:8c:cd:2d:df743670
 ApMacAddress a0:e0:af:22:6e:70
 
 01:30:48
@@ -1821,7 +1800,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 01:33:11
@@ -2104,7 +2082,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 01:46:52
@@ -2169,7 +2146,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 01:52:39
@@ -2192,7 +2168,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF A1 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88c22114:9d:09:40:09:0c743652
 ApMacAddress f4:4e:5:df:4e:f0
 
 01:59:38
@@ -2431,7 +2406,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e88dcab04:cf:8c:a6:9c:0c743676
 ApMacAddress a0:e0:af:22:6e:70
 
 02:15:54
@@ -2460,7 +2434,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 02:16:07
@@ -2502,7 +2475,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e88dd0500:24:36:b3:a9:67743677
 ApMacAddress f4:4e:5:df:4e:f0
 
 02:20:06
@@ -2557,7 +2529,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e88ddeb68:54:fd:f0:df:c6743678
 ApMacAddress 70:10:5c:b1:9e:d0
 
 02:20:24
@@ -2580,7 +2551,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 02:22:15
@@ -2647,7 +2617,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF A1 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88c22114:9d:09:40:09:0c743652
 ApMacAddress f4:4e:5:df:4e:f0
 
 02:23:37
@@ -2702,7 +2671,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e88deba40:b4:cd:39:fa:04743679
 ApMacAddress a0:e0:af:22:6e:70
 
 02:24:38
@@ -2795,7 +2763,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e88e02804:cf:8c:cd:2d:df743682
 ApMacAddress a0:3d:6f:31:b7:f0
 
 02:31:44
@@ -2818,7 +2785,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 02:31:56
@@ -2978,7 +2944,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 02:46:33
@@ -3056,7 +3021,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 02:52:39
@@ -3088,7 +3052,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF A1 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88c22114:9d:09:40:09:0c743652
 ApMacAddress f4:4e:5:df:4e:f0
 
 02:54:31
@@ -3382,7 +3345,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e88eac804:cf:8c:a6:9c:0c743688
 ApMacAddress a0:e0:af:22:6e:70
 
 03:15:50
@@ -3405,7 +3367,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 03:15:55
@@ -3478,7 +3439,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e88ec0868:54:fd:f0:df:c6743689
 ApMacAddress 70:10:5c:b1:9e:d0
 
 03:20:38
@@ -3501,7 +3461,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 03:22:07
@@ -3595,7 +3554,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF A1 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88c22114:9d:09:40:09:0c743652
 ApMacAddress f4:4e:5:df:4e:f0
 
 03:23:48
@@ -3650,7 +3608,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e88ecd640:b4:cd:39:fa:04743690
 ApMacAddress a0:3d:6f:31:b7:e0
 
 03:24:27
@@ -3822,7 +3779,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e88ee4404:cf:8c:cd:2d:df743693
 ApMacAddress a0:e0:af:22:6e:70
 
 03:31:21
@@ -3845,7 +3801,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 03:35:18
@@ -3907,7 +3862,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 03:46:56
@@ -3963,7 +3917,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 03:51:01
@@ -4261,7 +4214,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e88f8e504:cf:8c:a6:9c:0c743699
 ApMacAddress a0:e0:af:22:6e:70
 
 04:16:15
@@ -4284,7 +4236,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 04:17:22
@@ -4317,7 +4268,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e88f96200:24:36:b3:a9:67743700
 ApMacAddress f4:4e:5:df:4e:f0
 
 04:18:57
@@ -4349,7 +4299,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 04:20:35
@@ -4404,7 +4353,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e88fa2768:54:fd:f0:df:c6743701
 ApMacAddress 70:10:5c:b1:9e:d0
 
 04:22:04
@@ -4548,7 +4496,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e88faf140:b4:cd:39:fa:04743703
 ApMacAddress a0:e0:af:22:6e:70
 
 04:26:51
@@ -4642,7 +4589,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e88fc6104:cf:8c:cd:2d:df743706
 ApMacAddress a0:3d:6f:31:b7:f0
 
 04:31:01
@@ -4665,7 +4611,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 04:31:30
@@ -4820,7 +4765,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88ffe314:9d:09:40:09:0c743708
 ApMacAddress a0:e0:af:22:6e:70
 
 04:45:57
@@ -4843,7 +4787,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 04:46:58
@@ -4943,7 +4886,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 04:50:28
@@ -5239,7 +5181,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88ffe314:9d:09:40:09:0c743708
 ApMacAddress a0:e0:af:22:6e:70
 
 05:15:27
@@ -5294,7 +5235,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89070104:cf:8c:a6:9c:0c743713
 ApMacAddress a0:e0:af:22:6e:70
 
 05:15:31
@@ -5317,7 +5257,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 05:17:58
@@ -5358,7 +5297,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 05:20:49
@@ -5413,7 +5351,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89084468:54:fd:f0:df:c6743714
 ApMacAddress 70:10:5c:b1:9e:d0
 
 05:21:56
@@ -5495,7 +5432,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89090d40:b4:cd:39:fa:04743715
 ApMacAddress a0:3d:6f:31:b7:f0
 
 05:25:52
@@ -5640,7 +5576,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e890a7d04:cf:8c:cd:2d:df743718
 ApMacAddress a0:e0:af:22:6e:70
 
 05:30:31
@@ -5670,7 +5605,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 05:31:22
@@ -5846,7 +5780,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88ffe314:9d:09:40:09:0c743708
 ApMacAddress a0:e0:af:22:6e:70
 
 05:45:50
@@ -5881,7 +5814,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 05:46:45
@@ -5968,7 +5900,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 05:51:16
@@ -6143,7 +6074,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e8914c6ac:ac:13:ba:d4:1a743724
 ApMacAddress a0:3d:6f:31:b7:f0
 
 06:14:25
@@ -6210,7 +6140,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88ffe314:9d:09:40:09:0c743708
 ApMacAddress a0:e0:af:22:6e:70
 
 06:15:39
@@ -6277,7 +6206,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89151e04:cf:8c:a6:9c:0c743726
 ApMacAddress a0:e0:af:22:6e:70
 
 06:15:54
@@ -6300,7 +6228,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 06:18:08
@@ -6333,7 +6260,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e8915b000:24:36:b3:a9:67743727
 ApMacAddress f4:4e:5:df:4e:f0
 
 06:18:32
@@ -6378,7 +6304,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 06:21:02
@@ -6433,7 +6358,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89166168:54:fd:f0:df:c6743728
 ApMacAddress 70:10:5c:b1:9e:d0
 
 06:23:04
@@ -6541,7 +6465,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89172940:b4:cd:39:fa:04743729
 ApMacAddress a0:e0:af:22:6e:70
 
 06:27:01
@@ -6638,7 +6561,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89189a04:cf:8c:cd:2d:df743732
 ApMacAddress a0:3d:6f:31:b7:f0
 
 06:31:03
@@ -6661,7 +6583,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 06:32:02
@@ -6725,7 +6646,6 @@ IpAddressType ipv4
 IpAddress 0A 43 E7 E9 
 Username anonymouswlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e8919e0fc:18:3c:50:12:60743733
 ApMacAddress dc:8c:37:4c:2e:e0
 
 06:36:11
@@ -6748,7 +6668,6 @@ IpAddressType ipv4
 IpAddress 0A 43 E7 E9 
 Username anonymouswlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e8919e0fc:18:3c:50:12:60743733
 ApMacAddress 68:3b:78:e1:94:20
 
 06:36:27
@@ -6854,7 +6773,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88ffe314:9d:09:40:09:0c743708
 ApMacAddress a0:e0:af:22:6e:70
 
 06:45:16
@@ -6894,7 +6812,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 06:46:07
@@ -6944,7 +6861,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 06:53:58
@@ -7158,7 +7074,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e8922e1ac:ac:13:ba:d4:1a743739
 ApMacAddress a0:3d:6f:31:b7:f0
 
 07:14:46
@@ -7181,7 +7096,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88ffe314:9d:09:40:09:0c743708
 ApMacAddress a0:e0:af:22:6e:70
 
 07:15:13
@@ -7239,7 +7153,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e87d86d60:f8:1d:bf:1c:f0743205
 ApMacAddress 68:3b:78:e9:47:40
 
 07:15:52
@@ -7294,7 +7207,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89233a04:cf:8c:a6:9c:0c743741
 ApMacAddress a0:e0:af:22:6e:70
 
 07:16:22
@@ -7362,7 +7274,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 07:21:15
@@ -7417,7 +7328,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89247d68:54:fd:f0:df:c6743742
 ApMacAddress 70:10:5c:b1:9e:d0
 
 07:24:35
@@ -7472,7 +7382,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89254440:b4:cd:39:fa:04743743
 ApMacAddress a0:e0:af:22:6e:70
 
 07:24:39
@@ -7601,7 +7510,6 @@ IpAddressType ipv4
 IpAddress AC 1F C1 0A 
 Username jeerapa.s
 SSID PSU WiFi 802.1x
-SessionID 5e89267e18:65:90:26:c9:81743745
 ApMacAddress 68:3b:78:e1:94:20
 
 07:30:44
@@ -7656,7 +7564,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e8926b604:cf:8c:cd:2d:df743747
 ApMacAddress a0:e0:af:22:6e:70
 
 07:30:52
@@ -7701,7 +7608,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 07:32:07
@@ -7940,7 +7846,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88ffe314:9d:09:40:09:0c743708
 ApMacAddress a0:e0:af:22:6e:70
 
 07:45:48
@@ -8072,7 +7977,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 07:48:51
@@ -8104,7 +8008,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 07:50:23
@@ -8264,7 +8167,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e88ffe314:9d:09:40:09:0c743708
 ApMacAddress a0:3d:6f:31:b7:d0
 
 08:01:26
@@ -8439,7 +8341,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e892e5814:9d:09:40:09:0c743755
 ApMacAddress a0:3d:6f:31:b7:f0
 
 08:05:24
@@ -8462,7 +8363,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e892e5814:9d:09:40:09:0c743755
 ApMacAddress 70:10:5c:b1:a4:d0
 
 08:05:39
@@ -8485,7 +8385,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e892e5814:9d:09:40:09:0c743755
 ApMacAddress f4:4e:5:df:6c:f0
 
 08:05:56
@@ -8508,7 +8407,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e892e5814:9d:09:40:09:0c743755
 ApMacAddress 68:3b:78:e1:8e:c0
 
 08:06:48
@@ -8531,7 +8429,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e892e5814:9d:09:40:09:0c743755
 ApMacAddress 0:0:0:0:0:0
 
 08:07:05
@@ -8691,7 +8588,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e893102ac:ac:13:ba:d4:1a743757
 ApMacAddress a0:3d:6f:31:b7:f0
 
 08:16:05
@@ -8746,7 +8642,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89315704:cf:8c:a6:9c:0c743759
 ApMacAddress a0:e0:af:22:6e:70
 
 08:17:19
@@ -8821,7 +8716,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 08:18:44
@@ -8876,7 +8770,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e89320600:24:36:b3:a9:67743760
 ApMacAddress f4:4e:5:df:4e:f0
 
 08:19:22
@@ -8926,7 +8819,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 08:20:40
@@ -9003,7 +8895,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89329b68:54:fd:f0:df:c6743761
 ApMacAddress 70:10:5c:b1:9e:d0
 
 08:22:22
@@ -9067,7 +8958,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89336040:b4:cd:39:fa:04743762
 ApMacAddress a0:3d:6f:31:b7:f0
 
 08:24:56
@@ -9198,7 +9088,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 08:30:15
@@ -9315,7 +9204,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e8934d204:cf:8c:cd:2d:df743765
 ApMacAddress a0:3d:6f:31:b7:f0
 
 08:32:14
@@ -9611,7 +9499,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 08:48:42
@@ -9645,7 +9532,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 08:51:26
@@ -9807,7 +9693,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1B 
 Username 0520038800524205wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e893b3264:70:33:04:04:e6743772
 ApMacAddress 68:3b:78:e1:8e:c0
 
 08:58:14
@@ -9830,7 +9715,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1B 
 Username 0520038800524205wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e893b3264:70:33:04:04:e6743772
 ApMacAddress 68:3b:78:e1:8e:c0
 
 08:58:18
@@ -9937,7 +9821,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username 0520038800524205wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e893b3b64:70:33:04:04:e6743773
 ApMacAddress f4:4e:5:a2:a1:10
 
 08:58:51
@@ -9960,7 +9843,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1B 
 Username 0520038800524205wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e893b3b64:70:33:04:04:e6743773
 ApMacAddress f4:4e:5:a2:a1:10
 
 08:58:52
@@ -10048,7 +9930,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1B 
 Username 0520038800524205wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e893bb964:70:33:04:04:e6743776
 ApMacAddress f4:4e:5:db:f0:40
 
 09:00:36
@@ -10113,7 +9994,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EE E0 
 Username yYy 1520002062187232wlan.mnc000.mcc520.3gppnetwork.org
 SSID yYy TrueMove H
-SessionID yYy 5e893bc364:89:f1:79:59:79743777
 ApMacAddress yYy 68:3b:78:e1:94:20
 
 09:00:41
@@ -10146,7 +10026,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1B 
 Username 0520038800524205wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e893bc964:70:33:04:04:e6743778
 ApMacAddress 68:3b:78:e1:8e:c0
 
 09:00:52
@@ -10504,7 +10383,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e893f27ac:ac:13:ba:d4:1a743783
 ApMacAddress a0:3d:6f:31:b7:f0
 
 09:16:17
@@ -10559,7 +10437,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e893f7304:cf:8c:a6:9c:0c743785
 ApMacAddress a0:e0:af:22:6e:70
 
 09:17:48
@@ -10594,7 +10471,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 09:18:02
@@ -10683,7 +10559,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 09:21:42
@@ -10738,7 +10613,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e8940ba68:54:fd:f0:df:c6743786
 ApMacAddress 70:10:5c:b1:9e:d0
 
 09:21:58
@@ -10839,7 +10713,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89417c40:b4:cd:39:fa:04743787
 ApMacAddress a0:3d:6f:31:b7:f0
 
 09:26:42
@@ -10913,7 +10786,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 09:31:09
@@ -10968,7 +10840,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e8942ef04:cf:8c:cd:2d:df743789
 ApMacAddress a0:e0:af:22:6e:70
 
 09:31:32
@@ -11165,7 +11036,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 BF 
 Username 5910130009
 SSID PSU WiFi 802.1x
-SessionID 5e89455568:09:27:70:d6:5b743793
 ApMacAddress f4:4e:5:df:6c:f0
 
 09:46:17
@@ -11208,7 +11078,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 84 
 Username wirat.to
 SSID PSU WiFi 802.1x
-SessionID 5e8946799c:0c:df:b9:15:71743795
 ApMacAddress f4:4e:5:b5:65:90
 
 09:46:26
@@ -11231,7 +11100,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 84 
 Username wirat.to
 SSID PSU WiFi 802.1x
-SessionID 5e8946799c:0c:df:b9:15:71743795
 ApMacAddress 88:1d:fc:6:3f:b0
 
 09:47:08
@@ -11297,7 +11165,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 09:49:46
@@ -11320,7 +11187,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 09:50:32
@@ -11614,7 +11480,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e894b1b50:3e:aa:b8:a0:ca743802
 ApMacAddress a0:e0:af:22:6e:70
 
 10:07:01
@@ -11684,7 +11549,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e894bd214:9d:09:40:09:0c743804
 ApMacAddress a0:e0:af:22:6e:70
 
 10:10:14
@@ -11820,7 +11684,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e894d43ac:ac:13:ba:d4:1a743805
 ApMacAddress a0:3d:6f:31:b7:f0
 
 10:15:42
@@ -11884,7 +11747,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e894d9004:cf:8c:a6:9c:0c743806
 ApMacAddress a0:e0:af:22:6e:70
 
 10:16:51
@@ -11921,7 +11783,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 10:19:44
@@ -11944,7 +11805,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 10:19:54
@@ -11999,7 +11859,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e894e5b00:24:36:b3:a9:67743808
 ApMacAddress f4:4e:5:df:4e:f0
 
 10:20:00
@@ -12063,7 +11922,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A0 
 Username 5410110237
 SSID CoEWiFi
-SessionID 5e894e87b8:ee:65:ac:99:29743809
 ApMacAddress f4:4e:5:a2:a1:d0
 
 10:20:44
@@ -12293,7 +12151,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e894ed668:54:fd:f0:df:c6743810
 ApMacAddress 70:10:5c:b1:9e:d0
 
 10:22:01
@@ -12445,7 +12302,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e894f9740:b4:cd:39:fa:04743811
 ApMacAddress a0:3d:6f:31:b7:f0
 
 10:25:49
@@ -12545,7 +12401,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 10:31:21
@@ -12600,7 +12455,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89510b04:cf:8c:cd:2d:df743813
 ApMacAddress a0:3d:6f:31:b7:f0
 
 10:33:49
@@ -12654,7 +12508,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e894bd214:9d:09:40:09:0c743804
 ApMacAddress a0:e0:af:22:6e:70
 
 10:41:31
@@ -12726,7 +12579,6 @@ IpAddressType ipv4
 IpAddress AC 1F C3 0D 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e895378a8:9c:ed:97:a6:66743815
 ApMacAddress 68:3b:78:e1:94:20
 
 10:42:02
@@ -12814,7 +12666,6 @@ IpAddressType ipv4
 IpAddress AC 1F C3 0D 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e895378a8:9c:ed:97:a6:66743815
 ApMacAddress f4:4e:5:a2:a1:d0
 
 10:43:22
@@ -12868,7 +12719,6 @@ IpAddressType ipv4
 IpAddress AC 1F C3 0D 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e895378a8:9c:ed:97:a6:66743815
 ApMacAddress a0:e0:af:3d:c7:80
 
 10:43:28
@@ -12979,7 +12829,6 @@ IpAddressType ipv4
 IpAddress AC 1F C3 0D 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e895378a8:9c:ed:97:a6:66743815
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:43:53
@@ -13062,7 +12911,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8953f5a8:9c:ed:97:a6:66743816
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:44:35
@@ -13085,7 +12933,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8953f5a8:9c:ed:97:a6:66743816
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:44:41
@@ -13128,7 +12975,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8953f5a8:9c:ed:97:a6:66743816
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:44:57
@@ -13161,7 +13007,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895434a8:9c:ed:97:a6:66743818
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:45:50
@@ -13204,7 +13049,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895434a8:9c:ed:97:a6:66743818
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:46:13
@@ -13336,7 +13180,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89549da8:9c:ed:97:a6:66743820
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:47:49
@@ -13379,7 +13222,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89549da8:9c:ed:97:a6:66743820
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:48:08
@@ -13412,7 +13254,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 10:48:34
@@ -13454,7 +13295,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8954f6a8:9c:ed:97:a6:66743822
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:49:02
@@ -13497,7 +13337,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8954f6a8:9c:ed:97:a6:66743822
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:49:26
@@ -13564,7 +13403,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 10:50:41
@@ -13597,7 +13435,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895564a8:9c:ed:97:a6:66743823
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:50:57
@@ -13650,7 +13487,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89559ea8:9c:ed:97:a6:66743824
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:51:57
@@ -13673,7 +13509,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89559ea8:9c:ed:97:a6:66743824
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:52:07
@@ -13716,7 +13551,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89559ea8:9c:ed:97:a6:66743824
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:52:31
@@ -13793,7 +13627,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895618a8:9c:ed:97:a6:66743825
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:53:43
@@ -13836,7 +13669,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895618a8:9c:ed:97:a6:66743825
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:54:12
@@ -13879,7 +13711,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895618a8:9c:ed:97:a6:66743825
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:54:22
@@ -13931,7 +13762,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895618a8:9c:ed:97:a6:66743825
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:55:31
@@ -14018,7 +13848,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89573fa8:9c:ed:97:a6:66743827
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:59:00
@@ -14062,7 +13891,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895784a8:9c:ed:97:a6:66743828
 ApMacAddress f4:4e:5:df:6c:f0
 
 10:59:48
@@ -14095,7 +13923,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895794a8:9c:ed:97:a6:66743829
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:00:12
@@ -14150,7 +13977,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8957d9a8:9c:ed:97:a6:66743832
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:01:07
@@ -14193,7 +14019,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8957d9a8:9c:ed:97:a6:66743832
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:01:17
@@ -14236,7 +14061,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8957d9a8:9c:ed:97:a6:66743832
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:01:42
@@ -14313,7 +14137,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89583ca8:9c:ed:97:a6:66743833
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:03:27
@@ -14356,7 +14179,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89583ca8:9c:ed:97:a6:66743833
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:03:28
@@ -14457,7 +14279,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89583ca8:9c:ed:97:a6:66743833
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:03:38
@@ -14605,7 +14426,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e89593650:3e:aa:b8:a0:ca743836
 ApMacAddress a0:3d:6f:31:b7:f0
 
 11:07:08
@@ -14649,7 +14469,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89593ea8:9c:ed:97:a6:66743837
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:07:48
@@ -14968,7 +14787,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895992a8:9c:ed:97:a6:66743838
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:08:02
@@ -15011,7 +14829,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895992a8:9c:ed:97:a6:66743838
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:08:15
@@ -15044,7 +14861,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e8959aca8:9c:ed:97:a6:66743839
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:08:32
@@ -15108,7 +14924,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e8959bea8:9c:ed:97:a6:66743840
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:08:52
@@ -15131,7 +14946,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e8959bea8:9c:ed:97:a6:66743840
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:09:13
@@ -15154,7 +14968,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e894bd214:9d:09:40:09:0c743804
 ApMacAddress a0:e0:af:22:6e:70
 
 11:09:14
@@ -15267,7 +15080,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress f4:4e:5:a8:f3:70
 
 11:12:30
@@ -15322,7 +15134,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895a81a8:9c:ed:97:a6:66743844
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:12:56
@@ -15432,7 +15243,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e895ad4a8:9c:ed:97:a6:66743845
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:13:29
@@ -15475,7 +15285,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895ae6a8:9c:ed:97:a6:66743847
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:14:26
@@ -15508,7 +15317,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e895b1fa8:9c:ed:97:a6:66743848
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:15:07
@@ -15563,7 +15371,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895b48a8:9c:ed:97:a6:66743849
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:15:29
@@ -15596,7 +15403,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e895b61ac:ac:13:ba:d4:1a743850
 ApMacAddress a0:3d:6f:31:b7:f0
 
 11:15:48
@@ -15629,7 +15435,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895b71a8:9c:ed:97:a6:66743851
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:16:42
@@ -15684,7 +15489,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e895bac04:cf:8c:a6:9c:0c743852
 ApMacAddress a0:e0:af:22:6e:70
 
 11:18:21
@@ -15707,7 +15511,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 11:18:46
@@ -15760,7 +15563,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:3d:6f:31:b7:f0
 
 11:19:27
@@ -15793,7 +15595,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:3d:6f:31:b7:d0
 
 11:19:46
@@ -15816,7 +15617,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895c23a8:9c:ed:97:a6:66743854
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:19:46
@@ -15839,7 +15639,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 11:19:48
@@ -15882,7 +15681,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895c23a8:9c:ed:97:a6:66743854
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:19:55
@@ -15915,7 +15713,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895c69a8:9c:ed:97:a6:66743855
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:20:03
@@ -15938,7 +15735,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 11:20:14
@@ -15971,7 +15767,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895c7aa8:9c:ed:97:a6:66743856
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:20:30
@@ -16016,7 +15811,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A0 
 Username 5410110237
 SSID CoEWiFi
-SessionID 5e894e87b8:ee:65:ac:99:29743809
 ApMacAddress f4:4e:5:a2:a1:d0
 
 11:22:08
@@ -16071,7 +15865,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e895cf468:54:fd:f0:df:c6743858
 ApMacAddress 70:10:5c:b1:9e:d0
 
 11:22:26
@@ -16154,7 +15947,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895c8ca8:9c:ed:97:a6:66743857
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:23:27
@@ -16177,7 +15969,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895c8ca8:9c:ed:97:a6:66743857
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:23:33
@@ -16219,7 +16010,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e895d42a8:9c:ed:97:a6:66743859
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:24:07
@@ -16283,7 +16073,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895d64a8:9c:ed:97:a6:66743860
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:24:25
@@ -16316,7 +16105,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895d76a8:9c:ed:97:a6:66743861
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:24:47
@@ -16359,7 +16147,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895d76a8:9c:ed:97:a6:66743861
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:24:56
@@ -16392,7 +16179,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e895d95a8:9c:ed:97:a6:66743862
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:25:22
@@ -16447,7 +16233,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e895db340:b4:cd:39:fa:04743864
 ApMacAddress a0:3d:6f:31:b7:f0
 
 11:25:30
@@ -16680,7 +16465,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895e4ea8:9c:ed:97:a6:66743866
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:29:10
@@ -16713,7 +16497,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895e93a8:9c:ed:97:a6:66743867
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:29:37
@@ -16777,7 +16560,6 @@ IpAddressType ipv4
 IpAddress AC 1F C4 17 
 Username paramin.n
 SSID PSU WiFi 802.1x
-SessionID 5e895eb12c:0e:3d:5f:7b:b0743868
 ApMacAddress 68:3b:78:e1:94:20
 
 11:29:43
@@ -16876,7 +16658,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895ebba8:9c:ed:97:a6:66743869
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:30:21
@@ -16899,7 +16680,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 11:30:29
@@ -16942,7 +16722,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895ebba8:9c:ed:97:a6:66743869
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:30:39
@@ -16985,7 +16764,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895ebba8:9c:ed:97:a6:66743869
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:30:50
@@ -17050,7 +16828,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e895f2704:cf:8c:cd:2d:df743871
 ApMacAddress a0:e0:af:22:6e:70
 
 11:31:55
@@ -17105,7 +16882,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e895ef7a8:9c:ed:97:a6:66743870
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:32:40
@@ -17196,7 +16972,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e895ff9a8:9c:ed:97:a6:66743873
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:36:04
@@ -17229,7 +17004,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e896032a8:9c:ed:97:a6:66743874
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:36:45
@@ -17262,7 +17036,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89605aa8:9c:ed:97:a6:66743875
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:37:10
@@ -17305,7 +17078,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C0 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89605aa8:9c:ed:97:a6:66743875
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:37:16
@@ -17338,7 +17110,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89607ca8:9c:ed:97:a6:66743876
 ApMacAddress f4:4e:5:a2:a1:10
 
 11:42:27
@@ -17381,7 +17152,6 @@ IpAddressType ipv4
 IpAddress AC 1F C5 28 
 Username pattanawadee.s
 SSID PSU WiFi 802.1x
-SessionID 5e8961b3e4:e4:ab:5e:6e:87743877
 ApMacAddress f4:4e:5:df:6c:f0
 
 11:42:34
@@ -17505,7 +17275,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 11:49:07
@@ -17559,7 +17328,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 11:50:16
@@ -17582,7 +17350,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 11:51:15
@@ -17636,7 +17403,6 @@ IpAddressType ipv4
 IpAddress 0A 43 E4 46 
 Username anonymouswlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e8963c374:9e:af:17:7b:bb743880
 ApMacAddress 68:3b:78:e1:94:20
 
 11:52:18
@@ -17745,7 +17511,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 11:58:03
@@ -17837,7 +17602,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress dc:8c:37:4c:2e:e0
 
 11:59:54
@@ -17880,7 +17644,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress 68:3b:78:e1:94:20
 
 12:00:07
@@ -17955,7 +17718,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress f4:4e:5:df:6c:f0
 
 12:00:14
@@ -18010,7 +17772,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress a0:3d:6f:31:b7:d0
 
 12:00:20
@@ -18053,7 +17814,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress 70:10:5c:b1:9e:d0
 
 12:00:25
@@ -18184,7 +17944,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress 68:3b:78:e1:93:0
 
 12:00:36
@@ -18227,7 +17986,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress f4:4e:5:a8:f3:70
 
 12:00:45
@@ -18270,7 +18028,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress a0:e0:af:95:9c:40
 
 12:01:07
@@ -18419,7 +18176,6 @@ IpAddressType ipv4
 IpAddress AC 1F C0 E1 
 Username 5910110462
 SSID PSU WiFi 802.1x
-SessionID 5e8965ab70:5e:55:2c:07:49743882
 ApMacAddress f4:4e:5:a8:f3:70
 
 12:03:20
@@ -18602,7 +18358,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e89675050:3e:aa:b8:a0:ca743887
 ApMacAddress a0:e0:af:22:6e:70
 
 12:06:31
@@ -18768,7 +18523,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e89697fac:ac:13:ba:d4:1a743889
 ApMacAddress a0:3d:6f:31:b7:f0
 
 12:16:55
@@ -18823,7 +18577,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e8969c904:cf:8c:a6:9c:0c743890
 ApMacAddress a0:e0:af:22:6e:70
 
 12:18:19
@@ -18852,7 +18605,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 12:18:43
@@ -18899,7 +18651,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 12:20:25
@@ -18958,7 +18709,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 12:20:49
@@ -18991,7 +18741,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e896ab100:24:36:b3:a9:67743892
 ApMacAddress f4:4e:5:df:4e:f0
 
 12:21:07
@@ -19023,7 +18772,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A0 
 Username 5410110237
 SSID CoEWiFi
-SessionID 5e894e87b8:ee:65:ac:99:29743809
 ApMacAddress f4:4e:5:a2:a1:d0
 
 12:21:50
@@ -19105,7 +18853,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e896b1168:54:fd:f0:df:c6743893
 ApMacAddress 70:10:5c:b1:9e:d0
 
 12:22:28
@@ -19178,7 +18925,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e896bcf40:b4:cd:39:fa:04743895
 ApMacAddress a0:3d:6f:31:b7:f0
 
 12:26:24
@@ -19315,7 +19061,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 12:30:11
@@ -19338,7 +19083,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 12:31:46
@@ -19393,7 +19137,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e896d4404:cf:8c:cd:2d:df743897
 ApMacAddress a0:3d:6f:31:b7:f0
 
 12:33:27
@@ -19448,7 +19191,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username 5910610058
 SSID PSU WiFi 802.1x
-SessionID 5e896dae4c:1a:3d:7a:6e:1e743900
 ApMacAddress f4:4e:5:a2:a1:d0
 
 12:33:44
@@ -19502,7 +19244,6 @@ IpAddressType ipv4
 IpAddress AC 1F C1 8A 
 Username.L.r 5810610124
 SSID.L.r PSU WiFi 5GHz
-SessionID.L.r 5e896db74c:1a:3d:72:9e:ed743901
 ApMacAddress.L.r a0:3d:6f:31:b7:f0
 
 12:33:46
@@ -19591,7 +19332,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89607ca8:9c:ed:97:a6:66743876
 ApMacAddress f4:4e:5:a2:a1:10
 
 12:38:52
@@ -19874,7 +19614,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 12:49:07
@@ -19926,7 +19665,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 12:50:35
@@ -19949,7 +19687,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 12:50:53
@@ -20242,7 +19979,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e89756e50:3e:aa:b8:a0:ca743908
 ApMacAddress a0:3d:6f:31:b7:f0
 
 13:07:14
@@ -20388,7 +20124,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e89779eac:ac:13:ba:d4:1a743909
 ApMacAddress a0:3d:6f:31:b7:f0
 
 13:17:07
@@ -20443,7 +20178,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e8977e604:cf:8c:a6:9c:0c743910
 ApMacAddress a0:e0:af:22:6e:70
 
 13:17:13
@@ -20510,7 +20244,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 13:19:53
@@ -20542,7 +20275,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 13:21:06
@@ -20565,7 +20297,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 13:21:10
@@ -20648,7 +20379,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89792e68:54:fd:f0:df:c6743913
 ApMacAddress 70:10:5c:b1:9e:d0
 
 13:23:13
@@ -20723,7 +20453,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress f4:4e:5:df:4e:f0
 
 13:24:49
@@ -20746,7 +20475,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress f4:4e:5:db:f0:40
 
 13:25:28
@@ -20810,7 +20538,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e8979eb40:b4:cd:39:fa:04743916
 ApMacAddress a0:3d:6f:31:b7:f0
 
 13:26:45
@@ -20843,7 +20570,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A2 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e897a25c0:33:5e:08:d2:e3743917
 ApMacAddress f4:4e:5:db:f0:40
 
 13:27:15
@@ -20899,7 +20625,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress f4:4e:5:a2:a1:10
 
 13:29:21
@@ -20944,7 +20669,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 13:31:58
@@ -21032,7 +20756,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e897b6004:cf:8c:cd:2d:df743919
 ApMacAddress a0:e0:af:22:6e:70
 
 13:32:39
@@ -21143,7 +20866,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89607ca8:9c:ed:97:a6:66743876
 ApMacAddress f4:4e:5:a2:a1:10
 
 13:37:13
@@ -21369,7 +21091,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 13:49:00
@@ -21422,7 +21143,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 13:50:51
@@ -21509,7 +21229,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 13:51:59
@@ -21633,7 +21352,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress f4:4e:5:db:f0:40
 
 14:00:27
@@ -21656,7 +21374,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress f4:4e:5:db:f0:40
 
 14:00:32
@@ -21937,7 +21654,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e89838950:3e:aa:b8:a0:ca743929
 ApMacAddress a0:e0:af:22:6e:70
 
 14:07:16
@@ -22068,7 +21784,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e8985bfac:ac:13:ba:d4:1a743931
 ApMacAddress a0:3d:6f:31:b7:f0
 
 14:17:20
@@ -22123,7 +21838,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89860204:cf:8c:a6:9c:0c743932
 ApMacAddress a0:e0:af:22:6e:70
 
 14:18:54
@@ -22152,7 +21866,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 14:19:53
@@ -22191,7 +21904,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 14:20:41
@@ -22223,7 +21935,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 14:21:46
@@ -22256,7 +21967,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e89870700:24:36:b3:a9:67743934
 ApMacAddress f4:4e:5:df:4e:f0
 
 14:22:49
@@ -22311,7 +22021,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89874b68:54:fd:f0:df:c6743935
 ApMacAddress 70:10:5c:b1:9e:d0
 
 14:23:10
@@ -22425,7 +22134,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89881340:b4:cd:39:fa:04743937
 ApMacAddress a0:3d:6f:31:b7:f0
 
 14:26:51
@@ -22448,7 +22156,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A2 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e897a25c0:33:5e:08:d2:e3743917
 ApMacAddress f4:4e:5:db:f0:40
 
 14:27:03
@@ -22586,7 +22293,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A2 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e897a25c0:33:5e:08:d2:e3743917
 ApMacAddress f4:4e:5:db:f0:40
 
 14:29:55
@@ -22618,7 +22324,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 14:32:11
@@ -22673,7 +22378,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89897d04:cf:8c:cd:2d:df743938
 ApMacAddress a0:3d:6f:31:b7:f0
 
 14:33:36
@@ -22823,7 +22527,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89607ca8:9c:ed:97:a6:66743876
 ApMacAddress f4:4e:5:a2:a1:10
 
 14:38:17
@@ -22967,7 +22670,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 14:49:49
@@ -22999,7 +22701,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 14:50:07
@@ -23044,7 +22745,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 14:52:27
@@ -23207,7 +22907,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress f4:4e:5:db:f0:40
 
 15:00:18
@@ -23252,7 +22951,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1E 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89902d4c:56:9d:40:0c:ae743943
 ApMacAddress 68:3b:78:e1:94:20
 
 15:00:58
@@ -23275,7 +22973,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1E 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89902d4c:56:9d:40:0c:ae743943
 ApMacAddress dc:8c:37:4c:2e:e0
 
 15:01:01
@@ -23298,7 +22995,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1E 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89902d4c:56:9d:40:0c:ae743943
 ApMacAddress 68:3b:78:e1:94:20
 
 15:01:38
@@ -23409,7 +23105,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e8991a350:3e:aa:b8:a0:ca743946
 ApMacAddress a0:3d:6f:31:b7:f0
 
 15:07:10
@@ -23579,7 +23274,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress dc:8c:37:4c:2e:e0
 
 15:13:48
@@ -23622,7 +23316,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:94:20
 
 15:15:26
@@ -23687,7 +23380,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:8e:c0
 
 15:16:26
@@ -23752,7 +23444,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e8993e1ac:ac:13:ba:d4:1a743948
 ApMacAddress a0:3d:6f:31:b7:f0
 
 15:16:57
@@ -23795,7 +23486,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:94:20
 
 15:17:32
@@ -23850,7 +23540,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89941f04:cf:8c:a6:9c:0c743949
 ApMacAddress a0:e0:af:22:6e:70
 
 15:18:48
@@ -23879,7 +23568,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 15:19:23
@@ -23911,7 +23599,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 15:21:02
@@ -23934,7 +23621,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 15:21:04
@@ -24047,7 +23733,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89956968:54:fd:f0:df:c6743951
 ApMacAddress 70:10:5c:b1:9e:d0
 
 15:23:05
@@ -24070,7 +23755,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress f4:4e:5:df:6c:f0
 
 15:23:09
@@ -24156,7 +23840,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 70:10:5c:b1:a4:d0
 
 15:23:24
@@ -24179,7 +23862,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e899574a8:9c:ed:97:a6:66743952
 ApMacAddress 68:3b:78:e1:94:20
 
 15:24:03
@@ -24220,7 +23902,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e899574a8:9c:ed:97:a6:66743952
 ApMacAddress 68:3b:78:e1:94:20
 
 15:24:56
@@ -24294,7 +23975,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:d0
 
 15:25:07
@@ -24359,7 +24039,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress f4:4e:5:a8:f3:70
 
 15:25:20
@@ -24424,7 +24103,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:f0
 
 15:25:23
@@ -24466,7 +24144,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8995ffa8:9c:ed:97:a6:66743953
 ApMacAddress f4:4e:5:a2:a1:10
 
 15:25:41
@@ -24489,7 +24166,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8995ffa8:9c:ed:97:a6:66743953
 ApMacAddress f4:4e:5:a2:a1:10
 
 15:25:42
@@ -24686,7 +24362,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 15:26:21
@@ -24751,7 +24426,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89962e40:b4:cd:39:fa:04743955
 ApMacAddress a0:3d:6f:31:b7:f0
 
 15:26:28
@@ -24834,7 +24508,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A2 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e897a25c0:33:5e:08:d2:e3743917
 ApMacAddress f4:4e:5:db:f0:40
 
 15:29:51
@@ -24879,7 +24552,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 15:30:49
@@ -24962,7 +24634,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89979904:cf:8c:cd:2d:df743957
 ApMacAddress a0:e0:af:22:6e:70
 
 15:32:47
@@ -24985,7 +24656,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username 5510110408
 SSID PSU WiFi 802.1x
-SessionID 5e899766b4:c4:fc:fa:25:f2743956
 ApMacAddress 0:0:0:0:0:0
 
 15:32:47
@@ -25008,7 +24678,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C4 
 Username 5510110408
 SSID PSU WiFi 802.1x
-SessionID 5e899766b4:c4:fc:fa:25:f2743956
 ApMacAddress 0:0:0:0:0:0
 
 15:33:12
@@ -25071,7 +24740,6 @@ IpAddressType ipv4
 IpAddress AC 1F C2 A6 
 Username 6110120012
 SSID PSU WiFi 802.1x
-SessionID 5e8997c848:fd:a3:76:45:c8743958
 ApMacAddress 68:3b:78:e1:94:20
 
 15:33:44
@@ -25157,7 +24825,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C4 
 Username 5510110408
 SSID PSU WiFi 802.1x
-SessionID 5e899766b4:c4:fc:fa:25:f2743956
 ApMacAddress 68:3b:78:e1:94:20
 
 15:34:24
@@ -25242,7 +24909,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 15:44:14
@@ -25285,7 +24951,6 @@ IpAddressType ipv4
 IpAddress AC 1F C2 04 
 Username wichairat.k
 SSID PSU WiFi 802.1x
-SessionID 5e899a5848:bf:6b:60:2f:52743960
 ApMacAddress 68:3b:78:e1:94:20
 
 15:44:40
@@ -25442,7 +25107,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress f4:4e:5:a8:f3:70
 
 15:46:33
@@ -25485,7 +25149,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:93:0
 
 15:46:37
@@ -25539,7 +25202,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 70:10:5c:b1:9e:d0
 
 15:46:49
@@ -25562,7 +25224,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 70:10:5c:b1:a4:d0
 
 15:47:07
@@ -25624,7 +25285,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 15:49:44
@@ -25647,7 +25307,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 70:10:5c:b1:9e:d0
 
 15:49:47
@@ -25701,7 +25360,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:93:0
 
 15:49:56
@@ -25724,7 +25382,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:d0
 
 15:49:59
@@ -25747,7 +25404,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress f4:4e:5:a8:f3:70
 
 15:50:05
@@ -25770,7 +25426,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 15:50:25
@@ -25793,7 +25448,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 15:50:37
@@ -25838,7 +25492,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 15:52:10
@@ -25893,7 +25546,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username somsak.j
 SSID PSU WiFi 802.1x
-SessionID 5e899c802c:f0:a2:50:f6:a4743965
 ApMacAddress 68:3b:78:e1:94:20
 
 15:53:29
@@ -25938,7 +25590,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e8995ffa8:9c:ed:97:a6:66743953
 ApMacAddress f4:4e:5:a2:a1:10
 
 15:55:46
@@ -26003,7 +25654,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress 70:10:5c:b1:a4:d0
 
 15:57:49
@@ -26048,7 +25698,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress dc:8c:37:4c:2e:e0
 
 15:58:03
@@ -26071,7 +25720,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress f4:4e:5:b5:65:90
 
 15:58:35
@@ -26094,7 +25742,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A1 
 Username sinchai.k
 SSID CoEWiFi
-SessionID 5e89799d8c:b8:4a:4d:70:48743914
 ApMacAddress 68:3b:78:e1:94:20
 
 15:58:51
@@ -26256,7 +25903,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e899f8ed0:7f:a0:d3:51:95743970
 ApMacAddress a0:e0:af:95:9c:40
 
 16:06:35
@@ -26299,7 +25945,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e899f87a8:9c:ed:97:a6:66743969
 ApMacAddress f4:4e:5:b5:24:b0
 
 16:06:41
@@ -26322,7 +25967,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e899f87a8:9c:ed:97:a6:66743969
 ApMacAddress f4:4e:5:b5:24:b0
 
 16:06:45
@@ -26459,7 +26103,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e899fbd50:3e:aa:b8:a0:ca743971
 ApMacAddress a0:e0:af:22:6e:70
 
 16:07:13
@@ -26556,7 +26199,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:95:9c:40
 
 16:08:30
@@ -26599,7 +26241,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e899f87a8:9c:ed:97:a6:66743969
 ApMacAddress a0:3d:6f:31:b7:d0
 
 16:08:32
@@ -26622,7 +26263,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B 68:3b:78:e1:93:0
 
 16:08:36
@@ -26665,7 +26305,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e899f87a8:9c:ed:97:a6:66743969
 ApMacAddress 68:3b:78:e1:94:20
 
 16:08:36
@@ -26688,7 +26327,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B 68:3b:78:e1:93:0
 
 16:09:03
@@ -26798,7 +26436,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e899f87a8:9c:ed:97:a6:66743969
 ApMacAddress 68:3b:78:e1:8e:c0
 
 16:10:30
@@ -27030,7 +26667,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89a0dba8:9c:ed:97:a6:66743978
 ApMacAddress 68:3b:78:e1:8e:c0
 
 16:12:26
@@ -27083,7 +26719,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username kunlapat.t
 SSID PSU WiFi 802.1x
-SessionID 5e89a0f324:79:f3:f9:c9:cf743979
 ApMacAddress 88:1d:fc:a:f1:20
 
 16:12:36
@@ -27106,7 +26741,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C7 
 Username kunlapat.t
 SSID PSU WiFi 802.1x
-SessionID 5e89a0f324:79:f3:f9:c9:cf743979
 ApMacAddress 88:1d:fc:a:f1:20
 
 16:12:37
@@ -27182,7 +26816,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89a0dba8:9c:ed:97:a6:66743978
 ApMacAddress 68:3b:78:e1:94:20
 
 16:13:13
@@ -27274,7 +26907,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e8993e1ac:ac:13:ba:d4:1a743948
 ApMacAddress a0:3d:6f:31:b7:f0
 
 16:17:27
@@ -27373,7 +27005,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89a23b04:cf:8c:a6:9c:0c743980
 ApMacAddress a0:e0:af:22:6e:70
 
 16:19:51
@@ -27396,7 +27027,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 16:19:57
@@ -27425,7 +27055,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 16:20:14
@@ -27448,7 +27077,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 16:21:27
@@ -27471,7 +27099,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 16:21:40
@@ -27513,7 +27140,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e89a35c00:24:36:b3:a9:67743982
 ApMacAddress f4:4e:5:df:4e:f0
 
 16:23:15
@@ -27568,7 +27194,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89a38568:54:fd:f0:df:c6743983
 ApMacAddress 70:10:5c:b1:9e:d0
 
 16:25:24
@@ -27657,7 +27282,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89a44b40:b4:cd:39:fa:04743986
 ApMacAddress a0:e0:af:95:9c:40
 
 16:27:04
@@ -27782,7 +27406,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 16:30:45
@@ -27855,7 +27478,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89a5b504:cf:8c:cd:2d:df743987
 ApMacAddress a0:3d:6f:31:b7:f0
 
 16:34:15
@@ -27932,7 +27554,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF 45 
 Username 1520002042163975wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89a6260c:d7:46:1f:b6:86743989
 ApMacAddress 68:3b:78:e1:8e:c0
 
 16:35:06
@@ -28068,7 +27689,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:95:9c:40
 
 16:38:59
@@ -28091,7 +27711,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B 68:3b:78:e1:93:0
 
 16:39:52
@@ -28165,7 +27784,6 @@ IpAddressType ipv4
 IpAddress AC 1F C6 E3 
 Username anun.n
 SSID PSU WiFi 802.1x
-SessionID 5e89a79824:92:0e:92:cd:cc743993
 ApMacAddress f4:4e:5:b5:24:b0
 
 16:41:16
@@ -28448,7 +28066,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A3 
 Username anun.n
 SSID CoEWiFi
-SessionID 5e89a9c024:92:0e:92:cd:cc744001
 ApMacAddress f4:4e:5:b5:24:b0
 
 16:50:11
@@ -28477,7 +28094,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 16:50:20
@@ -28500,7 +28116,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:22:6e:70
 
 16:50:23
@@ -28523,7 +28138,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 16:50:26
@@ -28898,7 +28512,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 16:51:51
@@ -29030,7 +28643,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A3 
 Username anun.n
 SSID CoEWiFi
-SessionID 5e89a9c024:92:0e:92:cd:cc744001
 ApMacAddress f4:4e:5:a2:a1:d0
 
 16:57:58
@@ -29073,7 +28685,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A3 
 Username anun.n
 SSID CoEWiFi
-SessionID 5e89a9c024:92:0e:92:cd:cc744001
 ApMacAddress f4:4e:5:a2:a1:d0
 
 16:58:14
@@ -29096,7 +28707,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:3d:6f:31:b7:d0
 
 16:58:28
@@ -29119,7 +28729,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress f4:4e:5:a8:f3:70
 
 16:58:37
@@ -29142,7 +28751,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:3d:6f:31:b7:d0
 
 16:58:43
@@ -29165,7 +28773,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress 70:10:5c:b1:9e:d0
 
 16:58:50
@@ -29188,7 +28795,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress 70:10:5c:b1:a4:d0
 
 16:58:56
@@ -29222,7 +28828,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress f4:4e:5:df:6c:f0
 
 16:59:15
@@ -29267,7 +28872,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress 68:3b:78:e1:94:20
 
 16:59:23
@@ -29310,7 +28914,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FF 8A 
 Username anonymouswlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89abfbfc:18:3c:50:12:60744003
 ApMacAddress 68:3b:78:e1:94:20
 
 16:59:52
@@ -29344,7 +28947,6 @@ IpAddressType ipv4
 IpAddress 0A 43 FA 5D 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e895a5e14:9d:09:40:09:0c743843
 ApMacAddress a0:e0:af:95:9c:40
 
 17:00:05
@@ -29377,7 +28979,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C8 
 Username anun.n
 SSID PSU WiFi 802.1x
-SessionID 5e89ac2424:92:0e:92:cd:cc744004
 ApMacAddress f4:4e:5:b5:24:b0
 
 17:00:15
@@ -29420,7 +29021,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C8 
 Username anun.n
 SSID PSU WiFi 802.1x
-SessionID 5e89ac2424:92:0e:92:cd:cc744004
 ApMacAddress f4:4e:5:b5:24:b0
 
 17:00:57
@@ -29670,7 +29270,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:95:9c:40
 
 17:08:47
@@ -29693,7 +29292,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B 68:3b:78:e1:93:0
 
 17:09:24
@@ -29820,7 +29418,6 @@ IpAddressType ipv4
 IpAddress AC 1F C3 0D 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89af7aa8:9c:ed:97:a6:66744010
 ApMacAddress 68:3b:78:e1:94:20
 
 17:14:56
@@ -29863,7 +29460,6 @@ IpAddressType ipv4
 IpAddress AC 1F C3 0D 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89af7aa8:9c:ed:97:a6:66744010
 ApMacAddress 68:3b:78:e1:8e:c0
 
 17:14:58
@@ -29906,7 +29502,6 @@ IpAddressType ipv4
 IpAddress AC 1F C3 0D 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89af7aa8:9c:ed:97:a6:66744010
 ApMacAddress f4:4e:5:a2:a1:d0
 
 17:15:19
@@ -29939,7 +29534,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89afb7a8:9c:ed:97:a6:66744011
 ApMacAddress f4:4e:5:a2:a1:d0
 
 17:15:34
@@ -29982,7 +29576,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:3d:6f:dd:2d:70
 
 17:15:53
@@ -30077,7 +29670,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e89b01bac:ac:13:ba:d4:1a744012
 ApMacAddress a0:3d:6f:31:b7:f0
 
 17:17:29
@@ -30150,7 +29742,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89b05804:cf:8c:a6:9c:0c744013
 ApMacAddress a0:e0:af:22:6e:70
 
 17:20:04
@@ -30195,7 +29786,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 17:20:53
@@ -30218,7 +29808,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 17:21:20
@@ -30259,7 +29848,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 17:22:25
@@ -30367,7 +29955,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89b1a268:54:fd:f0:df:c6744016
 ApMacAddress 70:10:5c:b1:9e:d0
 
 17:23:31
@@ -30400,7 +29987,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b19da8:9c:ed:97:a6:66744015
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:23:46
@@ -30443,7 +30029,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b19da8:9c:ed:97:a6:66744015
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:23:54
@@ -30486,7 +30071,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C9 
 Username 5610515027
 SSID PSU WiFi 802.1x
-SessionID 5e89b1ba10:8e:e0:f6:94:84744018
 ApMacAddress 68:3b:78:e1:8e:c0
 
 17:24:02
@@ -30509,7 +30093,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b1baa8:9c:ed:97:a6:66744017
 ApMacAddress f4:4e:5:a2:a1:10
 
 17:24:37
@@ -30643,7 +30226,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1D 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89b2254c:56:9d:40:0c:ae744019
 ApMacAddress 68:3b:78:e1:94:20
 
 17:25:58
@@ -30758,7 +30340,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89b26740:b4:cd:39:fa:04744023
 ApMacAddress a0:3d:6f:31:b7:f0
 
 17:26:49
@@ -30791,7 +30372,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b269a8:9c:ed:97:a6:66744024
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:27:08
@@ -30845,7 +30425,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b269a8:9c:ed:97:a6:66744024
 ApMacAddress 70:10:5c:b1:a4:d0
 
 17:27:22
@@ -31121,7 +30700,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b28ea8:9c:ed:97:a6:66744025
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:28:27
@@ -31164,7 +30742,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b28ea8:9c:ed:97:a6:66744025
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:28:49
@@ -31257,7 +30834,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89b336a8:9c:ed:97:a6:66744029
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:30:27
@@ -31280,7 +30856,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 17:31:10
@@ -31313,7 +30888,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b35aa8:9c:ed:97:a6:66744030
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:31:22
@@ -31356,7 +30930,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b35aa8:9c:ed:97:a6:66744030
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:31:30
@@ -31399,7 +30972,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 7C 
 Username thanathip.l
 SSID CoEWiFi
-SessionID 5e89b35aa8:9c:ed:97:a6:66744030
 ApMacAddress f4:4e:5:df:6c:f0
 
 17:31:54
@@ -31505,7 +31077,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89b3d204:cf:8c:cd:2d:df744032
 ApMacAddress a0:e0:af:22:6e:70
 
 17:33:37
@@ -31578,7 +31149,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 17:35:02
@@ -31601,7 +31171,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1D 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89b2254c:56:9d:40:0c:ae744019
 ApMacAddress 68:3b:78:e1:94:20
 
 17:35:32
@@ -31634,7 +31203,6 @@ IpAddressType ipv4
 IpAddress 0A 43 E7 04 
 Username 1520002049203316wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89b473e0:aa:96:0d:63:b2744034
 ApMacAddress 68:3b:78:e1:8e:c0
 
 17:36:05
@@ -31657,7 +31225,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:f0
 
 17:36:28
@@ -31680,7 +31247,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:93:0
 
 17:36:43
@@ -31760,7 +31326,6 @@ IpAddressType ipv4
 IpAddress AC 1F C4 17 
 Username paramin.n
 SSID PSU WiFi 802.1x
-SessionID 5e89b4d12c:0e:3d:5f:7b:b0744035
 ApMacAddress 68:3b:78:e1:93:80
 
 17:37:45
@@ -31783,7 +31348,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1D 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89b2254c:56:9d:40:0c:ae744019
 ApMacAddress 68:3b:78:e1:94:20
 
 17:38:36
@@ -31806,7 +31370,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:3d:6f:dd:2d:70
 
 17:38:55
@@ -31829,7 +31392,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B 68:3b:78:e1:93:0
 
 17:39:21
@@ -31852,7 +31414,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1D 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89b2254c:56:9d:40:0c:ae744019
 ApMacAddress 68:3b:78:e5:46:60
 
 17:39:23
@@ -31875,7 +31436,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1D 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89b2254c:56:9d:40:0c:ae744019
 ApMacAddress 70:10:5c:b1:a4:d0
 
 17:39:34
@@ -31898,7 +31458,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 1D 
 Username 0520034002309209wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89b2254c:56:9d:40:0c:ae744019
 ApMacAddress 70:10:5c:b1:9e:d0
 
 17:39:39
@@ -32009,7 +31568,6 @@ IpAddressType ipv4
 IpAddress 0A 43 E7 04 
 Username 1520002049203316wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89b602e0:aa:96:0d:63:b2744040
 ApMacAddress 68:3b:78:e1:8e:c0
 
 17:42:25
@@ -32041,7 +31599,6 @@ IpAddressType ipv4
 IpAddress 0A 43 E7 04 
 Username 1520002049203316wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89b602e0:aa:96:0d:63:b2744040
 ApMacAddress 0:0:0:0:0:0
 
 17:42:46
@@ -32074,7 +31631,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 CA 
 Username l, chatcharwin.u
 SSID l, PSU WiFi 802.1x
-SessionID l, 5e89b5fe90:8d:6c:2c:e6:1a744039
 ApMacAddress l, 68:3b:78:e1:8e:c0
 
 17:43:03
@@ -32139,7 +31695,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:95:9c:40
 
 17:44:30
@@ -32210,7 +31765,6 @@ IpAddressType ipv4
 IpAddress 64 57 E0 26 
 Username 0520039504039228wlan.mnc003.mcc520.3gppnetwork.org
 SSID AIS SMART Login
-SessionID 5e89b6aa94:0c:98:90:3d:0c744042
 ApMacAddress 68:3b:78:e1:94:20
 
 17:45:18
@@ -32233,7 +31787,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 CA 
 Username l, chatcharwin.u
 SSID l, PSU WiFi 802.1x
-SessionID l, 5e89b5fe90:8d:6c:2c:e6:1a744039
 ApMacAddress l, 0:0:0:0:0:0
 
 17:45:32
@@ -32329,7 +31882,6 @@ IpAddressType ipv4
 IpAddress AC 1F C4 EB 
 Username napisphon.m
 SSID PSU WiFi 802.1x
-SessionID 5e89b6ceec:2c:e2:8a:c2:e9744045
 ApMacAddress 68:3b:78:e1:94:20
 
 17:45:39
@@ -32372,7 +31924,6 @@ IpAddressType ipv4
 IpAddress AC 1F C5 69 
 Username napisphon.m
 SSID PSU WiFi 802.1x
-SessionID 5e89b6ccdc:a4:ca:db:80:7c744043
 ApMacAddress 68:3b:78:e1:94:20
 
 17:45:41
@@ -32415,7 +31966,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F9 33 
 Username anonymouswlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89b6cd6c:4d:73:d3:eb:a7744044
 ApMacAddress 68:3b:78:e1:94:20
 
 17:45:43
@@ -32584,7 +32134,6 @@ IpAddressType ipv4
 IpAddress AC 1F C7 76 
 Username kalayanee.k
 SSID PSU WiFi 802.1x
-SessionID 5e89b7b4a8:87:b3:d2:04:61744049
 ApMacAddress f4:4e:5:b5:65:90
 
 17:49:25
@@ -32638,7 +32187,6 @@ IpAddressType ipv4
 IpAddress AC 1F C7 76 
 Username kalayanee.k
 SSID PSU WiFi 802.1x
-SessionID 5e89b7b4a8:87:b3:d2:04:61744049
 ApMacAddress dc:8c:37:4c:2e:e0
 
 17:49:29
@@ -32681,7 +32229,6 @@ IpAddressType ipv4
 IpAddress AC 1F C7 76 
 Username kalayanee.k
 SSID PSU WiFi 802.1x
-SessionID 5e89b7b4a8:87:b3:d2:04:61744049
 ApMacAddress 68:3b:78:e1:94:20
 
 17:49:37
@@ -32724,7 +32271,6 @@ IpAddressType ipv4
 IpAddress AC 1F C7 76 
 Username kalayanee.k
 SSID PSU WiFi 802.1x
-SessionID 5e89b7b4a8:87:b3:d2:04:61744049
 ApMacAddress 68:3b:78:e1:93:80
 
 17:49:38
@@ -32767,7 +32313,6 @@ IpAddressType ipv4
 IpAddress AC 1F C7 76 
 Username kalayanee.k
 SSID PSU WiFi 802.1x
-SessionID 5e89b7b4a8:87:b3:d2:04:61744049
 ApMacAddress 68:3b:78:e1:93:80
 
 17:49:40
@@ -32807,7 +32352,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 17:51:22
@@ -32852,7 +32396,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 17:52:02
@@ -32913,7 +32456,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C9 
 Username 5610515027
 SSID PSU WiFi 802.1x
-SessionID 5e89b1ba10:8e:e0:f6:94:84744018
 ApMacAddress 68:3b:78:e1:8e:c0
 
 17:54:44
@@ -33109,7 +32651,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 18:04:40
@@ -33143,7 +32684,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:93:0
 
 18:07:23
@@ -33221,7 +32761,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:95:9c:40
 
 18:09:20
@@ -33244,7 +32783,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B 68:3b:78:e1:93:0
 
 18:11:20
@@ -33309,7 +32847,6 @@ IpAddressType ipv4
 IpAddress AC 1F C5 A3 
 Username .a sakesun.s
 SSID .a PSU WiFi 802.1x
-SessionID .a 5e89bce43c:f7:a4:12:61:0b744056
 ApMacAddress .a 88:1d:fc:a:f1:20
 
 18:12:41
@@ -33435,7 +32972,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0F 
 Username 
 SSID CoEIoT
-SessionID 5e89be3aac:ac:13:ba:d4:1a744057
 ApMacAddress a0:3d:6f:31:b7:f0
 
 18:17:28
@@ -33543,7 +33079,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89be7404:cf:8c:a6:9c:0c744060
 ApMacAddress a0:e0:af:22:6e:70
 
 18:18:14
@@ -33575,7 +33110,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 18:20:11
@@ -33669,7 +33203,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:d0
 
 18:21:14
@@ -33692,7 +33225,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:95:9c:40
 
 18:21:17
@@ -33742,7 +33274,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:d0
 
 18:21:39
@@ -33765,7 +33296,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 18:21:52
@@ -33797,7 +33327,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress f4:4e:5:a8:f3:70
 
 18:22:36
@@ -33840,7 +33369,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B 68:3b:78:e1:93:0
 
 18:22:38
@@ -33863,7 +33391,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:f0
 
 18:22:46
@@ -33886,7 +33413,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 18:22:47
@@ -33926,7 +33452,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e89bfb200:24:36:b3:a9:67744062
 ApMacAddress f4:4e:5:df:4e:f0
 
 18:23:40
@@ -33981,7 +33506,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89bfbe68:54:fd:f0:df:c6744063
 ApMacAddress 70:10:5c:b1:9e:d0
 
 18:24:24
@@ -34004,7 +33528,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C9 
 Username 5610515027
 SSID PSU WiFi 802.1x
-SessionID 5e89b1ba10:8e:e0:f6:94:84744018
 ApMacAddress 68:3b:78:e1:8e:c0
 
 18:25:46
@@ -34054,7 +33577,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B a0:e0:af:22:6e:70
 
 18:26:57
@@ -34109,7 +33631,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89c08240:b4:cd:39:fa:04744065
 ApMacAddress a0:e0:af:22:6e:70
 
 18:27:16
@@ -34207,7 +33728,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:22:6e:70
 
 18:28:17
@@ -34272,7 +33792,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C9 
 Username 5610515027
 SSID PSU WiFi 802.1x
-SessionID 5e89b1ba10:8e:e0:f6:94:84744018
 ApMacAddress f4:4e:5:b5:24:b0
 
 18:29:25
@@ -34317,7 +33836,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 18:30:24
@@ -34439,7 +33957,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89c1ee04:cf:8c:cd:2d:df744066
 ApMacAddress a0:3d:6f:31:b7:f0
 
 18:34:12
@@ -34471,7 +33988,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 18:34:26
@@ -34538,7 +34054,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:22:6e:70
 
 18:39:10
@@ -34583,7 +34098,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B a0:e0:af:22:6e:70
 
 18:41:01
@@ -34772,7 +34286,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C9 
 Username 5610515027
 SSID PSU WiFi 802.1x
-SessionID 5e89b1ba10:8e:e0:f6:94:84744018
 ApMacAddress 68:3b:78:e1:8e:c0
 
 18:49:09
@@ -34826,7 +34339,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 18:50:45
@@ -34871,7 +34383,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 18:53:02
@@ -34894,7 +34405,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 18:53:50
@@ -35087,7 +34597,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 19:04:32
@@ -35236,7 +34745,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:22:6e:70
 
 19:09:14
@@ -35259,7 +34767,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 DB 
 Username B 5910110104
 SSID B PSU WiFi 802.1x
-SessionID B 5e89a00d38:ba:f8:42:ff:36743973
 ApMacAddress B a0:e0:af:22:6e:70
 
 19:11:26
@@ -35325,7 +34832,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username 5740310935
 SSID PSU WiFi 802.1x
-SessionID 5e89cb1a10:41:7f:3a:11:3d744080
 ApMacAddress 0:0:0:0:0:0
 
 19:12:41
@@ -35348,7 +34854,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 CB 
 Username 5740310935
 SSID PSU WiFi 802.1x
-SessionID 5e89cb1a10:41:7f:3a:11:3d744080
 ApMacAddress 0:0:0:0:0:0
 
 19:12:59
@@ -35402,7 +34907,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cb7214:9d:09:40:09:0c744083
 ApMacAddress f4:4e:5:a8:f3:70
 
 19:14:01
@@ -35546,7 +35050,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89cc9104:cf:8c:a6:9c:0c744085
 ApMacAddress a0:e0:af:22:6e:70
 
 19:18:59
@@ -35610,7 +35113,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e89cce150:3e:aa:b8:a0:ca744086
 ApMacAddress a0:e0:af:22:6e:70
 
 19:19:55
@@ -35633,7 +35135,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress f4:4e:5:df:4e:f0
 
 19:20:31
@@ -35662,7 +35163,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 19:21:38
@@ -35694,7 +35194,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 19:22:26
@@ -35739,7 +35238,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 19:23:52
@@ -35794,7 +35292,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89cdda68:54:fd:f0:df:c6744089
 ApMacAddress 70:10:5c:b1:9e:d0
 
 19:25:41
@@ -35903,7 +35400,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89ce9f40:b4:cd:39:fa:04744091
 ApMacAddress a0:3d:6f:31:b7:e0
 
 19:27:26
@@ -35970,7 +35466,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 19:30:34
@@ -36112,7 +35607,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89d00a04:cf:8c:cd:2d:df744093
 ApMacAddress a0:e0:af:22:6e:70
 
 19:33:39
@@ -36135,7 +35629,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 19:34:29
@@ -36180,7 +35673,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:d0
 
 19:36:02
@@ -36203,7 +35695,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:f0
 
 19:36:24
@@ -36246,7 +35737,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:e0:af:95:9c:40
 
 19:36:26
@@ -36289,7 +35779,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:dd:2d:70
 
 19:37:04
@@ -36334,7 +35823,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:e0:af:22:6e:70
 
 19:38:05
@@ -36377,7 +35865,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress f4:4e:5:a8:f3:70
 
 19:38:18
@@ -36420,7 +35907,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress f4:4e:5:df:4e:f0
 
 19:38:40
@@ -36463,7 +35949,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:3d:6f:31:b7:d0
 
 19:38:52
@@ -36486,7 +35971,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress a0:3d:6f:31:b7:d0
 
 19:39:54
@@ -36542,7 +36026,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress a0:3d:6f:31:b7:d0
 
 19:42:01
@@ -36565,7 +36048,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 70:10:5c:b1:a4:d0
 
 19:42:43
@@ -36588,7 +36070,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress f4:4e:5:df:6c:f0
 
 19:42:50
@@ -36631,7 +36112,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress 68:3b:78:e1:94:20
 
 19:43:00
@@ -36654,7 +36134,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 70:10:5c:b1:a4:d0
 
 19:43:12
@@ -36677,7 +36156,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:94:20
 
 19:43:21
@@ -36700,7 +36178,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress dc:8c:37:4c:2e:e0
 
 19:43:49
@@ -36723,7 +36200,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C6 
 Username 5910110104
 SSID PSU WiFi 802.1x
-SessionID 5e89a009d0:7f:a0:d3:51:95743972
 ApMacAddress 0:0:0:0:0:0
 
 19:44:16
@@ -36746,7 +36222,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress f4:4e:5:b5:24:b0
 
 19:44:21
@@ -36769,7 +36244,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C2 
 Username damrong.k
 SSID PSU WiFi 802.1x
-SessionID 5e89932804:d6:aa:54:80:cf743947
 ApMacAddress 68:3b:78:e1:94:20
 
 19:47:24
@@ -36855,7 +36329,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 CC 
 Username Wi nittikorn.s
 SSID Wi PSU WiFi 802.1x
-SessionID Wi 5e89d388b4:cb:57:69:ef:19744097
 ApMacAddress Wi 88:1d:fc:a:f1:20
 
 19:48:22
@@ -36889,7 +36362,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 CC 
 Username Wi nittikorn.s
 SSID Wi PSU WiFi 802.1x
-SessionID Wi 5e89d388b4:cb:57:69:ef:19744097
 ApMacAddress Wi 68:3b:78:e1:8e:c0
 
 19:49:29
@@ -36934,7 +36406,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress f4:4e:5:df:4e:f0
 
 19:50:45
@@ -36957,7 +36428,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 19:52:01
@@ -36980,7 +36450,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 19:53:11
@@ -37071,7 +36540,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username r.C pakpoom.h
 SSID r.C PSU WiFi 5GHz
-SessionID r.C 5e89d5e904:72:95:43:60:9e744099
 ApMacAddress r.C 68:3b:78:e1:94:20
 
 19:58:23
@@ -37116,7 +36584,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 CD 
 Username r.C pakpoom.h
 SSID r.C PSU WiFi 5GHz
-SessionID r.C 5e89d5e904:72:95:43:60:9e744099
 ApMacAddress r.C 68:3b:78:e1:94:20
 
 20:00:00
@@ -37210,7 +36677,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 20:04:51
@@ -37599,7 +37065,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89daad04:cf:8c:a6:9c:0c744102
 ApMacAddress a0:e0:af:22:6e:70
 
 20:19:55
@@ -37654,7 +37119,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 18 
 Username 
 SSID CoEIoT
-SessionID 5e89db0050:3e:aa:b8:a0:ca744103
 ApMacAddress a0:3d:6f:31:b7:f0
 
 20:20:11
@@ -37689,7 +37153,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 20:20:57
@@ -37743,7 +37206,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress a0:e0:af:22:6e:70
 
 20:22:27
@@ -37766,7 +37228,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 20:24:04
@@ -37821,7 +37282,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89dbf768:54:fd:f0:df:c6744105
 ApMacAddress 70:10:5c:b1:9e:d0
 
 20:24:24
@@ -37854,7 +37314,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e89dc0800:24:36:b3:a9:67744106
 ApMacAddress f4:4e:5:df:4e:f0
 
 20:24:51
@@ -37932,7 +37391,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89dcbb40:b4:cd:39:fa:04744108
 ApMacAddress a0:3d:6f:31:b7:f0
 
 20:27:28
@@ -38034,7 +37492,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A0 
 Username 5410110237
 SSID CoEWiFi
-SessionID 5e89dd43b8:ee:65:ac:99:29744110
 ApMacAddress f4:4e:5:a2:a1:d0
 
 20:29:47
@@ -38057,7 +37514,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username 5410110237
 SSID PSU WiFi 5GHz
-SessionID 5e89dd3c08:b3:af:fa:b1:af744109
 ApMacAddress f4:4e:5:a2:a1:d0
 
 20:29:48
@@ -38080,7 +37536,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 CE 
 Username 5410110237
 SSID PSU WiFi 5GHz
-SessionID 5e89dd3c08:b3:af:fa:b1:af744109
 ApMacAddress f4:4e:5:a2:a1:d0
 
 20:30:18
@@ -38125,7 +37580,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 20:31:33
@@ -38389,7 +37843,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89de2704:cf:8c:cd:2d:df744112
 ApMacAddress a0:3d:6f:31:b7:f0
 
 20:33:33
@@ -38412,7 +37865,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 20:33:54
@@ -38530,7 +37982,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress f4:4e:5:df:4e:f0
 
 20:43:41
@@ -38730,7 +38181,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress a0:3d:6f:31:b7:f0
 
 20:50:46
@@ -38759,7 +38209,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 20:50:53
@@ -38792,7 +38241,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username ming.l
 SSID PSU WiFi 802.1x
-SessionID 5e89e23d90:e1:7b:16:63:9d744116
 ApMacAddress 0:0:0:0:0:0
 
 20:51:13
@@ -38815,7 +38263,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 CF 
 Username ming.l
 SSID PSU WiFi 802.1x
-SessionID 5e89e23d90:e1:7b:16:63:9d744116
 ApMacAddress 0:0:0:0:0:0
 
 20:51:44
@@ -38847,7 +38294,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress f4:4e:5:a8:f3:70
 
 20:52:50
@@ -38870,7 +38316,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 20:57:53
@@ -39018,7 +38463,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 21:04:06
@@ -39136,7 +38580,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress a0:3d:6f:31:b7:f0
 
 21:16:51
@@ -39202,7 +38645,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89e8ca04:cf:8c:a6:9c:0c744128
 ApMacAddress a0:e0:af:22:6e:70
 
 21:20:46
@@ -39225,7 +38667,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 21:20:46
@@ -39290,7 +38731,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 21:24:18
@@ -39345,7 +38785,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89ea1568:54:fd:f0:df:c6744131
 ApMacAddress 70:10:5c:b1:9e:d0
 
 21:24:30
@@ -39477,7 +38916,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89ead840:b4:cd:39:fa:04744133
 ApMacAddress a0:e0:af:22:6e:70
 
 21:27:44
@@ -39533,7 +38971,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A0 
 Username 5410110237
 SSID CoEWiFi
-SessionID 5e89dd43b8:ee:65:ac:99:29744110
 ApMacAddress f4:4e:5:a2:a1:d0
 
 21:30:34
@@ -39556,7 +38993,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 21:33:37
@@ -39611,7 +39047,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89ec4304:cf:8c:cd:2d:df744135
 ApMacAddress a0:e0:af:22:6e:70
 
 21:33:41
@@ -39634,7 +39069,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress f4:4e:5:a2:a1:10
 
 21:34:44
@@ -39759,7 +39193,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress f4:4e:5:df:4e:f0
 
 21:41:57
@@ -39862,7 +39295,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress 68:3b:78:e1:94:20
 
 21:49:18
@@ -39927,7 +39359,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89b3b0a8:9c:ed:97:a6:66744031
 ApMacAddress 68:3b:78:e1:8e:c0
 
 21:50:14
@@ -39998,7 +39429,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 5GHz
-SessionID 5e89f045a8:9c:ed:97:a6:66744138
 ApMacAddress 68:3b:78:e1:94:20
 
 21:50:46
@@ -40021,7 +39451,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 21:51:28
@@ -40072,7 +39501,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89f077a8:9c:ed:97:a6:66744139
 ApMacAddress 68:3b:78:e1:8e:c0
 
 21:51:41
@@ -40115,7 +39543,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89f077a8:9c:ed:97:a6:66744139
 ApMacAddress a0:e0:af:95:9c:40
 
 21:51:42
@@ -40138,7 +39565,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89f077a8:9c:ed:97:a6:66744139
 ApMacAddress a0:e0:af:95:9c:40
 
 21:51:46
@@ -40181,7 +39607,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89f077a8:9c:ed:97:a6:66744139
 ApMacAddress 68:3b:78:e1:94:20
 
 21:52:12
@@ -40224,7 +39649,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89f077a8:9c:ed:97:a6:66744139
 ApMacAddress 68:3b:78:e5:46:60
 
 21:52:14
@@ -40267,7 +39691,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89f077a8:9c:ed:97:a6:66744139
 ApMacAddress 68:3b:78:e1:94:20
 
 21:52:22
@@ -40290,7 +39713,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 C3 
 Username thanathip.l
 SSID PSU WiFi 802.1x
-SessionID 5e89f077a8:9c:ed:97:a6:66744139
 ApMacAddress 0:0:0:0:0:0
 
 21:53:01
@@ -40313,7 +39735,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 21:56:21
@@ -40447,7 +39868,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress f4:4e:5:df:4e:f0
 
 22:12:32
@@ -40535,7 +39955,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e89f6e704:cf:8c:a6:9c:0c744145
 ApMacAddress a0:e0:af:22:6e:70
 
 22:19:21
@@ -40567,7 +39986,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 22:21:21
@@ -40641,7 +40059,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 22:23:35
@@ -40718,7 +40135,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e89f83268:54:fd:f0:df:c6744147
 ApMacAddress 70:10:5c:b1:9e:d0
 
 22:24:38
@@ -40846,7 +40262,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 24 
 Username 5810110224
 SSID CoEWiFi
-SessionID 5e89f85d00:24:36:b3:a9:67744148
 ApMacAddress f4:4e:5:df:4e:f0
 
 22:25:54
@@ -40930,7 +40345,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e89f8f440:b4:cd:39:fa:04744150
 ApMacAddress a0:3d:6f:31:b7:f0
 
 22:29:55
@@ -40975,7 +40389,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A0 
 Username 5410110237
 SSID CoEWiFi
-SessionID 5e89dd43b8:ee:65:ac:99:29744110
 ApMacAddress f4:4e:5:a2:a1:d0
 
 22:30:33
@@ -40998,7 +40411,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 22:31:12
@@ -41075,7 +40487,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e89fa5f04:cf:8c:cd:2d:df744151
 ApMacAddress a0:3d:6f:31:b7:f0
 
 22:34:49
@@ -41110,7 +40521,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress f4:4e:5:df:4e:f0
 
 22:44:39
@@ -41235,7 +40645,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 22:51:24
@@ -41305,7 +40714,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 22:53:23
@@ -41673,7 +41081,6 @@ IpAddressType ipv4
 IpAddress 0A 43 EC 00 
 Username 1520002044790813wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e89cce414:9d:09:40:09:0c744087
 ApMacAddress f4:4e:5:df:4e:f0
 
 23:10:45
@@ -41787,7 +41194,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 2F 
 Username 
 SSID CoEIoT
-SessionID 5e8a050304:cf:8c:a6:9c:0c744157
 ApMacAddress a0:e0:af:22:6e:70
 
 23:20:49
@@ -41810,7 +41216,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 23:21:37
@@ -41851,7 +41256,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 23:24:44
@@ -41906,7 +41310,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0D 
 Username 
 SSID CoEIoT
-SessionID 5e8a064f68:54:fd:f0:df:c6744159
 ApMacAddress 70:10:5c:b1:9e:d0
 
 23:26:17
@@ -42016,7 +41419,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 0C 
 Username 
 SSID CoEIoT
-SessionID 5e8a070f40:b4:cd:39:fa:04744161
 ApMacAddress a0:3d:6f:31:b7:f0
 
 23:29:34
@@ -42061,7 +41463,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 A0 
 Username 5410110237
 SSID CoEWiFi
-SessionID 5e89dd43b8:ee:65:ac:99:29744110
 ApMacAddress f4:4e:5:a2:a1:d0
 
 23:30:29
@@ -42084,7 +41485,6 @@ IpAddressType ipv4
 IpAddress AC 1E 50 88 
 Username wacharin.k
 SSID CoEWiFi
-SessionID 5e86befc74:da:38:de:c5:f0742353
 ApMacAddress f4:4e:5:a8:f3:70
 
 23:32:33
@@ -42205,7 +41605,6 @@ IpAddressType ipv4
 IpAddress AC 1E 51 22 
 Username 
 SSID CoEIoT
-SessionID 5e8a087c04:cf:8c:cd:2d:df744162
 ApMacAddress a0:e0:af:22:6e:70
 
 23:38:47
@@ -42342,7 +41741,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F8 DD 
 Username 0887913628
 SSID TrueMove H
-SessionID 5e892aa960:f8:1d:bf:1c:f0743751
 ApMacAddress 68:3b:78:e9:47:40
 
 23:51:11
@@ -42377,7 +41775,6 @@ IpAddressType ipv4
 IpAddress AC 1E 59 5D 
 Username nikom.s
 SSID PSU WiFi 802.1x
-SessionID 5e81c74da8:86:dd:8e:94:18738118
 ApMacAddress a0:3d:6f:dd:2d:70
 
 23:53:32
@@ -42421,7 +41818,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F2 E4 
 Username 1520002078069082wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e8a0d0c08:b3:af:b7:e8:eb744166
 ApMacAddress 88:1d:fc:a:f1:20
 
 23:53:49
@@ -42463,7 +41859,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username 6p.o parinya.su
 SSID 6p.o PSU WiFi 802.1x
-SessionID 6p.o 5e8a0de7b0:aa:36:70:f2:6f744167
 ApMacAddress 6p.o 68:3b:78:e1:8e:c0
 
 23:57:25
@@ -42508,7 +41903,6 @@ IpAddressType ipv4
 IpAddress 00 00 00 00 
 Username 6p.o parinya.su
 SSID 6p.o PSU WiFi 802.1x
-SessionID 6p.o 5e8a0de7b0:aa:36:70:f2:6f744167
 ApMacAddress 6p.o 0:0:0:0:0:0
 
 23:57:30
@@ -42531,7 +41925,6 @@ IpAddressType ipv4
 IpAddress AC 1E 58 D0 
 Username 6p.o parinya.su
 SSID 6p.o PSU WiFi 802.1x
-SessionID 6p.o 5e8a0de7b0:aa:36:70:f2:6f744167
 ApMacAddress 6p.o 0:0:0:0:0:0
 
 23:58:01
@@ -42554,7 +41947,6 @@ IpAddressType ipv4
 IpAddress 0A 43 F2 E4 
 Username 1520002078069082wlan.mnc000.mcc520.3gppnetwork.org
 SSID TrueMove H
-SessionID 5e8a0d0c08:b3:af:b7:e8:eb744166
 ApMacAddress 0:0:0:0:0:0
 
 23:58:25
