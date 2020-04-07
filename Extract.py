@@ -19,6 +19,6 @@ def extractSpecific(path, keyword):
         for line in f:
             line = line.rstrip()
             if re.search(keyword, line):
-                output += line.replace(keyword,'')
+              output += line.replace(keyword,'')
     f.close()
     return output

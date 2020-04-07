@@ -12,7 +12,7 @@ def replaceMultiple(mainString, toBeReplaces, newString):
 def filter_string(input_raw):    
     #filter weird string sction
     filtered = input_raw.replace("<UNKNOWN>","" )
-    showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
+    showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", '')
     #filter out lookoup from Filterx  module 
     wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
     timestamp = wrongtypeRemove.replace("DISMAN-EVENT-MIB::", "")

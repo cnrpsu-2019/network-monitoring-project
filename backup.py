@@ -30,7 +30,7 @@ def main():
             raw_input = input() #receive input
             #replace string
             filtered = raw_input.replace("<UNKNOWN>","" )
-            showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", strnow)
+            showDate = filtered.replace("UDP: [172.30.232.2]:32768->[172.30.232.250]:162", '')
 
             #filter out lookoup from Filterx  module 
             wrongtypeRemove = replaceMultiple(showDate, Filterx.wronglist, '')
