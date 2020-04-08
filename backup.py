@@ -23,7 +23,7 @@ def main():
     fileDate = now.strftime("%d-%b-%Y")
     fileName = "trapd-" + fileDate + ".log"
     output = open('/home/bass/receive/' + fileName, 'a') #output to be 
-    known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
+    # known_ssid_list = ["PSU WiFi 802.1x","PSU WiFi 5GHz","TrueMove H","CoEIoT","CoEWiFi"]
 
     while running:
         try:
@@ -38,14 +38,14 @@ def main():
             hideMIB = replaceMultiple(timestamp, Filterx.mibList, '')
             event = hideMIB.replace("snmpTrapOID","Event")
             prefixRemove = replaceMultiple(event, Filterx.prefixList, '')
-            weirdRemove = replaceMultiple(prefixRemove, Filterx.weirdList, ' ')
+            weirdRemove = replaceMultiple(prefixRemove, Filterx.weirdList, '')
             bad_chars = "/\\!$^&*|'({)[}>_<]~+=#$%;`@?"
 
             outstr  = replaceMultiple(weirdRemove,bad_chars,'')
             #outstr - write log files into local server
-            result = replaceMultiple(outstr,Filterx.bad_list,' ')
+            result = replaceMultiple(outstr,Filterx.bad_list,'')
             #write to local
-            output.write(result + '\n')
+            output.write(result +'\n')
 
            
         except EOFError:

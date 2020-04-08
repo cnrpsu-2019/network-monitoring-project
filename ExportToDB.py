@@ -15,7 +15,7 @@ dbName = 'test'
 dbClient = InfluxDBClient(host,port,username,password,dbName, ssl=False, verify_ssl=False)
 dbClient.switch_database('trapEvent')
 
-def countUser(topic,username,ssid,floor,receive):
+def countUser(topic='Unnown',username='Unnown',ssid='Unnown',floor='Unnown',apname='Unnown',receive=0):
     json_body = [{
                 "measurement": str(topic),
                 "tags": {

@@ -14,3 +14,6 @@ floor04_mac_list = ['a0:e0:af:22:6e:70','a0:3d:6f:31:b7:f0','a0:3d:6f:31:b7:d0',
 #all ap mac addresses in building
 
 buildingMacList = floor01_mac_list + floor02_mac_list + floor03_mac_list + floor04_mac_list
+
+#ssid name list
+ssidname_list = ['CoEIoT','CoEWiFi','TrueMove H','AIS SMART Login','PSU WiFi 5GHz','PSU WiFi 802.1x']
