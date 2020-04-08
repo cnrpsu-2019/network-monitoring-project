@@ -10,7 +10,7 @@ def listDuplicates(seq):
 
 def compileMacPattern(receive):
     pattern = re.compile(r'(?:[0-9a-fA-F]:?){12}')
-    resultMac = re.findall(pattern, receive) #now there's only list of mac addresses
+    resultMac = re.findall(pattern, str(receive)) #now there's only list of mac addresses
     return resultMac
 
 def extractSpecific(path, keyword):
