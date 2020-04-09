@@ -2,6 +2,7 @@ import subprocess
 import collections
 import filterString
 import createFiles
+import B612
 
 def main(): #this shit is receive, filter string and write into a local server
     output = open( createFiles.path + createFiles.fileName, 'a') #write into local server
@@ -17,6 +18,6 @@ def main(): #this shit is receive, filter string and write into a local server
         finally:
             subprocess.call(['sed','-i','/.*SessionID.*/d',createFiles.path + createFiles.fileName])
             
-            
 if __name__ == '__main__':
     main()
+    B612.seek_and_destroy()

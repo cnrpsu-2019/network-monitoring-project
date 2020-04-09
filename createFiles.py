@@ -7,5 +7,5 @@ fileDate = now.strftime("%d-%b-%Y") #day-month-year
 path = '/home/bass/receive/'
 fileName = "trapd-" + fileDate + ".log"
 
-
-sampleFile = 'trapd-05-Apr-2020.log'
+realFile = path + fileName
+sampleFile = 'example.log'
