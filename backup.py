@@ -5,6 +5,7 @@ import sys
 import Filterx
 import time
 
+
 def replaceMultiple(mainString, toBeReplaces, newString):
     # Iterate over the strings to be replaced
     for elem in toBeReplaces :

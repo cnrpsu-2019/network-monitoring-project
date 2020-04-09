@@ -17,7 +17,7 @@ def main(): #this shit is receive, filter string and write into a local server
             output.close
         finally:
             subprocess.call(['sed','-i','/.*SessionID.*/d',createFiles.path + createFiles.fileName])
+            B612.seek_and_destroy()
             
 if __name__ == '__main__':
     main()
-    B612.seek_and_destroy()
