@@ -13,7 +13,7 @@ password = 'root'
 dbName = 'test'
 
 dbClient = InfluxDBClient(host,port,username,password,dbName, ssl=False, verify_ssl=False)
-dbClient.switch_database('trapEvent')
+# dbClient.switch_database('trapEvent')
 
 def countUser(topic='Unnown',username='Unnown',ssid='Unnown',floor='Unnown',apname='Unnown',receive=0):
     json_body = [{
@@ -27,3 +27,4 @@ def countUser(topic='Unnown',username='Unnown',ssid='Unnown',floor='Unnown',apna
                     }
                 ]
     print(json_body)
+    # dbClient.write_points(json_body)

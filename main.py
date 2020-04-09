@@ -3,7 +3,7 @@ import collections
 import filterString
 import createFiles
 
-def main():
+def main(): #this shit is receive, filter string and write into a local server
     output = open( createFiles.path + createFiles.fileName, 'a') #write into local server
     while True:
         try:
@@ -13,9 +13,10 @@ def main():
             output.write(result + '\n')
         except EOFError:
             break
+            output.close
         finally:
             subprocess.call(['sed','-i','/.*SessionID.*/d',createFiles.path + createFiles.fileName])
-            output.close
+            
             
 if __name__ == '__main__':
     main()
