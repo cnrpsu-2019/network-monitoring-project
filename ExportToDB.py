@@ -1,20 +1,19 @@
 from influxdb import InfluxDBClient
+import Secret
 
+#influxdb for local tests
 host = 'localhost'
 port = 8086
-username = 'sabaszx'
-password = 'admin'
-dbName = 'snmptrapd'
+username = 'root'
+password = 'root'
+dbName = 'test'
 
-# host = 'localhost'
-# port = 8086
-# username = 'root'
-# password = 'root'
-# dbName = 'test'
-
+#test section
 dbClient = InfluxDBClient(host,port,username,password,dbName, ssl=False, verify_ssl=False)
-dbClient.switch_database('snmptrapd')
-# def countUser(topic='Unknown',username='Unnown',ssid='Unnown',floor='Unnown',apname='Unnown',value=0):
+dbClient.switch_database('test')
+
+# dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
+# dbClient.switch_database(Secret.dbName)
 
 def countUser(value):
     json_body = [{
@@ -27,7 +26,7 @@ def countUser(value):
                     }
                 ]
     print(json_body)
-    dbClient.write_points(json_body)
+    # dbClient.write_points(json_body)
 
 def count_ssid(ssid_name,value):
     json_body = [{
@@ -40,7 +39,7 @@ def count_ssid(ssid_name,value):
                     }
                 ]
     print(json_body)
-    dbClient.write_points(json_body)
+    # dbClient.write_points(json_body)
 
 
 def uptime_instance(date_string):
