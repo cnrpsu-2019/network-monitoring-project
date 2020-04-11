@@ -26,7 +26,7 @@ def countUser(value):
                     }
                 ]
     print(json_body)
-    # dbClient.write_points(json_body)
+    dbClient.write_points(json_body)
 
 def count_ssid(ssid_name,value):
     json_body = [{
@@ -39,7 +39,7 @@ def count_ssid(ssid_name,value):
                     }
                 ]
     print(json_body)
-    # dbClient.write_points(json_body)
+    dbClient.write_points(json_body)
 
 
 def uptime_instance(date_string):
@@ -53,4 +53,4 @@ def uptime_instance(date_string):
                     }
                 ]
     print(json_body)
-    dbClient.write_points(json_body)
+    # dbClient.write_points(json_body)
