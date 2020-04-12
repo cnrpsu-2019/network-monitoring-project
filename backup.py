@@ -5,7 +5,7 @@ import B612
 
 def main():
     running = True
-    output = open(createFiles.path + createFiles.fileName,'a')
+    output = open(createFiles.realFile,'a')
     while running:
         try:
             raw_input = input() #receive input
@@ -17,7 +17,7 @@ def main():
         except EOFError:
             running = False
     output.close()
-    subprocess.call(['sed','-i','/.*SessionID.*/d',createFiles.path + createFiles.fileName])
+    subprocess.call(['sed','-i','/.*SessionID.*/d',createFiles.realFile])
 
 if __name__ == '__main__':
     main()
