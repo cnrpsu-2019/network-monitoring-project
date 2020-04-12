@@ -49,5 +49,5 @@ def seek_and_destroy():
     ExportToDB.count_ssid(MacList.ssidname_list[5],psu_802)
     ExportToDB.uptime_instance(lastet_uptime)
 
-    ExportToDB.countSoething('rogue_ap_detected','rogue',rougue_ap_detected)
+    ExportToDB.countSomething('rogue_ap_detected','rogue',rougue_ap_detected)
 
