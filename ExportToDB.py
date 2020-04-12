@@ -14,6 +14,24 @@ dbName = 'test'
 #
 dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
 dbClient.switch_database(Secret.dbName)
+# dbClient = InfluxDBClient(host,port,username,password,dbName, ssl=False, verify_ssl=False)
+# dbClient.switch_database('test')
+
+dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
+dbClient.switch_database(Secret.dbName)
+
+def countSomething(topic,kind,value):
+    json_body = [{
+                "measurement": str(topic),
+                "tags": {
+                    "type": str(kind),
+                },
+                "fields": {
+                    "value": int(value)}
+                    }
+                ]
+    print(json_body)
+    dbClient.write_points(json_body)
 
 def countUser(value):
     json_body = [{
