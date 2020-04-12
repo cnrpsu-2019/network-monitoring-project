@@ -37,7 +37,7 @@ def seek_and_destroy():
     lastet_uptime = uptime_non_zero[-1]
 
     #rogue ap detected
-    rougue_ap_detected = Extract.extractSpecific(createFiles.sampleFile,'Event ApRogueDetected').replace('Event','').count('ApRogueDetected')
+    rougue_ap_detected = Extract.extractSpecific(createFiles.realFile,'Event ApRogueDetected').replace('Event','').count('ApRogueDetected')
 
     #export to db part
     ExportToDB.countUser(unique_name)
