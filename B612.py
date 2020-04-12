@@ -36,6 +36,8 @@ def seek_and_destroy():
     #pick last element in list
     lastet_uptime = uptime_non_zero[-1]
 
+    #rogue ap detected
+    rougue_ap_detected = Extract.extractSpecific(createFiles.sampleFile,'Event ApRogueDetected').replace('Event','').count('ApRogueDetected')
 
     #export to db part
     ExportToDB.countUser(unique_name)
@@ -46,3 +48,6 @@ def seek_and_destroy():
     ExportToDB.count_ssid(MacList.ssidname_list[4],psu_5g)
     ExportToDB.count_ssid(MacList.ssidname_list[5],psu_802)
     ExportToDB.uptime_instance(lastet_uptime)
+
+    ExportToDB.countSoething('rogue_ap_detected','rogue',rougue_ap_detected)
+
