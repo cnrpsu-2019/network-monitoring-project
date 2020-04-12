@@ -9,11 +9,11 @@ password = 'root'
 dbName = 'test'
 
 #test section
-dbClient = InfluxDBClient(host,port,username,password,dbName, ssl=False, verify_ssl=False)
-dbClient.switch_database('test')
-
-# dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
-# dbClient.switch_database(Secret.dbName)
+#dbClient = InfluxDBClient(host,port,username,password,dbName, ssl=False, verify_ssl=False)
+#dbClient.switch_database('test')
+#
+dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
+dbClient.switch_database(Secret.dbName)
 
 def countUser(value):
     json_body = [{
