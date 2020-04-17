@@ -9,4 +9,4 @@ fileName = "trapd-" + fileDate + ".log"
 
 realFile = path + fileName #real file for real implement
 
-sampleFile = 'example.log'
+sampleFile = 'example.log' #sample file for testing

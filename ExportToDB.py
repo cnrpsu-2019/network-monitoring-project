@@ -20,46 +20,24 @@ dbClient.switch_database(Secret.dbName)
 dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
 dbClient.switch_database(Secret.dbName)
 
-def countSomething(topic,kind,value):
+#func prototype
+def count_client(self):
     json_body = [{
-                "measurement": str(topic),
+                "measurement": 'no_of_clients',
                 "tags": {
-                    "type": str(kind),
+                    "type": 'active_users',
                 },
                 "fields": {
-                    "value": int(value)}
+                    "mac_address": self,
+                    "ip_address": self,
+                    "ap_name": self, #this is how we identify floor
+                    "wlan_ssid":self,
+                    "username":self}
                     }
                 ]
     print(json_body)
-    dbClient.write_points(json_body)
 
-def countUser(value):
-    json_body = [{
-                "measurement": 'user_count',
-                "tags": {
-                    "type": 'user_associated',
-                },
-                "fields": {
-                    "value": int(value)}
-                    }
-                ]
-    print(json_body)
-    dbClient.write_points(json_body)
-
-def count_ssid(ssid_name,value):
-    json_body = [{
-                "measurement": 'ssid_count',
-                "tags": {
-                    "name": str(ssid_name),
-                },
-                "fields": {
-                    "value": int(value)}
-                    }
-                ]
-    print(json_body)
-    dbClient.write_points(json_body)
-
-
+#it works 
 def uptime_instance(date_string):
     json_body = [{
                 "measurement": 'uptime_instance',
