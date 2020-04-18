@@ -1,5 +1,11 @@
-My senior project using Python
+# My senior project using Python #
 
-- Use SNMP(Simple Network Management Protocol) type: trap
-- uses Influxdb and grafana to store and visualize
-- too much non-sense commitments
+- ที่ใช้อยู่นะ
+    * SNMP(Simple Network Management Protocol) 
+        * type: trap
+        
+    * InfluxDB สำหรับเก็บข้อมูลแบบอนุกรมเวลา
+    * Grafana ในการแสดงผลข้อมูล
+    * ภาษาที่ใช้ในการเขียน
+        * Python
+        

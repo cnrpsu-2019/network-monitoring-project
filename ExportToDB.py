@@ -37,6 +37,15 @@ def count_client(self):
                 ]
     print(json_body)
 
+def active_users_coarse(receive):
+    json_body = [{
+        'mesurement':'active_users',
+        'fields':{
+            'number':receive
+        }
+    }]
+    dbClient.write_points(json_body)
+
 #it works 
 def uptime_instance(date_string):
     json_body = [{
