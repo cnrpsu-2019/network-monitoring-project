@@ -49,4 +49,4 @@ def uptime_instance(date_string):
                     }
                 ]
     print(json_body)
-    # dbClient.write_points(json_body)
+    dbClient.write_points(json_body)
