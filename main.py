@@ -13,12 +13,7 @@ def main():
             raw_input = input() #receive input
             #replace string
             result = filterString.filter_string(raw_input)
-            
-            #extract username
-#            username_ext = Extract.username_extract(result).replace('Username','').split()
-#            unique_users = int(len(list(set(username_ext))) * 0.85)
-#            ExportToDB.active_users_coarse(unique_users)
-#            
+              
             #write to local
             output.write(result +'\n')
            
@@ -29,4 +24,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    B612.seek_and_destroy()
+    B612.uptime_instance()

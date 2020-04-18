@@ -7,20 +7,10 @@ port = 8086
 username = 'root'
 password = 'root'
 dbName = 'test'
-
-#test section
-#dbClient = InfluxDBClient(host,port,username,password,dbName, ssl=False, verify_ssl=False)
-#dbClient.switch_database('test')
 #
 dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
 dbClient.switch_database(Secret.dbName)
-# dbClient = InfluxDBClient(host,port,username,password,dbName, ssl=False, verify_ssl=False)
-# dbClient.switch_database('test')
 
-dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
-dbClient.switch_database(Secret.dbName)
-
-#func prototype
 def count_client(self):
     json_body = [{
                 "measurement": 'no_of_clients',
@@ -37,13 +27,17 @@ def count_client(self):
                 ]
     print(json_body)
 
-def active_users_coarse(receive = 0):
+def active_users_coarse(receive):
     json_body = [{
-        'mesurement':'active_users',
-        'fields':{
-            'number':receive
-        }
-    }]
+                "measurement": 'active_users',
+                "tags": {
+                    "name": 'users',
+                },
+                "fields": {
+                    "value": int(receive)}
+                    }
+                ]
+    print(json_body)
     dbClient.write_points(json_body)
 
 #it works 
