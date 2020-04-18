@@ -16,7 +16,7 @@ def uptime_instance():
     ExportToDB.uptime_instance(lastet_uptime)
 
 def active_user_cummulate():
-    username_ext = Extract.username_extract(whole_file).replace('Username','').split()
+    username_ext = Extract.username_extract(createFiles.realFile,'Username').replace('Username','').split()
     unique_users = int(len(list(set(username_ext))) * 0.85)
     #send to database
     ExportToDB.active_users_coarse(unique_users)
