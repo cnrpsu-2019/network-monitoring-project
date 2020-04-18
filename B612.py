@@ -25,5 +25,5 @@ def rogue_ssid_detected():
     rogue_whole = Extract.extractSpecific(createFiles.realFile,'ApRogueApSsid').replace('ApRogueApSsid','')
     pattern = re.compile(r"(?:\w.?){10,}")
     result_ssid = re.findall(pattern,rogue_whole)
-    unique_ssid_rogue = list(set(result_ssid))
+    unique_ssid_rogue = len(list(set(result_ssid)))
     ExportToDB.ssid_rogue_detected(unique_ssid_rogue)
