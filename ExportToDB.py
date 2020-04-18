@@ -40,6 +40,19 @@ def active_users_coarse(receive):
     print(json_body)
     dbClient.write_points(json_body)
 
+def ssid_rogue_detected(receive):
+    json_body = [{
+                "measurement": 'ssid_rogue_detected',
+                "tags": {
+                    "name": 'rogue_ssid',
+                },
+                "fields": {
+                    "value": int(receive)}
+                    }
+                ]
+    print(json_body)
+    dbClient.write_points(json_body)
+
 #it works 
 def uptime_instance(date_string):
     json_body = [{

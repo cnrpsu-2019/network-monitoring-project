@@ -20,3 +20,10 @@ def active_user_cummulate():
     unique_users = int(len(list(set(username_ext))) * 0.85)
     #send to database
     ExportToDB.active_users_coarse(unique_users)
+
+def rogue_ssid_detected():
+    rogue_whole = Extract.extractSpecific(createFiles.realFile,'ApRogueApSsid').replace('ApRogueApSsid','')
+    pattern = re.compile(r"(?:\w.?){10,}")
+    result_ssid = re.findall(pattern,rogue_whole)
+    unique_ssid_rogue = list(set(result_ssid))
+    ExportToDB.ssid_rogue_detected(unique_ssid_rogue)

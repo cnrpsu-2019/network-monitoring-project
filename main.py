@@ -26,3 +26,4 @@ if __name__ == '__main__':
     main()
     B612.uptime_instance()
     B612.active_user_cummulate()
+    B612.rogue_ssid_detected()
