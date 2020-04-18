@@ -37,6 +37,9 @@ def count_client(self):
                 ]
     print(json_body)
 
+def funcname(parameter_list):
+    pass
+    
 #it works 
 def uptime_instance(date_string):
     json_body = [{
