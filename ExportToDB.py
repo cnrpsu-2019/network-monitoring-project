@@ -66,3 +66,19 @@ def uptime_instance(date_string):
                 ]
     print(json_body)
     dbClient.write_points(json_body)
+
+def send_to_db(mac_address,ip_address,ap_name,ssid,username):
+    tosend_body = [{
+        "measurement": 'no_of_clients',
+        "tags": {
+            "type": 'active_users',
+            "wlan_ssid": ssid,
+            "ap_name": ap_name #this is how we identify floor
+        },
+        "fields": {
+            "mac_address":mac_address,
+            "ip_address":ip_address,
+            "username":username
+            }
+    }]                
+    dbClient.write_points(tosend_body)

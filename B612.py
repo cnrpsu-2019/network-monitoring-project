@@ -26,3 +26,11 @@ def rogue_ssid_detected():
     result_ssid = re.findall(pattern,rogue_whole)
     unique_ssid_rogue = len(list(set(result_ssid)))
     ExportToDB.ssid_rogue_detected(unique_ssid_rogue)
+
+def test_users():
+    apname_last = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
+    ssid = Extract.extractSpecific(createFiles.realFile,'SSID').split('SSID')[-1]
+    user_name = Extract.extractSpecific(createFiles.realFile,'Username').split('Username')[-1]
+    mac_address = Extract.extractSpecific(createFiles.realFile,'MacAddress').split('MacAddress')[-1]
+    ip_address = Extract.extractSpecific(createFiles.realFile,'IPAddress').split('IPAddress')[-1]
+    ExportToDB.send_to_db(mac_address,ip_address,ap_name,ssid,ip_address)
