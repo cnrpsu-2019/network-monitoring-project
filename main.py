@@ -13,7 +13,6 @@ def main():
             raw_input = input() #receive input
             #replace string
             result = filterString.filter_string(raw_input)
-              
             #write to local
             output.write(result +'\n')
            

@@ -12,7 +12,6 @@ def uptime_instance():
     uptime_non_zero = re.findall(pattern,uptime) #filter 0 out
     #pick last element in list
     lastet_uptime = uptime_non_zero[-1]
-
     ExportToDB.uptime_instance(lastet_uptime)
 
 def active_user_cummulate():

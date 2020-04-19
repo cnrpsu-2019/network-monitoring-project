@@ -22,12 +22,3 @@ def extractSpecific(path, keyword):
               output += line
     f.close()
     return output
-
-def username_extract(receive):
-  output = ''
-  keyword = 'Username'
-  for line in receive:
-    line = line.rstrip()
-    if re.search(keyword,line):
-      output += line
-  return output
