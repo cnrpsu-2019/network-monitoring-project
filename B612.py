@@ -33,4 +33,4 @@ def test_users():
     user_name = Extract.extractSpecific(createFiles.realFile,'Username').split('Username')[-1]
     mac_address = Extract.extractSpecific(createFiles.realFile,'MacAddress').split('MacAddress')[-1]
     ip_address = Extract.extractSpecific(createFiles.realFile,'IPAddress').split('IPAddress')[-1]
-    ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,ip_address)
+    ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,user_name)
