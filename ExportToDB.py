@@ -11,43 +11,48 @@ dbName = 'test'
 dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
 dbClient.switch_database(Secret.dbName)
 
-def count_client(self):
-    json_body = [{
-                "measurement": 'no_of_clients',
-                "tags": {
-                    "type": 'active_users',
-                },
-                "fields": {
-                    "mac_address": self,
-                    "ip_address": self,
-                    "ap_name": self, #this is how we identify floor
-                    "wlan_ssid":self,
-                    "username":self}
-                    }
-                ]
-    print(json_body)
+# def count_client(self):
+#     json_body = [{
+#                 "measurement": 'no_of_clients',
+#                 "tags": {
+#                     "type": 'active_users',
+#                 },
+#                 "fields": {
+#                     "mac_address": self,
+#                     "ip_address": self,
+#                     "ap_name": self, #this is how we identify floor
+#                     "wlan_ssid":self,
+#                     "username":self}
+#                     }
+#                 ]
+#     print(json_body)
 
-def active_users_coarse(receive):
-    json_body = [{
-                "measurement": 'active_users',
-                "tags": {
-                    "name": 'users',
-                },
-                "fields": {
-                    "value": int(receive)}
-                    }
-                ]
-    print(json_body)
-    dbClient.write_points(json_body)
+# def active_users_coarse(receive):
+#     json_body = [{
+#                 "measurement": 'active_users',
+#                 "tags": {
+#                     "name": 'users',
+#                 },
+#                 "fields": {
+#                     "value": int(receive)}
+#                     }
+#                 ]
+#     print(json_body)
+#     dbClient.write_points(json_body)
 
-def ssid_rogue_detected(receive):
+def ssid_rogue_detected(rogue_mode,rogue_ssid,rogue_apname_last,rogue_detected_ch,rogue_mac_address,rogue_rssi):
     json_body = [{
                 "measurement": 'ssid_rogue_detected',
                 "tags": {
-                    "name": 'rogue_ssid',
+                    "ssid": rogue_ssid,
+                    "mode": rogue_mode
                 },
                 "fields": {
-                    "value": int(receive)}
+                    "detected_ch": rogue_detected_ch,
+                    "rogue_mac_address":rogue_mac_address,
+                    "rssi":rogue_rssi,
+                    "ap_name":rogue_apname_last
+                        }
                     }
                 ]
     print(json_body)

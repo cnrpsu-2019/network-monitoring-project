@@ -14,23 +14,23 @@ def uptime_instance():
     lastet_uptime = uptime_non_zero[-1]
     ExportToDB.uptime_instance(lastet_uptime)
 
-def active_user_cummulate():
-    username_ext = Extract.extractSpecific(createFiles.realFile,'Username').replace('Username','').split()
-    unique_users = int(len(list(set(username_ext))) * 0.85)
-    #send to database
-    ExportToDB.active_users_coarse(unique_users)
 
 def rogue_ssid_detected():
-    rogue_whole = Extract.extractSpecific(createFiles.realFile,'ApRogueApSsid').replace('ApRogueApSsid','')
-    pattern = re.compile(r"(?:\w.?){10,}")
-    result_ssid = re.findall(pattern,rogue_whole)
-    unique_ssid_rogue = len(list(set(result_ssid)))
-    ExportToDB.ssid_rogue_detected(unique_ssid_rogue)
+    # ApRogueMode
+    rogue_detected = Extract.extractSpecific(createFiles.realFile,'ApRogueDetected').replace('ApRogueDetected','').split()[-1]
+    rogue_mode = Extract.extractSpecific(createFiles.realFile,'ApRogueMode').replace('ApRogueMode','').split()[-1]
+    rogue_apname_last = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
+    rogue_ssid = Extract.extractSpecific(createFiles.realFile,'ApRogueApSsid').split('ApRogueApSsid')[-1]
+    rogue_detected_ch = Extract.extractSpecific(createFiles.realFile,'ApRogueDetectedChannel').split('ApRogueDetectedChannel')[-1]
+    rogue_mac_address = Extract.extractSpecific(createFiles.realFile,'ApRogueApMacAddress').split('ApRogueApMacAddress')[-1]
+    rogue_rssi = Extract.extractSpecific(createFiles.realFile,'ApRSSI').split('ApRSSI')[-1]
+    ExportToDB.ssid_rogue_detected(rogue_mode,rogue_ssid,rogue_apname_last,rogue_detected_ch,rogue_mac_address,rogue_rssi)
 
-def test_users():
+def activity_users():
     apname_last = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
     ssid = Extract.extractSpecific(createFiles.realFile,'SSID').split('SSID')[-1]
     user_name = Extract.extractSpecific(createFiles.realFile,'Username').split('Username')[-1]
     mac_address = Extract.extractSpecific(createFiles.realFile,'MacAddress').split('MacAddress')[-1]
     ip_address = Extract.extractSpecific(createFiles.realFile,'IPAddress').split('IPAddress')[-1]
-    ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,user_name)
+    if mac_address is not '0:0:0:0:0:0':
+        ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,user_name)
