@@ -44,11 +44,11 @@ def ssid_rogue_detected(rogue_mode,rogue_ssid,rogue_apname_last,rogue_detected_c
     json_body = [{
                 "measurement": 'ssid_rogue_detected',
                 "tags": {
-                    "ssid": rogue_ssid,
                     "mode": rogue_mode
                 },
                 "fields": {
                     "detected_ch": rogue_detected_ch,
+                    "ssid": rogue_ssid,
                     "rogue_mac_address":rogue_mac_address,
                     "rssi":rogue_rssi,
                     "ap_name":rogue_apname_last
