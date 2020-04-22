@@ -33,4 +33,5 @@ def activity_users():
     mac_address = Extract.extractSpecific(createFiles.realFile,'MacAddress').split('MacAddress')[-1]
     ip_address = Extract.extractSpecific(createFiles.realFile,'IPAddress').split('IPAddress')[-1]
     if mac_address is not '0:0:0:0:0:0':
-        ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,user_name)
+        if user_name is not '6 Bil' or '5 Bil':
+            ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,user_name)
