@@ -83,7 +83,8 @@ def send_to_db(mac_address,ip_address,ap_name,ssid,username):
         "fields": {
             "mac_address":mac_address,
             "ip_address":ip_address,
-            "username":username
+            "username":username,
+            "wlan_ssid": ssid
             }
     }]                
     dbClient.write_points(tosend_body)
