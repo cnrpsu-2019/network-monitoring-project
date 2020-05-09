@@ -36,8 +36,8 @@ def activity_users():
 
 def deauth_users():
     apname_last = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
-    reason_code = Extract.extractSpecific(createFiles.sampleFile,'ReasonCode').split('ReasonCode')[-1]
-    user_ip_address = Extract.extractSpecific(createFiles.sampleFile,'UserIpAddress').split('UserIpAddress')[-1]
-    user_name = Extract.extractSpecific(createFiles.sampleFile,'UserName').split('UserName')[-1]
-    mac_address = Extract.extractSpecific(createFiles.sampleFile,'MacAddress').split('MacAddress')[-1]
+    reason_code = Extract.extractSpecific(createFiles.realFile,'ReasonCode').split('ReasonCode')[-1]
+    user_ip_address = Extract.extractSpecific(createFiles.realFile,'UserIpAddress').split('UserIpAddress')[-1]
+    user_name = Extract.extractSpecific(createFiles.realFile,'UserName').split('UserName')[-1]
+    mac_address = Extract.extractSpecific(createFiles.realFile,'MacAddress').split('MacAddress')[-1]
     ExportToDB.disassociate_users(mac_address,ip_address,apname_last,reason_code,user_name)
