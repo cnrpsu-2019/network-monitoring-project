@@ -14,7 +14,6 @@ def uptime_instance():
     lastet_uptime = uptime_non_zero[-1]
     ExportToDB.uptime_instance(lastet_uptime)
 
-
 def rogue_ssid_detected():
     # ApRogueMode
     rogue_detected = Extract.extractSpecific(createFiles.realFile,'ApRogueDetected').replace('ApRogueDetected','').split()[-1]
@@ -34,3 +33,11 @@ def activity_users():
     ip_address = Extract.extractSpecific(createFiles.realFile,'IPAddress').split('IPAddress')[-1]
     if mac_address is not '0:0:0:0:0:0':
             ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,user_name)
+
+def deauth_users():
+    apname_last = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
+    reason_code = Extract.extractSpecific(createFiles.sampleFile,'ReasonCode').split('ReasonCode')[-1]
+    user_ip_address = Extract.extractSpecific(createFiles.sampleFile,'UserIpAddress').split('UserIpAddress')[-1]
+    user_name = Extract.extractSpecific(createFiles.sampleFile,'UserName').split('UserName')[-1]
+    mac_address = Extract.extractSpecific(createFiles.sampleFile,'MacAddress').split('MacAddress')[-1]
+    ExportToDB.disassociate_users(mac_address,ip_address,apname_last,reason_code,user_name)
