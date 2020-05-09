@@ -1,33 +1,46 @@
-from influxdb import InfluxDBClient
 import Secret
-# import Extract
+import os
+import requests
+import subprocess
+import time
+from datetime import datetime
 
+def checkPing():
+	host_ip = '1.1.1.1' #Check ping res by Cloudflare Public DNS server
+	try:
+		output = subprocess.check_output("ping -c 1 -W 3 {}".format(host_ip), shell=True)
+	except Exception as e:
+		return False
+	return True
 
-dbClient = InfluxDBClient(Secret.host,Secret.port,Secret.username,Secret.password,Secret.dbName, ssl=False, verify_ssl=False)
-dbClient.switch_database(Secret.dbName)
+def login():
+	headers = {'User-Agent': 'PSU Auto Login'}
+	payload = {
+		'username' : Secret.std_id,
+		'password' : Secret.std_password,
+		'login': 'Login'
+	}
+	
+	s = requests.Session()
+	get_login = s.get(PSU_URL)
+	cookies = dict(get_login.cookies)
+	#print(get_login.headers)
+	
+	post_login = s.post(PSU_URL, headers=headers, data=payload, cookies=cookies)
+	#print(post_login.text)
+	time.sleep(5) ## Sleep 5s.
 
-# class Rose(self,mac_address,ip_address,ap_name,ssid,username):
-    
-#     def __init__(self):    
-#         self.mac_address = mac_address 
-#         self.ip_address = ip_address 
-#         self.ap_name = ap_name 
-#         self.ssid = ssid  
-#         self.username = username 
+	if(checkPing() == True):
+		print('Log in successful !!')
+	else:
+		print('Error , Please try again')
 
-def send_to_db(self,mac_address,ip_address,ap_name,ssid,username):
-    
-    tosend_body = [{
-        "measurement": 'no_of_clients',
-        "tags": {
-            "type": 'active_users',
-        },
-        "fields": {
-            "mac_address":mac_address,
-            "ip_address":ip_address,
-            "ap_name":ap_name, #this is how we identify floor
-            "wlan_ssid":ssid,
-            "username":username}
-            }
-        ]                
-    dbClient.write_points(tosend_body)
+def main():
+	if(checkPing() == False):
+		print('NOT LOGIN !!')
+		login() # Call login() function
+	else:
+		print('Already Loged in!!') 
+
+if __name__ == '__main__':
+    main() ## Main Function
