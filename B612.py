@@ -40,4 +40,4 @@ def deauth_users():
     user_ip_address = Extract.extractSpecific(createFiles.realFile,'UserIpAddress').split('UserIpAddress')[-1]
     user_name = Extract.extractSpecific(createFiles.realFile,'UserName').split('UserName')[-1]
     mac_address = Extract.extractSpecific(createFiles.realFile,'MacAddress').split('MacAddress')[-1]
-    ExportToDB.disassociate_users(mac_address,ip_address,apname_last,reason_code,user_name)
+    ExportToDB.disassociate_users(mac_address,user_ip_address,apname_last,reason_code,user_name)
