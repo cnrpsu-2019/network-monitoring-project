@@ -57,7 +57,8 @@ def send_to_db(mac_address,ip_address,ap_name,ssid,username): #collect associate
             "username":username,
             "wlan_ssid": ssid
             }
-    }]                
+    }]
+    print(tosend_body)                
     dbClient.write_points(tosend_body)
 
 def disassociate_users(mac_address,ip_address,ap_name,reason_code,username):
@@ -73,5 +74,6 @@ def disassociate_users(mac_address,ip_address,ap_name,reason_code,username):
             "username":username,
             "reason_code": reason_code
             }
-    }]                
+    }]
+    print(tosend_body)                
     dbClient.write_points(tosend_body)

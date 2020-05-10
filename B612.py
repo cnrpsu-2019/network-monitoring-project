@@ -32,7 +32,7 @@ def activity_users():
     mac_address = Extract.extractSpecific(createFiles.realFile,'MacAddress').split('MacAddress')[-1]
     ip_address = Extract.extractSpecific(createFiles.realFile,'IPAddress').split('IPAddress')[-1]
     if mac_address is not '0:0:0:0:0:0':
-            ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,user_name)
+        ExportToDB.send_to_db(mac_address,ip_address,apname_last,ssid,user_name)
 
 def deauth_users():
     apname_last = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
@@ -40,4 +40,5 @@ def deauth_users():
     user_ip_address = Extract.extractSpecific(createFiles.realFile,'UserIpAddress').split('UserIpAddress')[-1]
     user_name = Extract.extractSpecific(createFiles.realFile,'UserName').split('UserName')[-1]
     mac_address = Extract.extractSpecific(createFiles.realFile,'MacAddress').split('MacAddress')[-1]
-    ExportToDB.disassociate_users(mac_address,user_ip_address,apname_last,reason_code,user_name)
+    if mac_address is not '0:0:0:0:0:0':
+        ExportToDB.disassociate_users(mac_address,user_ip_address,apname_last,reason_code,user_name) 
