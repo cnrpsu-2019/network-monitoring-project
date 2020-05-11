@@ -22,7 +22,7 @@ def harvest_user():
 					total_user = total_user - 1
 
 			ExportToDB.harvest_user(total_user)
-			time.sleep(300) #delayed for 5 mins
+			time.sleep(20) #delayed for 5 mins
 			total_user = 0
 		except e:
 			print(e)
