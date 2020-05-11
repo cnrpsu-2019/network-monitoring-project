@@ -12,7 +12,7 @@ def harvest_user():
 	total_user = 0
 	try:
 		if curr_mac == prev_mac:
-			time.sleep(5) #snooze for 5 secs
+			time.sleep(10) #snooze for 5 secs
 		elif curr_mac != prev_mac:
 			if status is 'Associate':
 				total_user = total_user + 1
@@ -20,7 +20,7 @@ def harvest_user():
 				total_user = total_user - 1
 
 		ExportToDB.harvest_user(total_user)
-		time.sleep(5) #delayed for 5 mins
-		total_user = 0
+		time.sleep(10) #delayed for 5 mins
+		
 	except e:
 		print(e)
