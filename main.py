@@ -32,4 +32,4 @@ if __name__ == '__main__':
     B612.rogue_ssid_detected()
     B612.activity_users()
     B612.deauth_users()
-    #Rose.harvest_user()
+    Rose.harvest_user()
