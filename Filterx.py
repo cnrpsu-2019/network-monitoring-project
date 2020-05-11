@@ -57,3 +57,6 @@ mibList = ['SNMPv2-MIB::','CISCO-LWAPP-SI-MIB::','CISCO-LWAPP-RRM-MIB::',
 
 prefixList = ['bsn','cL','cldc','Dot11','Dot3','AirespaceAP','ciscoLwapp','sys','SiIdr','Si','clrRrm']
 weirdList = ['.0',". ",'.1 ','"',' : ']           
+
+
+apPrefix = ['Ap','RogueAP','ApSys','ApRogueAp','ApRogueClassifiedAp','ApSys']

@@ -77,3 +77,16 @@ def disassociate_users(mac_address,ip_address,ap_name,reason_code,username):
     }]
     print(ip_address,username,reason_code)                
     dbClient.write_points(tosend_body)
+
+def harvest_user(num):
+    tosend_body = [{
+        "measurement": 'number_of_users',
+        "tags": {
+            "type": 'overall'
+        },
+        "fields": {
+            "value":num,
+            }
+    }]
+    print('number of users every 5 mins is {}'.format(num))
+    dbClient.write_points(tosend_body)

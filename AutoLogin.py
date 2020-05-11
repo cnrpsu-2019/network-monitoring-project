@@ -39,5 +39,6 @@ def check_and_login():
 	if(checkPing() == False):
 		print('NOT LOGIN !!')
 		login() # Call login() function
+		# time.sleep(14400) #sleep for 4 hours !
 	else:
 		print('Already Loged in!!') 
