@@ -5,7 +5,7 @@ import time
 import ExportToDB
 
 def harvest_user():
-	status = Extract.extractSpecific(createFiles)
+	status = Extract.extractSpecific(createFiles.realFile,'Event').split('Event')[-1]
 	prev_mac = Extract.client_mac(createFiles.realFile)[-1]
 	time.sleep(10) #sleep for 10 secs
 	curr_mac = Extract.client_mac(createFiles.realFile)[-1]
