@@ -26,7 +26,7 @@ def ssid_rogue_detected(rogue_mode,rogue_ssid,rogue_apname_last,rogue_detected_c
                         }
                     }
                 ]
-    print(json_body)
+    print(rogue_mode,rogue_ssid)
     dbClient.write_points(json_body)
 
 #it works 
@@ -40,7 +40,7 @@ def uptime_instance(date_string):
                     "value": str(date_string)}
                     }
                 ]
-    print(json_body)
+    print(date_string)
     dbClient.write_points(json_body)
 
 def send_to_db(mac_address,ip_address,ap_name,ssid,username): #collect associated users
@@ -58,7 +58,7 @@ def send_to_db(mac_address,ip_address,ap_name,ssid,username): #collect associate
             "wlan_ssid": ssid
             }
     }]
-    print(tosend_body)                
+    print(ip_address,ssid,username)                
     dbClient.write_points(tosend_body)
 
 def disassociate_users(mac_address,ip_address,ap_name,reason_code,username):
@@ -75,5 +75,5 @@ def disassociate_users(mac_address,ip_address,ap_name,reason_code,username):
             "reason_code": reason_code
             }
     }]
-    print(tosend_body)                
+    print(ip_address,username,reason_code)                
     dbClient.write_points(tosend_body)
