@@ -5,6 +5,8 @@ import subprocess
 import time
 from datetime import datetime
 
+PSU_URL = 'https://cp-xml-40g.psu.ac.th:6082/php/uid.php'
+
 def checkPing():
 	host_ip = '1.1.1.1' #Check ping res by Cloudflare Public DNS server
 	try:
