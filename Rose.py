@@ -4,23 +4,19 @@ import createFiles
 import time
 import ExportToDB
 
-def harvest_user():
-	status = Extract.extractSpecific(createFiles.realFile,'Event').split('Event')[-1]
-	prev_mac = Extract.client_mac(createFiles.realFile)[-1]
-	time.sleep(10) #sleep for 10 secs
-	curr_mac = Extract.client_mac(createFiles.realFile)[-1]
+def harvest_user(): #collect user by mac address
+	status = Extract.extractSpecific(createFiles.realFile,'Event').split('Event')[-1].strip()
+	curr_mac = Extract.client_mac(createFiles.realFile)[-1].strip()
+	prev_mac = Extract.client_mac(createFiles.realFile)[-2].strip()
+	bucket = []
 	total_user = 0
-	try:
-		if curr_mac == prev_mac:
-			time.sleep(10) #snooze for 5 secs
-		elif curr_mac != prev_mac:
-			if status is 'Associate':
-				total_user = total_user + 1
-			elif status is 'Disassociate':
-				total_user = total_user - 1
-
-		ExportToDB.harvest_user(total_user)
-		time.sleep(10) #delayed for 5 mins
-		
-	except e:
-		print(e)
+	
+	if curr_mac is not prev_mac:
+		if status is 'Associate':
+			bucket.append(curr_mac)
+		elif status is 'Disassociate':
+			if bucket is not []:
+				bucket.pop()
+	
+	total_user = int(len(bucket))
+	ExportToDB.harvest_user(total_user)

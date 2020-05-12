@@ -88,5 +88,5 @@ def harvest_user(num):
             "value":num,
             }
     }]
-    print('number of users every 5 mins is {}'.format(num))
+    print('number of users is {}'.format(num))
     dbClient.write_points(tosend_body)
