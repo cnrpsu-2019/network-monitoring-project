@@ -6,6 +6,9 @@ import createFiles
 import time
 import ExportToDB
 import schedule
+import sys
+
+sys.path.append('/home/bass/.local/lib/python3.8/site-packages/schedule')
 
 def harvest_user(): #collect user by mac address
 	status = Extract.extractSpecific(createFiles.realFile,'Event').split('Event')[-1].strip()
