@@ -26,8 +26,7 @@ def main():
 if __name__ == '__main__':
     main()
     #login into outside world
-    AutoLogin.check_and_login()
-    
+    AutoLogin.check_and_login()    
     B612.uptime_instance()
     B612.rogue_ssid_detected()
     B612.activity_users()
