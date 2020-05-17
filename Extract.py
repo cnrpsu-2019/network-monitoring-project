@@ -35,4 +35,4 @@ def client_mac(path):
     # differenciate between client and ap mac_address
     client_mac = list(set(pure_mac) - set(MacList.buildingMacList))
 
-    return client_mac  # return unique mac addresses
+    return client_mac  # return list of unique mac addresses
