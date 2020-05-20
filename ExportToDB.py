@@ -32,7 +32,7 @@ def ssid_rogue_detected(rogue_mode,rogue_ssid,rogue_apname_last,rogue_detected_c
 #it works 
 def uptime_instance(date_string):
     json_body = [{
-                "measurement": 'uptime_instance',
+        "measurement": 'uptime_instance',
                 "tags": {
                     "name": 'uptime_instance',
                 },
@@ -40,7 +40,7 @@ def uptime_instance(date_string):
                     "value": str(date_string)}
                     }
                 ]
-    print(date_string)
+    print('uptime instance duration : {}'.format(date_string))
     dbClient.write_points(json_body)
 
 def send_to_db(mac_address,ip_address,ap_name,ssid,username): #collect associated users
