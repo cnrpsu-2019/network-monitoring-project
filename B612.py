@@ -11,8 +11,8 @@ def uptime_instance():
     pattern = re.compile(r'(?:[0-9]:?){6}')
     uptime_non_zero = re.findall(pattern,uptime) #filter 0 out
     #pick last element in list
-    lastet_uptime = uptime_non_zero[-1]
-    ExportToDB.uptime_instance(lastet_uptime)
+    lastet_uptime = uptime_non_zero[-1]    
+    return lastet_uptime
 
 def rogue_ssid_detected():
     # ApRogueMode

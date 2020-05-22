@@ -3,7 +3,6 @@ import Extract, createFiles, time, ExportToDB
 import sched as sc
 
 schedule = sc.scheduler(time.time, time.sleep)
-status = Extract.extractSpecific(createFiles.realFile,'Event').split('Event')[-1].strip()
 
 '''
 def do_something(sc): 
