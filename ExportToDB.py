@@ -78,15 +78,22 @@ def disassociate_users(mac_address,ip_address,ap_name,reason_code,username):
     print(ip_address,username,reason_code)                
     dbClient.write_points(tosend_body)
 
-def harvest_user(num):
+def harvest_user_eng(tx,rx,username,ip_address,mac_address,ap_name,ssid):
     tosend_body = [{
         "measurement": 'number_of_users',
         "tags": {
-            "type": 'overall'
+            "type": 'overall',
+            "ssid_name": ssid,
+            "ap_name":ap_name
         },
         "fields": {
-            "value":num,
+            "tx_rate":tx,
+            "rx_rate":rx,
+            "username":username,
+            "ip_address":ip_address,
+            "ap_name":ap_name,
+            "ssid":ssid
             }
     }]
-    print('number of users is {}'.format(num))
+    print(username,ssid,tx,rx)
     dbClient.write_points(tosend_body)

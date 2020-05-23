@@ -42,3 +42,14 @@ def deauth_users():
     mac_address = Extract.client_mac(createFiles.realFile)[-1]
     if mac_address is not '0:0:0:0:0:0':
         ExportToDB.disassociate_users(mac_address,user_ip_address,apname_last,reason_code,user_name) 
+
+def eng_users_details():
+    tx_rates = Extract.extractSpecific(createFiles.realFile,'TxDatates').replace('TxDatates','').split()[-1]
+    rx_rates = Extract.extractSpecific(createFiles.realFile,'RxDatates').replace('RxDatates','').split()[-1]
+    user_ip_addr = Extract.extractSpecific(createFiles.realFile,'UserIpAddress').replace('UserIpAddress','').split()[-1]
+    user_name = Extract.extractSpecific(createFiles.realFile,'UserName').replace('UserName','').split()[-1]
+    ap_name = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
+    mac_addr = Extract.extractSpecific(createFiles.realFile,'MacAddress').replace('MacAddress','').split()[-1]
+    user_ssid = Extract.extractSpecific(createFiles.realFile,'SSID').replace('SSID','').split()[-1]
+    
+    ExportToDB.harvest_user_eng(tx_rates,rx_rates,user_name,user_ip_addr,mac_addr,ap_name,user_ssid)

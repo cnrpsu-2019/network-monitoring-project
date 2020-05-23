@@ -21,6 +21,7 @@ def main():
             elif result == 'UDP: 172.31.253.2:32769-172.30.232.250:162': #eng psu
                 eng_psu = B612.uptime_instance()
                 ExportToDB.uptime_wlc('172.30.253.2 - EnG',eng_psu)
+                B612.eng_users_details()
 
             output.write(result +'\n')
         except EOFError:
