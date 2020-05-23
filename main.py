@@ -21,7 +21,6 @@ def main():
             elif result == 'UDP: 172.31.253.2:32769-172.30.232.250:162': #eng psu
                 eng_psu = B612.uptime_instance()
                 ExportToDB.uptime_wlc('172.30.253.2 - EnG',eng_psu)
-                B612.eng_users_details()
 
             output.write(result +'\n')
         except EOFError:
@@ -30,9 +29,9 @@ def main():
 
 if __name__ == '__main__':
     main()
-    #login into outside world
-    AutoLogin.check_and_login()    
-    # B612.uptime_instance()
+    AutoLogin.check_and_login()  #login into outside world    
     B612.rogue_ssid_detected()
     B612.activity_users()
     B612.deauth_users()
+    B612.eng_users_details()
+
