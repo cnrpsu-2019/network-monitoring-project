@@ -34,4 +34,3 @@ if __name__ == '__main__':
     B612.activity_users()
     B612.deauth_users()
     B612.eng_users_details()
-
