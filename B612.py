@@ -13,10 +13,12 @@ def uptime_instance():
     uptime_non_zero = re.findall(pattern,uptime) #filter 0 out
     #pick last element in list
     lastet_uptime = uptime_non_zero[-1]
-    read_file = open(createFiles.realFile).read()
-    if read_file == 'UDP: 172.31.253.2:32769-172.30.232.250:162':
+    wlc_coe = Extract.extractSpecific(createFiles.realFile,'UDP: 172.30.232.2:32768-172.30.232.250:162').split('UDP: ')[-1]
+    wlc_eng = Extract.extractSpecific(createFiles.realFile,'UDP: 172.30.253.2:32768-172.30.232.250:162').split('UDP: ')[-1]
+
+    if wlc_eng == '172.31.253.2:32769-172.30.232.250:162':
         ExportToDB.uptime_wlc(ip_address='172.31.253.2 - EnG',date_string=lastet_uptime)
-    elif read_file == 'UDP: 172.30.232.2:32768-172.30.232.250:162':
+    elif wlc_coe == '172.30.232.2:32768-172.30.232.250:162':
         ExportToDB.uptime_wlc(ip_address='172.31.232.2 - CoE',date_string=lastet_uptime)
 
 def rogue_ssid_detected():
