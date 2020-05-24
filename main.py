@@ -16,10 +16,10 @@ def main():
             result = filterString.filter_string(raw_input)
             #write to local server
             if result == 'UDP: 172.30.232.2:32768-172.30.232.250:162': #coe wlc
-                coe_wlc = B612.uptime_instance()
+                coe_wlc = Extract.extractSpecific(createFiles.realFile,'UpTimeInstance').replace('UpTimeInstance','').split()[-2]
                 ExportToDB.uptime_wlc('172.30.232.2 - CoE',coe_wlc)
             elif result == 'UDP: 172.31.253.2:32769-172.30.232.250:162': #eng psu
-                eng_psu = B612.uptime_instance()
+                eng_psu = Extract.extractSpecific(createFiles.realFile,'UpTimeInstance').replace('UpTimeInstance','').split()[-2]
                 ExportToDB.uptime_wlc('172.30.253.2 - EnG',eng_psu)
 
             output.write(result +'\n')

@@ -6,16 +6,16 @@ import collections
 import re
 import time
 
-def uptime_instance():
-    #uptime instance
-    uptime = Extract.extractSpecific(createFiles.realFile,'UpTimeInstance').replace('UpTimeInstance','')
-    pattern = re.compile(r'(?:[0-9]:?){6}')
-    uptime_non_zero = re.findall(pattern,uptime) #filter 0 out
-    #pick last element in list
-    lastet_uptime = uptime_non_zero[-1]
-    if lastet_uptime is not None:
-        return lastet_uptime
-        time.sleep(5)
+# def uptime_instance():
+#     #uptime instance
+#     uptime = 
+#     pattern = re.compile(r'(?:[0-9]:?){6}')
+#     uptime_non_zero = re.findall(pattern,uptime) #filter 0 out
+#     #pick last element in list
+#     lastet_uptime = uptime_non_zero[-1]
+#     if lastet_uptime is not None:
+#         return lastet_uptime
+#         time.sleep(5)
 
 def rogue_ssid_detected():
     # ApRogueMode
