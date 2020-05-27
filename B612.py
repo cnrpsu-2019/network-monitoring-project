@@ -57,6 +57,6 @@ def eng_users_details():
     user_name = Extract.extractSpecific(createFiles.realFile,'UserName').replace('UserName','').split()[-1]
     ap_name = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
     mac_addr = Extract.extractSpecific(createFiles.realFile,'MacAddress').replace('MacAddress','').split()[-1]
-    user_ssid = Extract.extractSpecific(createFiles.realFile,'SSID').replace('SSID','').split()[-1]
+    user_ssid = Extract.extractSpecific(createFiles.realFile,'SSID').split('SSID')[-1]
     
     ExportToDB.harvest_user_eng(tx_rates,rx_rates,user_name,user_ip_addr,mac_addr,ap_name,user_ssid)
