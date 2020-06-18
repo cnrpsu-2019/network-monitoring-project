@@ -5,7 +5,6 @@ import ExportToDB
 import Extract
 import B612
 import AutoLogin
-import Rose
 
 def main():
     running = True
@@ -16,19 +15,17 @@ def main():
             #replace string
             result = filterString.filter_string(raw_input)
             #write to local server
+
             output.write(result +'\n')
-           
         except EOFError:
             running = False
     output.close()
-    # subprocess.call(['sed','-i','/.*SessionID.*/d',createFiles.realFile])
 
 if __name__ == '__main__':
     main()
-    #login into outside world
-    AutoLogin.check_and_login()    
-    B612.uptime_instance()
+    AutoLogin.check_and_login()  #login into outside world    
     B612.rogue_ssid_detected()
     B612.activity_users()
     B612.deauth_users()
-    Rose.harvest()
+    B612.eng_users_details()
+    B612.uptime_instance()

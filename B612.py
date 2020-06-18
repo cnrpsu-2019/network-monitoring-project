@@ -4,6 +4,7 @@ import ExportToDB
 import MacList
 import collections
 import re
+import time
 
 def uptime_instance():
     #uptime instance
@@ -12,7 +13,13 @@ def uptime_instance():
     uptime_non_zero = re.findall(pattern,uptime) #filter 0 out
     #pick last element in list
     lastet_uptime = uptime_non_zero[-1]
-    ExportToDB.uptime_instance(lastet_uptime)
+    wlc_coe = Extract.extractSpecific(createFiles.realFile,'UDP: 172.30.232.2:32768-172.30.232.250:162').split('UDP: ')[-1]
+    wlc_eng = Extract.extractSpecific(createFiles.realFile,'UDP: 172.30.253.2:32768-172.30.232.250:162').split('UDP: ')[-1]
+
+    if wlc_eng == '172.31.253.2:32769-172.30.232.250:162':
+        ExportToDB.uptime_wlc(ip_address='172.31.253.2 - EnG',date_string=lastet_uptime)
+    elif wlc_coe == '172.30.232.2:32768-172.30.232.250:162':
+        ExportToDB.uptime_wlc(ip_address='172.31.232.2 - CoE',date_string=lastet_uptime)
 
 def rogue_ssid_detected():
     # ApRogueMode
@@ -42,3 +49,14 @@ def deauth_users():
     mac_address = Extract.client_mac(createFiles.realFile)[-1]
     if mac_address is not '0:0:0:0:0:0':
         ExportToDB.disassociate_users(mac_address,user_ip_address,apname_last,reason_code,user_name) 
+
+def eng_users_details():
+    tx_rates = Extract.extractSpecific(createFiles.realFile,'TxDatates').replace('TxDatates','').split()[-1]
+    rx_rates = Extract.extractSpecific(createFiles.realFile,'RxDatates').replace('RxDatates','').split()[-1]
+    user_ip_addr = Extract.extractSpecific(createFiles.realFile,'UserIpAddress').replace('UserIpAddress','').split()[-1]
+    user_name = Extract.extractSpecific(createFiles.realFile,'UserName').replace('UserName','').split()[-1]
+    ap_name = Extract.extractSpecific(createFiles.realFile,'APName').replace('APName','').split()[-1]
+    mac_addr = Extract.extractSpecific(createFiles.realFile,'MacAddress').replace('MacAddress','').split()[-1]
+    user_ssid = Extract.extractSpecific(createFiles.realFile,'SSID').split('SSID')[-1]
+    
+    ExportToDB.harvest_user_eng(tx_rates,rx_rates,user_name,user_ip_addr,mac_addr,ap_name,user_ssid)
